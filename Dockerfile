@@ -23,7 +23,7 @@ EXPOSE 25565/tcp
 
 CMD ["/launch.sh"]
 
-ENV MOTD "Cave Factory 1.2.0 Server Powered by Docker"
+ENV MOTD "Vault Hunters 1.12.3 Server Powered by Docker"
 ENV LEVEL world
 ENV LEVELTYPE ""
 ENV JVM_OPTS "-Xms2048m -Xmx6144m"

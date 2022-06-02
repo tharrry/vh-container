@@ -23,7 +23,7 @@ EXPOSE 25565/tcp
 
 CMD ["/launch.sh"]
 
-ENV MOTD "Vault Hunters 1.12.3 Server Powered by Docker"
-ENV LEVEL world
-ENV LEVELTYPE ""
+ENV MOTD "Vault Hunters 1.12.3 Modded Minecraft Server Powered by Docker"
+# ENV LEVEL "Vault-Hunters"
+# ENV LEVELTYPE ""
 ENV JVM_OPTS "-Xms2048m -Xmx6144m"

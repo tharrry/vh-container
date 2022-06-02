@@ -1,4 +1,4 @@
-# [Cave Factory](https://www.curseforge.com/minecraft/modpacks/cave-factory)
+# [Vault Hunters](https://vaulthunters.gg)
 <!-- MarkdownTOC autolink="true" indent="  " markdown_preview="github" -->
 
 - [Description](#description)
@@ -12,9 +12,9 @@
 ## Description
 
 
-Docker Container for Cave Factory Minecraft Modpack
+Docker Container for Vault Hunters Minecraft Modpack
 
-The docker on first run will download the same version as tagged of Cave Factory and install it.  This can take a while as the Forge installer can take a bit to complete.  You can watch the logs and it will eventually finish.
+The docker on first run will download the same version as tagged of Vault Hunters and install it.  This can take a while as the Forge installer can take a bit to complete.  You can watch the logs and it will eventually finish.
 
 After the first run it will simply start the server.
 
@@ -39,6 +39,6 @@ Set the enviroment variable `OPS` with a comma separated list of players.
 example:
 `OPS="OpPlayer1,OpPlayer2"`
 
-## Source
+## Original Source
 Github: https://github.com/Ratomas/cave-factory
 Docker: https://hub.docker.com/r/ratomas/cave-factory

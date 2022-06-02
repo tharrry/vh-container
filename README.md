@@ -29,8 +29,8 @@ These environment variables can be set at run time to override their defaults.
 
 * JVM_OPTS "-Xms2048m -Xmx6144m"
 * MOTD "A Minecraft (Vault Hunters 1.12.3) Server Powered by Docker"
-* LEVEL world
-* LEVELTYPE ""
+* LEVEL Vault-Hunters
+* LEVELTYPE byg
 
 ## Adding Minecraft Operators
 

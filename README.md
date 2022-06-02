@@ -1,4 +1,4 @@
-# [Vault Hunters](https://vaulthunters.gg)
+# [Vault Hunters]([https://vaulthunters.gg](https://www.curseforge.com/minecraft/modpacks/vault-hunters-official-modpack))
 <!-- MarkdownTOC autolink="true" indent="  " markdown_preview="github" -->
 
 - [Description](#description)

@@ -45,8 +45,8 @@
 		pancake = true
 		statue = true
 		iron_gate = true
-		bamboo_spikes_tipped = true
 		netherite_trapdoor = true
+		bamboo_spikes_tipped = true
 		fodder = true
 		wrench = true
 		end_stone_lamp = true
@@ -78,12 +78,12 @@
 		item_shelf = true
 		turn_table = true
 		faucet = true
-		blackstone_lamp = true
 		daub = true
+		blackstone_lamp = true
 		gold_trapdoor = true
 		feather_block = true
-		deepslate_lamp = true
 		magma_cream_block = true
+		deepslate_lamp = true
 		goblet = true
 		sconce_green = false
 		flute = true

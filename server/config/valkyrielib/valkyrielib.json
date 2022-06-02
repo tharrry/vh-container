@@ -1,3 +1,4 @@
 {
-  "bo:generate_documentation": false
+  "bo:generate_documentation": true,
+  "bo:debug": false
 }

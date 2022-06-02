@@ -1,7 +1,0 @@
-{
-  "name": "Dried kelp",
-  "colors": ["000000", "555555"],
-  "ingredient": {
-    "item": "minecraft:dried_kelp"
-  }
-}

@@ -60,13 +60,20 @@ Docker: https://hub.docker.com/r/ratomas/cave-factory
 
 ## Forked Source
 ### note that each modded minecraft server is in a dedicated fork
+Vault Hunters
 > Github: https://github.com/Wotupfoo/minecraft-container/tree/vault-hunters
+
+Cave Factory
 > Github: https://github.com/Wotupfoo/minecraft-container/tree/cave-factory   (not functional yet)
 
 ## DockerHub image
 ### DockerHub Image name: 
-> Full URI *docker.io/wotupfoo/vault-hunters:1.12.4* 
-> Shorthand *wotupfoo/vault-hunters:1.12.4*
+> Full URI
+> *docker.io/wotupfoo/vault-hunters:1.12.4* 
+
+> Shorthand
+> *wotupfoo/vault-hunters:1.12.4*
+
 ### DockerHub:
 > https://hub.docker.com/r/wotupfoo/vault-hunters:1.12.4
 

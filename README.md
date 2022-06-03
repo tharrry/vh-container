@@ -53,7 +53,7 @@ Minecraft server name
 Minecraft World name (and what world is automatically started when the server starts)
 > `LEVEL` vh-1.12.4-world
 
-The Level Type - no used currently
+The Level Type - not used currently
 > `LEVELTYPE`
 
 The Difficulty of the World
@@ -73,12 +73,14 @@ Docker:
 > https://hub.docker.com/r/ratomas/cave-factory
 
 ## Forked Source
-### note that each modded minecraft server is in a dedicated fork
-Vault Hunters Github:
+> NOTE: Each modded minecraft server is in a dedicated fork
+The main branch is a stale fork of the original cave-factory containerization by [Ratomas](https://github.com/Ratomas)
+
+#### Vault Hunters Github:
 > https://github.com/Wotupfoo/minecraft-container/tree/vault-hunters
 
-Cave Factory Github:
-> https://github.com/Wotupfoo/minecraft-container/tree/cave-factory   (not functional yet)
+#### Cave Factory Github: (not functional yet)
+> https://github.com/Wotupfoo/minecraft-container/tree/cave-factory
 
 ## DockerHub image
 Full URI
@@ -88,5 +90,5 @@ Shorthand
 > *wotupfoo/vault-hunters:1.12.4*
 
 DockerHub webpage
-> https://hub.docker.com/r/wotupfoo/vault-hunters:1.12.4
+> https://hub.docker.com/r/wotupfoo/vault-hunters/tags
 

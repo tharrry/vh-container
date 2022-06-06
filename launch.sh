@@ -39,18 +39,23 @@ fi
 if [[ "$LEVEL" = "Iskall-world" ]] && ![ -d "./Iskall-world" ]; then
 	ISKALL_GOOGLE_DRIVE_URL="https://shorturl.at/ehvLX"
 	ISKALL_WORLD_ZIP="Vault-Hunters-15k-vanilla_pregen.zip"
-	if command -v wget &> /dev/null; then
-		echo "DEBUG: (wget) Downloading 'https://drive.google.com/u/0/uc?id=1aMymaF_oEJFiG7F2N1ojA9rLdfRdZNuJ&export=download&confirm=t'"
-		 wget \
-		 --no-check-certificate \
-		 'https://drive.google.com/u/0/uc?id=1aMymaF_oEJFiG7F2N1ojA9rLdfRdZNuJ&export=download&confirm=t' \
-		 -O "${ISKALL_WORLD_ZIP}"
-	else
-		echo "ERROR: curl was not found on your system to download the Iskall pre-gen world. Please file an issue on github:/wotupfoo/minecraft-container/tree/vault-hunters."
-		exit 1
+
+	# Do we already have the zip file?
+	if ! [[ -f ${ISKALL_WORLD_ZIP} ]]; then
+		# Nope. Let's get it.
+		if command -v wget &> /dev/null; then
+			echo "DEBUG: (wget) Downloading 'https://drive.google.com/u/0/uc?id=1aMymaF_oEJFiG7F2N1ojA9rLdfRdZNuJ&export=download&confirm=t'"
+			wget \
+			--no-check-certificate \
+			'https://drive.google.com/u/0/uc?id=1aMymaF_oEJFiG7F2N1ojA9rLdfRdZNuJ&export=download&confirm=t' \
+			-O "${ISKALL_WORLD_ZIP}"
+		else
+			echo "ERROR: curl was not found on your system to download the Iskall pre-gen world. Please file an issue on github:/wotupfoo/minecraft-container/tree/vault-hunters."
+			exit 1
+		fi
+		echo "INFO: Downloaded ${ISKALL_WORLD_ZIP} from Iskall's Google Drive"
 	fi
 
-	echo "INFO: Downloaded ${ISKALL_WORLD_ZIP} from Iskall's Google Drive"
 	echo "INFO: Making the Iskall-world directory"
 	mkdir Iskall-world
 	if command -v unzip &> /dev/null; then
@@ -92,8 +97,8 @@ fi
 # Run the JAVA command line to launch the server skipping the Log4J Java Logger configuration file if it's not downloaded
 if ! [[ -f log4j2_112-116.xml ]]; then
 	echo "INFO: Starting Minecraft Java server without the LOG4J configuration file"
-	java $JAVA_FLAGS $JVM_OPTS -jar forge-1.16.5-36.2.23.jar
+	java $JAVA_FLAGS $JVM_OPTS -jar forge-1.16.5-36.2.23.jar -nogui
 else
 	echo "INFO: Starting Minecraft Java server with the LOG4J configuration file"
-	java $JAVA_FLAGS $JVM_OPTS -Dlog4j.configurationFile=log4j2_112-116.xml -jar forge-1.16.5-36.2.23.jar
+	java $JAVA_FLAGS $JVM_OPTS -Dlog4j.configurationFile=log4j2_112-116.xml -jar forge-1.16.5-36.2.23.jar -nogui
 fi

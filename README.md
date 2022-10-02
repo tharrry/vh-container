@@ -35,7 +35,7 @@ If you want the world to use Iskall's provided pre-generated world (5GB) where t
 The pre-generated world was provided in the description of Iskall's Single Player Vault-Hunters YouTube series in Episode 2. `https://shorturl.at/ehvLX` (Google Drive link)
 
 This is the default world, generated from scratch on first boot
-> `LEVEL` vh-1.12.4-world
+> `LEVEL` Vault-Hunters
 
 This is the Iskall pre-generated world and will be automatically downloaded and installed (5GB download space required + 5GB of extracted world)
 > `LEVEL` Iskall-world

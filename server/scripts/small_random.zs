@@ -183,6 +183,10 @@ craftingTable.addShaped("compressed_snow", <item:compressium:snow_1>, [
     [<item:minecraft:snow_block>, <item:minecraft:snow_block>, <item:minecraft:snow_block>],
 ]);
 
+craftingTable.addShapeless("compressium_compressed_snow_trade", <item:compressium:snow_1> *9, [
+  <item:compressium:snow_2>
+]);
+
 craftingTable.addShaped("factoryhopper", <item:engineersdecor:factory_hopper>, [
     [<item:the_vault:gem_pog>, <item:minecraft:ender_eye>, <item:the_vault:gem_pog>],
     [<item:engineersdecor:metal_bar>, <item:minecraft:hopper>, <item:engineersdecor:metal_bar>],
@@ -191,6 +195,10 @@ craftingTable.addShaped("factoryhopper", <item:engineersdecor:factory_hopper>, [
 
 craftingTable.addShapeless("douwsky_compressed_snow_trade", <item:minecraft:snow_block> *9, [
   <item:compressium:snow_1>
+]);
+
+craftingTable.addShapeless("douwsky_uncompressing_snow_trade", <item:minecraft:snowball> *4, [
+  <item:minecraft:snow_block>
 ]);
 
 craftingTable.addShapeless("douwsky_8_bamboo_trade", <item:minecraft:bamboo> *8, [
@@ -422,4 +430,22 @@ craftingTable.addShapeless("black_conrete_powder", <item:minecraft:black_concret
   <tag:items:ag:concrete_powder>, <tag:items:ag:concrete_powder>, <tag:items:ag:concrete_powder>,
   <tag:items:ag:concrete_powder>, <tag:items:forge:dyes/black>, <tag:items:ag:concrete_powder>,
   <tag:items:ag:concrete_powder>, <tag:items:ag:concrete_powder>, <tag:items:ag:concrete_powder>,
+]);
+
+craftingTable.addShaped("cobweb", <item:minecraft:cobweb>, [
+    [<item:minecraft:string>, <item:minecraft:air>, <item:minecraft:string>],
+    [<item:minecraft:air>, <item:the_vault:gem_benitoite>, <item:minecraft:air>],
+    [<item:minecraft:string>, <item:minecraft:string>, <item:minecraft:string>],
+]);
+
+craftingTable.addShaped("heater", <item:ironfurnaces:heater>, [
+    [<item:the_vault:vault_diamond>, <item:rsgauges:industrial_comparator_switch>, <item:the_vault:vault_diamond>],
+    [<tag:items:forge:stone>, <item:compressium:redstone_2>, <tag:items:forge:stone>],
+    [<tag:items:forge:stone>, <item:ironfurnaces:diamond_furnace>, <tag:items:forge:stone>],
+]);
+
+craftingTable.addShaped("heat_transmitter", <item:ironfurnaces:item_heater>, [
+    [<item:the_vault:vault_diamond>, <item:minecraft:comparator>, <item:the_vault:vault_diamond>],
+    [<item:minecraft:repeater>, <item:compressium:redstone_1>, <item:minecraft:repeater>],
+    [<item:the_vault:vault_diamond>, <item:minecraft:comparator>, <item:the_vault:vault_diamond>],
 ]);

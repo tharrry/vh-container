@@ -171,3 +171,8 @@ craftingTable.addShaped("refinedstorage_stack_upgrade", <item:refinedstorage:sta
     [<item:refinedstorage:speed_upgrade>, <item:the_vault:gem_echo>, <item:refinedstorage:speed_upgrade>],
     [<item:refinedstorage:quartz_enriched_iron>, <item:refinedstorage:speed_upgrade>, <item:refinedstorage:quartz_enriched_iron>]
 ]);
+
+craftingTable.addShapeless("refinedstorage_cable", <item:refinedstorage:cable> *4, [
+    <item:refinedstorage:quartz_enriched_iron>, <item:the_vault:gem_larimar>, <item:refinedstorage:quartz_enriched_iron>,
+    <tag:items:forge:silicon>
+]);

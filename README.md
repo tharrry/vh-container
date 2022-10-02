@@ -14,13 +14,13 @@
 
 Docker Container for Vault Hunters Minecraft Modpack
 
-The docker on first run will download the same version as tagged of Vault Hunters and install it.  This can take a while as the Forge installer can take a bit to complete.  You can watch the logs and it will eventually finish.
+The docker on first run will download the same version as tagged of Vault Hunters and install it.  This can take a while as the Forge installer can take a bit to complete. You can watch the logs and it will eventually finish.
 
 After the first run it will simply start the server.
 
 ## Requirements
 
-- Make sure that the EULA  is set to `true`
+- Make sure that the environment variable EULA is set to `true`
 - `/data` mounted to a persistent disk volume - otherwise your world will not be saved !!!
     - Examples:
         - Anonymous volume `-v :/data`
@@ -44,17 +44,20 @@ This is the Iskall pre-generated world and will be automatically downloaded and 
 
 These environment variables can be set at run time to override their defaults.
 
-Java virtual machine memory
-> `JVM_OPTS` "-Xms2048m -Xmx6144m"
+Java virtual machine memory - 6 Gigabytes maximum, increase by ~2G per player
+> `JVM_OPTS` "-Xmx6g"
 
 Minecraft server name
-> `MOTD` "A Minecraft (Vault Hunters 1.12.4) Server Powered by Docker"
+> `MOTD` "A Minecraft (Vault Hunters 1.13.9h) Server Powered by Docker"
 
 Minecraft World name (and what world is automatically started when the server starts)
-> `LEVEL` vh-1.12.4-world
+> `LEVEL` Vault-Hunters
 
 The Level Type - not used currently
 > `LEVELTYPE`
+
+The Mode of the World
+> `GAMEMODE` survival     [adventure, creative, spectator, survival]
 
 The Difficulty of the World
 > `DIFFICULTY` normal     [peaceful, easy, normal, hard]
@@ -74,7 +77,8 @@ Docker:
 
 ## Forked Source
 > NOTE: Each modded minecraft server is in a dedicated fork
-The main branch is a stale fork of the original cave-factory containerization by [Ratomas](https://github.com/Ratomas)
+This is the Vault-Hunters branch.
+The main branch is dead. Do not use it.
 
 #### Vault Hunters Github:
 > https://github.com/Wotupfoo/minecraft-container/tree/vault-hunters
@@ -84,10 +88,10 @@ The main branch is a stale fork of the original cave-factory containerization by
 
 ## DockerHub image
 Full URI
-> *docker.io/wotupfoo/vault-hunters:1.12.4* 
+> *docker.io/wotupfoo/vault-hunters:1.13.9* 
 
 Shorthand
-> *wotupfoo/vault-hunters:1.12.4*
+> *wotupfoo/vault-hunters:1.13.9*
 
 DockerHub webpage
 > https://hub.docker.com/r/wotupfoo/vault-hunters/tags

@@ -141,7 +141,8 @@
     },
     {
       "modIds": [
-        "storagedrawers"
+        "storagedrawers",
+        "framedcompactdrawers"
       ],
       "restrictions": {
         "restricts": {
@@ -1064,13 +1065,6 @@
             "CRAFTABILITY": true
           }
         },
-        "the_vault:vault_ingot": {
-          "restricts": {
-            "HITTABILITY": false,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
         "the_vault:etching": {
           "restricts": {
             "HITTABILITY": false,
@@ -1119,22 +1113,6 @@
       "blockRestrictions": {},
       "entityRestrictions": {},
       "name": "Powerful Arrows",
-      "cost": 1,
-      "usesKnowledge": true
-    },
-    {
-      "itemRestrictions": {
-        "the_vault:shard_pouch": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        }
-      },
-      "blockRestrictions": {},
-      "entityRestrictions": {},
-      "name": "Soul Hunting",
       "cost": 1,
       "usesKnowledge": true
     },

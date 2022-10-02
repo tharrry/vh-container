@@ -81,7 +81,7 @@
         "OMEGA": "the_vault:chest/lvl25/gildedomega"
       },
       "ALTAR": "the_vault:chest/altar",
-      "BOSS_CRATE": "the_vault:chest/lvl25/bosscratenew",
+      "BOSS_CRATE": "the_vault:chest/lvl25/bosscrate",
       "SCAVENGER_CRATE": "the_vault:chest/lvl25/scavengecrate",
       "BOSS_BONUS_CRATE": "the_vault:chest/lvl25/championbox",
       "ARENA_CRATE": "the_vault:chest/lvl25/arena",

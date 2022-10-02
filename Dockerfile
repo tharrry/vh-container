@@ -12,7 +12,7 @@ COPY launch.sh /launch.sh
 RUN dos2unix /launch.sh
 RUN chmod +x /launch.sh
 
-COPY server /server
+COPY --chown=minecraft:minecraft server /server
 
 USER minecraft
 
@@ -25,7 +25,18 @@ EXPOSE 25565/tcp
 
 CMD ["/launch.sh"]
 
-ENV MOTD "Vault Hunters 1.12.4 Modded Minecraft Server Powered by Docker"
-# ENV LEVEL "Vault-Hunters" - default
-# ENV LEVEL "Iskall-world" - loads Iskall's pre-generated world
-ENV JVM_OPTS "-Xms2048m -Xmx6144m"
+ENV EULA "false"
+
+ENV MOTD "Vault Hunters 1.13.9 Modded Minecraft Server Powered by Docker"
+
+# default
+ENV LEVEL "Vault-Hunters" 
+#  loads Iskall's pre-generated world
+# ENV LEVEL "Iskall-world"
+
+ENV GAMEMODE "survival"
+
+ENV DIFFICULTY "normal"
+
+# Start with 2G of ram expandable to 6G
+ENV JVM_OPTS "-Xms2g -Xmx6g"

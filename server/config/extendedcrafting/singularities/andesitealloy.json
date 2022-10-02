@@ -1,7 +1,0 @@
-{
-  "name": "Andesite alloy",
-  "colors": ["ffffff", "cccccc"],
-  "ingredient": {
-    "item": "create:andesite_alloy"
-  }
-}

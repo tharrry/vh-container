@@ -3,7 +3,7 @@
 <!-- /MarkdownTOC -->
 
 ## Description
-Docker Container for [Vault Hunters](http://vaulthunters.gg) & [Cave Factory](https://www.curseforge.com/minecraft/modpacks/cave-factory)) Minecraft Modpacks
+Docker Container for [Vault Hunters](http://vaulthunters.gg) & [Cave Factory](https://www.curseforge.com/minecraft/modpacks/cave-factory) Minecraft Modpacks
 
 Change to the branch for the game you want.
 
@@ -19,7 +19,7 @@ Github: https://github.com/wotupfoo/minecraft-container/tree/cave-factory
 
 Docker: coming some day - current focus is on Vault-Hunters since there is already a Cave Factory container (this is forked from)
 
-## Source
+## Credit
 This repo was forked from the original work here to launch Cave Factory
 
 Github: https://github.com/Ratomas/cave-factory

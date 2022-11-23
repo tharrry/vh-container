@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# Minecraft Vault Hunters world with the 1.13.9 update
+  vault-hunters:
+    image: wotupfoo/vault-hunters:1.13.9
+    tty: true
+#    stdin_open: true
+    ports:
+        - "25565:25565"
+    volumes:
+      - ./vault-hunters-1.13.9:/data
+    environment:
+        - EULA=true
+        - JVM_OPTS=-Xmx16g
+# default enironment variable values
+#        - JVM_OPTS : "-Xms2g -Xmx6g"
+#        - JAVA_HOME : "/usr/local/openjdk-8"
+#        - JAVA_VERSION : "8u312"
+#        - MOTD : "Vault Hunters 1.13.9 Modded Minecraft Server Powered by Docker"
+#        - LEVEL : "Vault-Hunters"
+#        - GAMEMODE : "survival"
+#        - DIFFICULTY : "normal"

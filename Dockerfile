@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1
 
-FROM openjdk:8u312-jdk-buster
+FROM openjdk:17-jdk-buster
 
-LABEL version="1.2.0"
+LABEL version="1.18.0"
 
 RUN apt-get update && apt-get install -y curl dos2unix && \
  addgroup minecraft && \
@@ -13,6 +13,8 @@ RUN dos2unix /launch.sh
 RUN chmod +x /launch.sh
 
 COPY --chown=minecraft:minecraft server /server
+RUN dos2unix /server/start.sh
+RUN chmod +x /server/start.sh
 
 USER minecraft
 
@@ -27,10 +29,10 @@ CMD ["/launch.sh"]
 
 ENV EULA "false"
 
-ENV MOTD "Vault Hunters 1.13.9 Modded Minecraft Server Powered by Docker"
+#ENV MOTD "Vault Hunters 1.18.2-alpha-0.0.1 Modded Minecraft Server Powered by Docker"
 
 # default
-ENV LEVEL "Vault-Hunters" 
+# ENV LEVEL "VH3" 
 #  loads Iskall's pre-generated world
 # ENV LEVEL "Iskall-world"
 

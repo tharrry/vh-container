@@ -9,9 +9,9 @@ if [[ "$(id -u)" == "0" ]]; then
   echo "Warning! Running with administrator-privileges is not recommended."
 fi
 
-MINECRAFT_VERSION="1.16.5"
+MINECRAFT_VERSION="1.18.2"
 MODLOADER="Forge"
-MODLOADER_VERSION="36.2.23"
+MODLOADER_VERSION="40.1.61"
 ARGS="$JVM_OPTS"
 JAVA="java"
 FABRIC_INSTALLER_VERSION="0.11.0"
@@ -59,7 +59,7 @@ setup_forge() {
   echo ""
   echo "Running Forge checks and setup..."
 
-  FORGE_INSTALLER_URL="https://files.minecraftforge.net/maven/net/minecraftforge/forge/${MINECRAFT_VERSION}-${MODLOADER_VERSION}/forge-${MINECRAFT_VERSION}-${MODLOADER_VERSION}-installer.jar"
+  FORGE_INSTALLER_URL="https://maven.minecraftforge.net/net/minecraftforge/forge/${MINECRAFT_VERSION}-${MODLOADER_VERSION}/forge-${MINECRAFT_VERSION}-${MODLOADER_VERSION}-installer.jar"
 
   FORGE_JAR_LOCATION="do_not_manually_edit"
   IFS="." read -ra MINOR <<<"${MINECRAFT_VERSION}"

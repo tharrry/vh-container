@@ -58,6 +58,9 @@ fi
 if [[ -n "$LEVELTYPE" ]]; then
     sed -i "/level-type\s*=/ c level-type=$LEVELTYPE" server.properties
 fi
+if [[ -n "$LEVELSEED" ]]; then
+    sed -i "/level-seed\s*=/ c level-seed=$LEVELSEED" server.properties
+fi
 if [[ -n "$GAMEMODE" ]]; then
     sed -i "/gamemode\s*=/ c gamemode=$GAMEMODE" server.properties
 fi

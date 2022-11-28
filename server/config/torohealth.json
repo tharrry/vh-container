@@ -4,29 +4,31 @@
     "distance": 60,
     "x": 4.0,
     "y": 4.0,
-    "scale": 0.0,
-    "hideDelay": 60,
+    "scale": 1.0,
+    "hideDelay": 20,
     "anchorPoint": "TOP_LEFT",
     "showEntity": false,
-    "showBar": true,
-    "showSkin": false
+    "showBar": false,
+    "showSkin": false,
+    "onlyWhenHurt": false
   },
   "bar": {
     "damageNumberType": "LAST",
-    "friendColor": 16711935,
-    "friendColorSecondary": 8388863,
-    "foeColor": -16776961,
-    "foeColorSecondary": -2147483393
+    "friendColor": "#00ff00",
+    "friendColorSecondary": "#008000",
+    "foeColor": "#ff0000",
+    "foeColorSecondary": "#800000"
   },
   "inWorld": {
-    "mode": "NONE",
-    "distance": 10.0,
-    "onlyWhenLookingAt": true,
+    "mode": "ALWAYS",
+    "distance": 60.0,
+    "onlyWhenLookingAt": false,
     "onlyWhenHurt": true
   },
   "particle": {
     "show": true,
-    "damageColor": 16711680,
-    "healColor": 65280
+    "damageColor": "#ff0000",
+    "healColor": "#00ff00",
+    "distance": 60
   }
 }

@@ -1,116 +1,162 @@
-import crafttweaker.api.SmithingManager;
-import crafttweaker.api.Brewing;
-import crafttweaker.api.registries.IRecipeManager;
-import mods.botania.ElvenTrade;
+/* scripts made by Douwsky
+for Iskall85's Vaulthunters */
 
 // adding recipes
 
-craftingTable.addShaped("thermal_machhine_frame", <item:thermal:machine_frame>, [
-    [<item:minecraft:diamond>, <tag:items:the_vault:perfectcommongems>, <item:minecraft:diamond>],
-    [<tag:items:the_vault:perfectcommongems>, <item:the_vault:perfect_black_opal>, <tag:items:the_vault:perfectcommongems>],
-    [<item:minecraft:diamond>, <tag:items:the_vault:perfectcommongems>, <item:minecraft:diamond>]
+var ingots = {
+  "iron": "minecraft:iron_ingot",
+  "gold": "minecraft:gold_ingot",
+  "copper": "minecraft:copper_ingot",
+  "netherite": "minecraft:netherite_ingot",
+  "tin": "thermal:tin_ingot",
+  "lead": "thermal:lead_ingot",
+  "silver": "thermal:silver_ingot",
+  "nickel": "thermal:nickel_ingot",
+  "bronze": "thermal:bronze_ingot",
+  "electrum": "thermal:electrum_ingot",
+  "invar": "thermal:invar_ingot",
+  "constantan": "thermal:constantan_ingot",
+  "signalum": "thermal:signalum_ingot",
+  "lumium": "thermal:lumium_ingot",
+  "enderium": "thermal:enderium_ingot",
+};
+
+var gems = {
+    "lapis": "lapis_lazuli",
+    "diamond": "diamond",
+    "emerald": "emerald",
+    "quartz": "quartz",
+};    
+
+for ingotId, ingotName in ingots {
+  craftingTable.addShaped("thermal_" + ingotId + "_gear", <item:thermal:${ingotId}_gear>, [
+    [<item:the_vault:gem_larimar>, <item:${ingotName}>, <item:the_vault:gem_larimar>],
+    [<item:${ingotName}>, <item:the_vault:chromatic_iron_ingot>, <item:${ingotName}>],
+    [<item:the_vault:gem_larimar>, <item:${ingotName}>, <item:the_vault:gem_larimar>]
 ]);
+}
+
+for gemId, gemName in gems {
+  craftingTable.addShaped("thermal_" + gemId + "_gear", <item:thermal:${gemId}_gear>, [
+    [<item:the_vault:gem_larimar>, <item:minecraft:${gemName}>, <item:the_vault:gem_larimar>],
+    [<item:minecraft:${gemName}>, <item:the_vault:chromatic_iron_ingot>, <item:minecraft:${gemName}>],
+    [<item:the_vault:gem_larimar>, <item:minecraft:${gemName}>, <item:the_vault:gem_larimar>]
+]);
+}
+
+<recipetype:thermal:pulverizer>.addRecipe("ore_to_dust", [<item:the_vault:chromatic_iron_dust> *2], <item:the_vault:chromatic_iron_ore>, 3, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("raw_to_dust", [<item:the_vault:chromatic_iron_dust>], <item:the_vault:raw_chromatic_iron>, 3, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("ingot_to_dust", [<item:the_vault:chromatic_iron_dust>], <item:the_vault:chromatic_iron_ingot>, 3, 2000);
+
+<recipetype:thermal:pulverizer>.addRecipe("vaultstone_to_rock", [<item:the_vault:vault_cobblestone> % 100, <item:the_vault:chipped_vault_rock> % 50], <item:the_vault:vault_stone>, 3, 2000);
 
 craftingTable.addShaped("thermal_rf_coil", <item:thermal:rf_coil>, [
-    [<item:minecraft:air>, <tag:items:the_vault:perfectcommongems>, <item:minecraft:redstone_block>],
-    [<tag:items:the_vault:perfectcommongems>, <item:minecraft:gold_block>, <tag:items:the_vault:perfectcommongems>],
-    [<item:minecraft:redstone_block>, <tag:items:the_vault:perfectcommongems>, <item:minecraft:air>]
+    [<item:minecraft:air>, <item:minecraft:air>, <tag:items:forge:storage_blocks/redstone>],
+    [<item:minecraft:air>, <tag:items:forge:storage_blocks/gold>, <item:minecraft:air>],
+    [<tag:items:forge:storage_blocks/redstone>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("thermal_redstone_servo", <item:thermal:redstone_servo>, [
+    [<item:minecraft:air>, <tag:items:forge:storage_blocks/redstone>, <item:minecraft:air>],
+    [<item:minecraft:air>, <tag:items:forge:storage_blocks/iron>, <item:minecraft:air>],
+    [<item:minecraft:air>, <tag:items:forge:storage_blocks/redstone>, <item:minecraft:air>]
+]);
+
+<recipetype:create:item_application>.addRecipe("machine_frame", [<item:thermal:machine_frame>],
+<item:minecraft:tinted_glass>, <tag:items:forge:gears>);
+
+<recipetype:create:item_application>.addRecipe("energy_cell_frame", [<item:thermal:energy_cell_frame>],
+<tag:items:forge:storage_blocks/lead>, <tag:items:forge:gears>);
+
+<recipetype:create:item_application>.addRecipe("fluid_cell_frame", [<item:thermal:fluid_cell_frame>],
+<tag:items:forge:storage_blocks/copper>, <tag:items:forge:gears>);
+
+craftingTable.addShaped("thermal_energy_cell", <item:thermal:energy_cell>, [
+    [<item:thermal:cured_rubber_block>, <item:compressium:redstone_1>, <item:thermal:cured_rubber_block>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:energy_cell_frame>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:thermal:cured_rubber_block>, <item:thermal:rf_coil>, <item:thermal:cured_rubber_block>]
+]);
+
+craftingTable.addShaped("thermal_fluid_cell", <item:thermal:fluid_cell>, [
+    [<item:thermal:cured_rubber_block>, <tag:items:thermal:glass/hardened>, <item:thermal:cured_rubber_block>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:fluid_cell_frame>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:thermal:cured_rubber_block>, <item:thermal:redstone_servo>, <item:thermal:cured_rubber_block>]
 ]);
 
 craftingTable.addShaped("thermal_wrench", <item:thermal:wrench>, [
-    [<item:the_vault:vault_ingot>, <item:the_vault:perfect_black_opal>, <item:the_vault:vault_ingot>],
+    [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:air>, <item:the_vault:chromatic_iron_ingot>],
     [<item:minecraft:air>, <tag:items:forge:gears>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:the_vault:perfectcommongems>, <item:minecraft:air>]
+    [<item:minecraft:air>, <item:the_vault:chromatic_steel_ingot>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("thermal_dynamo_compression", <item:thermal:dynamo_compression>, [
-    [<item:the_vault:perfect_black_opal>, <item:thermal:rf_coil>, <item:the_vault:perfect_black_opal>],
-    [<item:minecraft:iron_block>, <tag:items:forge:gears/bronze>, <item:minecraft:iron_block>],
-    [<tag:items:forge:storage_blocks/bronze>, <item:compressium:redstone_1>, <tag:items:forge:storage_blocks/bronze>]
+craftingTable.addShaped("thermal_magmatic_dynamo", <item:thermal:dynamo_magmatic>, [
+    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:invar_gear>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:thermal:invar_block>, <item:compressium:redstone_1>, <item:thermal:invar_block>]
 ]);
 
-craftingTable.addShaped("thermal_dynamo_magmatic", <item:thermal:dynamo_magmatic>, [
-    [<item:the_vault:perfect_black_opal>, <item:thermal:rf_coil>, <item:the_vault:perfect_black_opal>],
-    [<item:minecraft:iron_block>, <tag:items:forge:gears/invar>, <item:minecraft:iron_block>],
-    [<tag:items:forge:storage_blocks/invar>, <item:compressium:redstone_1>, <tag:items:forge:storage_blocks/invar>]
+craftingTable.addShaped("thermal_numismatic_dynamo", <item:thermal:dynamo_numismatic>, [
+    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:tin_gear>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:thermal:constantan_block>, <item:compressium:redstone_1>, <item:thermal:constantan_block>]
 ]);
 
-craftingTable.addShaped("thermal_dynamo_numismatic", <item:thermal:dynamo_numismatic>, [
-    [<item:the_vault:perfect_black_opal>, <item:thermal:rf_coil>, <item:the_vault:perfect_black_opal>],
-    [<item:minecraft:iron_block>, <tag:items:forge:gears/tin>, <item:minecraft:iron_block>],
-    [<tag:items:forge:storage_blocks/constantan>, <item:compressium:redstone_1>, <tag:items:forge:storage_blocks/constantan>]
-]);
-
-craftingTable.addShaped("thermal_dynamo_lapidary", <item:thermal:dynamo_lapidary>, [
-    [<item:the_vault:perfect_black_opal>, <item:thermal:rf_coil>, <item:the_vault:perfect_black_opal>],
-    [<item:minecraft:iron_block>, <tag:items:forge:gears/gold>, <item:minecraft:iron_block>],
+craftingTable.addShaped("thermal_lapidary_dynamo", <item:thermal:dynamo_lapidary>, [
+    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:gold_gear>, <item:the_vault:chromatic_steel_ingot>],
     [<item:compressium:lapis_1>, <item:compressium:redstone_1>, <item:compressium:lapis_1>]
 ]);
 
-craftingTable.addShaped("thermal_dynamo_stirling", <item:thermal:dynamo_stirling>, [
-    [<item:the_vault:perfect_black_opal>, <item:thermal:rf_coil>, <item:the_vault:perfect_black_opal>],
-    [<item:minecraft:iron_block>, <tag:items:forge:gears/iron>, <item:minecraft:iron_block>],
-    [<item:compressium:stone_2>, <item:compressium:redstone_1>, <item:compressium:stone_2>]
+craftingTable.addShaped("thermal_disenchantment_dynamo", <item:thermal:dynamo_disenchantment>, [
+    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:silver_gear>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:minecraft:experience_bottle>, <item:compressium:redstone_1>, <item:minecraft:experience_bottle>]
 ]);
 
-craftingTable.addShaped("thermal_machine_insolator", <item:thermal:machine_insolator>, [
-    [<item:minecraft:air>, <item:the_vault:echo_pog>, <item:minecraft:air>],
-    [<item:the_vault:gem_pog>, <item:thermal:machine_frame>, <item:the_vault:gem_pog>],
-    [<tag:items:forge:gears/lumium>, <item:thermal:rf_coil>, <tag:items:forge:gears/lumium>]
+craftingTable.addShaped("thermal_gourmand_dynamo", <item:thermal:dynamo_gourmand>, [
+    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:copper_gear>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:thermal:tin_block>, <item:compressium:redstone_1>, <item:thermal:tin_block>]
 ]);
 
-craftingTable.addShaped("thermal_energy_cell", <item:thermal:energy_cell>, [
-    [<item:thermal:cured_rubber>, <item:compressium:redstone_2>, <item:thermal:cured_rubber>],
-    [<item:the_vault:perfect_black_opal>, <item:thermal:energy_cell_frame>, <item:the_vault:perfect_black_opal>],
-    [<item:thermal:cured_rubber>, <item:thermal:rf_coil>, <item:thermal:cured_rubber>]
+craftingTable.addShaped("thermal_stirling_dynamo", <item:thermal:dynamo_stirling>, [
+    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:iron_gear>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:the_vault:vault_stone>, <item:compressium:redstone_1>, <item:the_vault:vault_stone>]
 ]);
 
-craftingTable.addShaped("thermal_energy_cell_frame", <item:thermal:energy_cell_frame>, [
-    [<tag:items:forge:ingots/lead>, <item:the_vault:perfect_benitoite>, <tag:items:forge:ingots/lead>],
-    [<item:the_vault:perfect_larimar>, <tag:items:forge:gears/electrum>, <item:the_vault:perfect_larimar>],
-    [<tag:items:forge:ingots/lead>, <item:the_vault:perfect_benitoite>, <tag:items:forge:ingots/lead>]
+craftingTable.addShaped("thermal_compression_dynamo", <item:thermal:dynamo_compression>, [
+    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:copper_gear>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:thermal:bronze_block>, <item:compressium:redstone_1>, <item:thermal:bronze_block>]
 ]);
 
-craftingTable.addShapeless("thermal_electrum_nugget", <item:thermal:electrum_nugget> * 9, [
-    <item:thermal:electrum_ingot>
+craftingTable.addShaped("thermal_phyto_insolator", <item:thermal:machine_insolator>, [
+    [<item:minecraft:air>, <item:compressium:dirt_2>, <item:minecraft:air>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:machine_frame>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:thermal:lumium_gear>, <item:thermal:rf_coil>, <item:thermal:lumium_gear>]
 ]);
 
-craftingTable.addShapeless("thermal_constantan_nugget", <item:thermal:constantan_nugget> * 9, [
-    <item:thermal:constantan_ingot>
+craftingTable.addShaped("thermal_pulverizor", <item:thermal:machine_pulverizer>, [
+    [<item:minecraft:air>, <item:the_vault:chromatic_steel_ingot>, <item:minecraft:air>],
+    [<item:supplementaries:flint_block>, <item:thermal:machine_frame>, <item:supplementaries:flint_block>],
+    [<item:thermal:copper_gear>, <item:thermal:rf_coil>, <item:thermal:copper_gear>]
 ]);
 
-craftingTable.addShapeless("thermal_nickel_nugget", <item:thermal:nickel_nugget> * 9, [
-    <item:thermal:nickel_ingot>
-]);
-
-craftingTable.addShapeless("thermal_silver_nugget", <item:thermal:silver_nugget> * 9, [
-    <item:thermal:silver_ingot>
-]);
-
-craftingTable.addShapeless("thermal_lead_nugget", <item:thermal:lead_nugget> * 9, [
-    <item:thermal:lead_ingot>
-]);
-
-craftingTable.addShapeless("thermal_copper_nugget", <item:thermal:copper_nugget> * 9, [
-    <item:thermal:copper_ingot>
-]);
-
-craftingTable.addShapeless("thermal_bronze_nugget", <item:thermal:bronze_nugget> * 9, [
-    <item:thermal:bronze_ingot>
-]);
-
-craftingTable.addShapeless("thermal_tin_nugget", <item:thermal:tin_nugget> * 9, [
-    <item:thermal:tin_ingot>
-]);
-
-craftingTable.addShaped("thermal_vecuumulator", <item:thermal:device_collector>, [
-    [<item:the_vault:gem_pog>, <item:minecraft:ender_eye>, <item:the_vault:gem_pog>],
-    [<tag:items:forge:storage_blocks/tin>, <item:minecraft:hopper>, <tag:items:forge:storage_blocks/tin>],
-    [<item:the_vault:perfect_alexandrite>, <item:thermal:redstone_servo>, <item:the_vault:perfect_alexandrite>]
+craftingTable.addShaped("thermal_vacuumulator", <item:thermal:device_collector>, [
+    [<tag:items:forge:storage_blocks/tin>, <item:the_vault:gem_pog>, <tag:items:forge:storage_blocks/tin>],
+    [<item:minecraft:tinted_glass>, <item:thermal:machine_frame>, <item:minecraft:tinted_glass>],
+    [<tag:items:forge:storage_blocks/tin>, <item:thermal:redstone_servo>, <tag:items:forge:storage_blocks/tin>]
 ]);
 
 craftingTable.addShaped("thermal_igneous_extruder", <item:thermal:device_rock_gen>, [
-    [<item:thermal:invar_block>, <item:thermal:constantan_gear>, <item:thermal:invar_block>],
-    [<item:the_vault:gem_pog>, <item:thermal:machine_frame>, <item:the_vault:gem_pog>],
-    [<item:thermal:invar_block>, <item:thermal:redstone_servo>, <item:thermal:invar_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:constantan_gear>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:minecraft:tinted_glass>, <item:thermal:machine_frame>, <item:minecraft:tinted_glass>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:redstone_servo>, <item:the_vault:chromatic_steel_ingot>]
+]);
+
+craftingTable.addShaped("thermal_aqueous_accumulator", <item:thermal:device_water_gen>, [
+    [<item:the_vault:chromatic_steel_ingot>, <item:compressium:iron_1>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:minecraft:tinted_glass>, <item:the_vault:infinite_water_bucket>, <item:minecraft:tinted_glass>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:thermal:redstone_servo>, <item:the_vault:chromatic_steel_ingot>]
 ]);

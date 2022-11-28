@@ -3,75 +3,58 @@
     "Storage": {
       "title": "Storage",
       "research": [
-        "More Chests",
-        "Pretty Pipes",
-        "RFTools Storage",
+        "Colossal Chests",
+        "Simple Storage Network",
         "Refined Storage",
         "Applied Energistics",
         "Drawers",
-        "Mekanism QIO",
-        "Vault Looter"
+        "Mekanism QIO"
       ],
-      "globalCostIncrease": 0.5,
+      "globalCostIncrease": 0.0,
       "groupCostIncrease": {
-        "Storage": 2.0,
-        "Power": 1.0
+        "Storage": 0.24
       }
     },
-    "VaultUtils": {
-      "title": "Utilities",
+    "BigToys": {
+      "title": "Big Toys",
       "research": [
-        "Backpacks",
-        "Building Gadgets",
-        "Botania",
-        "Jetpacks",
-        "Danks",
-        "Extendo Arm",
-        "Powerful Arrows",
-        "Vault Blacksmith",
-        "Vault Powerups"
+        "Mining Gadgets",
+        "Weirding Gadgets",
+        "Digital Miner",
+        "Building Gadgets"
       ],
-      "globalCostIncrease": 0.5,
+      "globalCostIncrease": 0.0,
       "groupCostIncrease": {
-        "VaultUtils": 2.0
+        "BigToys": 3.0
       }
     },
-    "Farming": {
-      "title": "Farming",
+    "Production": {
+      "title": "Production",
       "research": [
         "Easy Villagers",
         "SNAD",
-        "Quarry",
-        "Digital Miner",
-        "Garden Cloche",
-        "Mining Gadgets",
+        "Cagerium",
         "Mob Spawners",
-        "Laser Mining",
-        "Phytogenic Insulator"
+        "Phytogenic Insulator",
+        "Easy Piglins",
+        "Botany Pots"
       ],
-      "globalCostIncrease": 0.5,
+      "globalCostIncrease": 0.0,
       "groupCostIncrease": {
-        "Farming": 2.0,
-        "Processing": 1.0
+        "Production": 9.0
       }
     },
-    "Processing": {
-      "title": "Processing",
+    "BigMods": {
+      "title": "Big Mods",
       "research": [
         "Create",
         "Mekanism",
         "Thermal Expansion",
-        "Industrial Foregoing",
-        "Immersive Engineering",
-        "Engineers Decor",
-        "Iron Furnaces",
-        "RFTools Base",
-        "Automatic Genius"
+        "Botania"
       ],
-      "globalCostIncrease": 0.5,
+      "globalCostIncrease": 0.0,
       "groupCostIncrease": {
-        "Processing": 2.0,
-        "Farming": 1.0
+        "BigMods": 12.0
       }
     },
     "Power": {
@@ -79,48 +62,57 @@
       "research": [
         "Flux Networks",
         "Powah",
-        "RFTools Power",
-        "Mekanism Generators"
+        "Mekanism Generators",
+        "Iron Generators"
       ],
-      "globalCostIncrease": 0.5,
+      "globalCostIncrease": 0.0,
       "groupCostIncrease": {
-        "Power": 4.0,
-        "Farming": 1.0,
-        "Storage": 1.0,
-        "Processing": 1.0
+        "Power": 3.0
       }
     },
-    "Base": {
-      "title": "Base",
+    "QoL": {
+      "title": "QoL",
       "research": [
-        "Xnet",
-        "Dark Utilities",
-        "Waystones",
         "Torch Master",
         "Trashcans",
         "Elevators",
-        "RFTools Utility",
-        "Dimensional Storage",
-        "Modular Routers"
+        "Waystones",
+        "Weirding Gadgets",
+        "Vault Compass"
       ],
-      "globalCostIncrease": 0.5,
+      "globalCostIncrease": 0.0,
       "groupCostIncrease": {
-        "Base": 1.0
       }
     },
-    "Decoration": {
-      "title": "Decoration",
+    "Looting": {
+      "title": "Looting",
       "research": [
-        "Furniture",
-        "Decorator",
-        "More Lights",
-        "Chef",
-        "Test Dummies",
-        "Fairy Lights"
+        "Belts",
+        "Pouches",
+        "Double Pouches",
+        "Backpacks",
+        "Big Backpacks",
+        "Junk Management"
       ],
-      "globalCostIncrease": -1.0,
+      "globalCostIncrease": 0.0,
       "groupCostIncrease": {
+        "Looting": 2.0
       }
+    },
+      "Handling": {
+        "title": "Handling",
+        "research": [
+          "Xnet",
+          "Modular Routers",
+          "Pipez",
+          "Iron Furnaces",
+          "Automatic Genius",
+          "Dark Utilities"
+        ],
+        "globalCostIncrease": 0.0,
+        "groupCostIncrease": {
+          "Handling": 1.0
+        }
     }
   }
 }

@@ -1,0 +1,80 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "iskall85",
+      "uniqueId": "7ed3587b-e656-4689-90d6-08e11daaf907"
+    },
+    "time": 1665046065204,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/EFk14UvBHP"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "iskall85",
+      "uniqueId": "7ed3587b-e656-4689-90d6-08e11daaf907"
+    },
+    "time": 1665046059821,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/YhxWCoqcpm"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "iskall85",
+      "uniqueId": "7ed3587b-e656-4689-90d6-08e11daaf907"
+    },
+    "time": 1665046052758,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/9RQzLt5KuD"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "iskall85",
+      "uniqueId": "7ed3587b-e656-4689-90d6-08e11daaf907"
+    },
+    "time": 1665046043014,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/eVTRXOkvAH"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "iskall85",
+      "uniqueId": "7ed3587b-e656-4689-90d6-08e11daaf907"
+    },
+    "time": 1665046034610,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/MfuqCvii1y"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "iskall85",
+      "uniqueId": "7ed3587b-e656-4689-90d6-08e11daaf907"
+    },
+    "time": 1663885655790,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/agMUjD8Kc7"
+    }
+  }
+]

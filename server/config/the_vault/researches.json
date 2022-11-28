@@ -2,7 +2,7 @@
   "MOD_RESEARCHES": [
     {
       "modIds": [
-        "simplybackpacks"
+        "colossalchests"
       ],
       "restrictions": {
         "restricts": {
@@ -13,14 +13,30 @@
           "ENTITY_INTERACTABILITY": false
         }
       },
-      "name": "Backpacks",
+      "name": "Colossal Chests",
+      "cost": 1,
+      "usesKnowledge": true
+    },
+    {
+      "modIds": [
+        "storagenetwork"
+      ],
+      "restrictions": {
+        "restricts": {
+          "HITTABILITY": false,
+          "BLOCK_INTERACTABILITY": true,
+          "USABILITY": true,
+          "CRAFTABILITY": true,
+          "ENTITY_INTERACTABILITY": false
+        }
+      },
+      "name": "Simple Storage Network",
       "cost": 2,
       "usesKnowledge": true
     },
     {
       "modIds": [
-        "waystones",
-        "usefulrailroads"
+        "waystones"
       ],
       "restrictions": {
         "restricts": {
@@ -49,7 +65,7 @@
         }
       },
       "name": "Torch Master",
-      "cost": 3,
+      "cost": 2,
       "usesKnowledge": true
     },
     {
@@ -67,28 +83,18 @@
       },
       "name": "Trashcans",
       "cost": 1,
-      "usesKnowledge": true
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/trash/helmet",
+        "the_vault:gear/armor/trash/chestplate",
+        "the_vault:gear/armor/trash/leggings",
+        "the_vault:gear/armor/trash/boots"
+      ]
     },
     {
       "modIds": [
-        "dankstorage"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Danks",
-      "cost": 5,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "buildinggadgets"
+        "buildinggadgets",
+        "enercell"
       ],
       "restrictions": {
         "restricts": {
@@ -100,8 +106,14 @@
         }
       },
       "name": "Building Gadgets",
-      "cost": 4,
-      "usesKnowledge": true
+      "cost": 2,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/builder/helmet",
+        "the_vault:gear/armor/builder/chestplate",
+        "the_vault:gear/armor/builder/leggings",
+        "the_vault:gear/armor/builder/boots"
+      ]
     },
     {
       "modIds": [
@@ -117,32 +129,12 @@
         }
       },
       "name": "Mining Gadgets",
-      "cost": 6,
+      "cost": 3,
       "usesKnowledge": true
     },
     {
       "modIds": [
-        "metalbarrels",
-        "ironchest",
-        "storage_overhaul"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "More Chests",
-      "cost": 1,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "storagedrawers",
-        "framedcompactdrawers"
+        "storagedrawers"
       ],
       "restrictions": {
         "restricts": {
@@ -154,7 +146,7 @@
         }
       },
       "name": "Drawers",
-      "cost": 2,
+      "cost": 1,
       "usesKnowledge": true
     },
     {
@@ -171,8 +163,14 @@
         }
       },
       "name": "Refined Storage",
-      "cost": 4,
-      "usesKnowledge": true
+      "cost": 6,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/arcade/helmet",
+        "the_vault:gear/armor/arcade/chestplate",
+        "the_vault:gear/armor/arcade/leggings",
+        "the_vault:gear/armor/arcade/boots"
+      ]
     },
     {
       "modIds": [
@@ -188,86 +186,14 @@
         }
       },
       "name": "Applied Energistics",
-      "cost": 4,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "rftoolsstorage"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": true,
-          "USABILITY": true,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "RFTools Storage",
-      "cost": 2,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "masonry",
-        "decorative_blocks",
-        "camera",
-        "mcwbridges",
-        "blockcarpentry",
-        "mcwwindows",
-        "mcwroofs",
-        "mcwdoors",
-        "enviromats",
-        "platforms"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Decorator",
-      "cost": 1,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "cfm",
-        "supplementaries"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Furniture",
-      "cost": 1,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "engineersdecor"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Engineers Decor",
-      "cost": 1,
-      "usesKnowledge": true
+      "cost": 6,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/robotic/helmet",
+        "the_vault:gear/armor/robotic/chestplate",
+        "the_vault:gear/armor/robotic/leggings",
+        "the_vault:gear/armor/robotic/boots"
+      ]
     },
     {
       "modIds": [
@@ -288,25 +214,7 @@
     },
     {
       "modIds": [
-        "immersiveengineering"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Immersive Engineering",
-      "cost": 6,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "elevatorid",
-        "movingelevators"
+        "elevatorid"
       ],
       "restrictions": {
         "restricts": {
@@ -323,40 +231,6 @@
     },
     {
       "modIds": [
-        "cookingforblockheads"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Chef",
-      "cost": 1,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "dimstorage"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Dimensional Storage",
-      "cost": 3,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
         "xnet"
       ],
       "restrictions": {
@@ -369,8 +243,14 @@
         }
       },
       "name": "Xnet",
-      "cost": 6,
-      "usesKnowledge": true
+      "cost": 4,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/xnet/helmet",
+        "the_vault:gear/armor/xnet/chestplate",
+        "the_vault:gear/armor/xnet/leggings",
+        "the_vault:gear/armor/xnet/boots"
+      ]
     },
     {
       "modIds": [
@@ -386,12 +266,12 @@
         }
       },
       "name": "Modular Routers",
-      "cost": 6,
+      "cost": 3,
       "usesKnowledge": true
     },
     {
       "modIds": [
-        "rftoolsutility"
+        "pipez"
       ],
       "restrictions": {
         "restricts": {
@@ -402,8 +282,25 @@
           "ENTITY_INTERACTABILITY": false
         }
       },
-      "name": "RFTools Utility",
+      "name": "Pipez",
       "cost": 1,
+      "usesKnowledge": true
+    },
+    {
+      "modIds": [
+        "weirdinggadget"
+      ],
+      "restrictions": {
+        "restricts": {
+          "HITTABILITY": false,
+          "BLOCK_INTERACTABILITY": false,
+          "USABILITY": false,
+          "CRAFTABILITY": true,
+          "ENTITY_INTERACTABILITY": false
+        }
+      },
+      "name": "Weirding Gadgets",
+      "cost": 2,
       "usesKnowledge": true
     },
     {
@@ -437,8 +334,14 @@
         }
       },
       "name": "Mob Spawners",
-      "cost": 4,
-      "usesKnowledge": true
+      "cost": 3,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/zombie/helmet",
+        "the_vault:gear/armor/zombie/chestplate",
+        "the_vault:gear/armor/zombie/leggings",
+        "the_vault:gear/armor/zombie/boots"
+      ]
     },
     {
       "modIds": [
@@ -454,8 +357,14 @@
         }
       },
       "name": "Botania",
-      "cost": 12,
-      "usesKnowledge": true
+      "cost": 6,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/botania/helmet",
+        "the_vault:gear/armor/botania/chestplate",
+        "the_vault:gear/armor/botania/leggings",
+        "the_vault:gear/armor/botania/boots"
+      ]
     },
     {
       "modIds": [
@@ -471,8 +380,14 @@
         }
       },
       "name": "Mekanism",
-      "cost": 12,
-      "usesKnowledge": true
+      "cost": 6,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/meka_light/helmet",
+        "the_vault:gear/armor/meka_light/chestplate",
+        "the_vault:gear/armor/meka_light/leggings",
+        "the_vault:gear/armor/meka_light/boots"
+      ]
     },
     {
       "modIds": [
@@ -488,12 +403,18 @@
         }
       },
       "name": "Easy Villagers",
-      "cost": 3,
-      "usesKnowledge": true
+      "cost": 2,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/villager/helmet",
+        "the_vault:gear/armor/villager/chestplate",
+        "the_vault:gear/armor/villager/leggings",
+        "the_vault:gear/armor/villager/boots"
+      ]
     },
     {
       "modIds": [
-        "rftoolsbuilder"
+        "easy_piglins"
       ],
       "restrictions": {
         "restricts": {
@@ -504,25 +425,8 @@
           "ENTITY_INTERACTABILITY": false
         }
       },
-      "name": "Quarry",
-      "cost": 14,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "ironjetpacks"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Jetpacks",
-      "cost": 4,
+      "name": "Easy Piglins",
+      "cost": 2,
       "usesKnowledge": true
     },
     {
@@ -539,7 +443,7 @@
         }
       },
       "name": "Dark Utilities",
-      "cost": 6,
+      "cost": 1,
       "usesKnowledge": true
     },
     {
@@ -557,24 +461,13 @@
       },
       "name": "Create",
       "cost": 6,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "prettypipes"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Pretty Pipes",
-      "cost": 1,
-      "usesKnowledge": true
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/create/helmet",
+        "the_vault:gear/armor/create/chestplate",
+        "the_vault:gear/armor/create/leggings",
+        "the_vault:gear/armor/create/boots"
+      ]
     },
     {
       "modIds": [
@@ -595,6 +488,46 @@
     },
     {
       "modIds": [
+        "cagerium"
+      ],
+      "restrictions": {
+        "restricts": {
+          "HITTABILITY": false,
+          "BLOCK_INTERACTABILITY": true,
+          "USABILITY": false,
+          "CRAFTABILITY": true,
+          "ENTITY_INTERACTABILITY": false
+        }
+      },
+      "name": "Cagerium",
+      "cost": 3,
+      "usesKnowledge": true
+    },
+    {
+      "modIds": [
+        "botanypots"
+      ],
+      "restrictions": {
+        "restricts": {
+          "HITTABILITY": false,
+          "BLOCK_INTERACTABILITY": true,
+          "USABILITY": false,
+          "CRAFTABILITY": true,
+          "ENTITY_INTERACTABILITY": false
+        }
+      },
+      "name": "Botany Pots",
+      "cost": 2,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/fairy/helmet",
+        "the_vault:gear/armor/fairy/chestplate",
+        "the_vault:gear/armor/fairy/leggings",
+        "the_vault:gear/armor/fairy/boots"
+      ]
+    },
+    {
+      "modIds": [
         "fluxnetworks"
       ],
       "restrictions": {
@@ -607,76 +540,14 @@
         }
       },
       "name": "Flux Networks",
-      "cost": 8,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "simplylight"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "More Lights",
-      "cost": 1,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "dummmmmmy"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Test Dummies",
-      "cost": 1,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "fairylights"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Fairy Lights",
-      "cost": 1,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "rftoolspower"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "RFTools Power",
       "cost": 2,
-      "usesKnowledge": true
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/flux/helmet",
+        "the_vault:gear/armor/flux/chestplate",
+        "the_vault:gear/armor/flux/leggings",
+        "the_vault:gear/armor/flux/boots"
+      ]
     },
     {
       "modIds": [
@@ -692,25 +563,14 @@
         }
       },
       "name": "Thermal Expansion",
-      "cost": 10,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "industrialforegoing"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Industrial Foregoing",
-      "cost": 20,
-      "usesKnowledge": true
+      "cost": 4,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/thermal/helmet",
+        "the_vault:gear/armor/thermal/chestplate",
+        "the_vault:gear/armor/thermal/leggings",
+        "the_vault:gear/armor/thermal/boots"
+      ]
     },
     {
       "modIds": [
@@ -726,7 +586,30 @@
         }
       },
       "name": "Powah",
-      "cost": 6,
+      "cost": 5,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/powah/helmet",
+        "the_vault:gear/armor/powah/chestplate",
+        "the_vault:gear/armor/powah/leggings",
+        "the_vault:gear/armor/powah/boots"
+      ]
+    },
+    {
+      "modIds": [
+        "irongenerators"
+      ],
+      "restrictions": {
+        "restricts": {
+          "HITTABILITY": false,
+          "BLOCK_INTERACTABILITY": false,
+          "USABILITY": false,
+          "CRAFTABILITY": true,
+          "ENTITY_INTERACTABILITY": false
+        }
+      },
+      "name": "Iron Generators",
+      "cost": 1,
       "usesKnowledge": true
     },
     {
@@ -744,7 +627,13 @@
       },
       "name": "Mekanism Generators",
       "cost": 8,
-      "usesKnowledge": true
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/meka_dark/helmet",
+        "the_vault:gear/armor/meka_dark/chestplate",
+        "the_vault:gear/armor/meka_dark/leggings",
+        "the_vault:gear/armor/meka_dark/boots"
+      ]
     }
   ],
   "CUSTOM_RESEARCHES": [
@@ -818,7 +707,13 @@
       "entityRestrictions": {},
       "name": "Automatic Genius",
       "cost": 100,
-      "usesKnowledge": true
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/atomatic/helmet",
+        "the_vault:gear/armor/atomatic/chestplate",
+        "the_vault:gear/armor/atomatic/leggings",
+        "the_vault:gear/armor/atomatic/boots"
+      ]
     },
     {
       "itemRestrictions": {
@@ -896,12 +791,12 @@
       "blockRestrictions": {},
       "entityRestrictions": {},
       "name": "Mekanism QIO",
-      "cost": 10,
+      "cost": 6,
       "usesKnowledge": true
     },
     {
       "itemRestrictions": {
-        "create:extendo_grip": {
+        "the_vault:vault_compass": {
           "restricts": {
             "HITTABILITY": true,
             "USABILITY": true,
@@ -911,38 +806,66 @@
       },
       "blockRestrictions": {},
       "entityRestrictions": {},
-      "name": "Extendo Arm",
+      "name": "Vault Compass",
+      "cost": 1,
+      "usesKnowledge": true
+    },
+    {
+      "itemRestrictions": {
+        "thermal:dynamo_stirling": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "thermal:dynamo_compression": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "thermal:dynamo_magmatic": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "thermal:dynamo_numismatic": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "thermal:dynamo_lapidary": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "thermal:dynamo_disenchantment": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "thermal:dynamo_gourmand": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        }
+      },
+      "blockRestrictions": {},
+      "entityRestrictions": {},
+      "name": "Thermal Dynamos",
       "cost": 2,
-      "usesKnowledge": true
-    },
-    {
-      "itemRestrictions": {
-        "industrialforegoing:ore_laser_base": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "industrialforegoing:laser_drill": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "industrialforegoing:fluid_laser_base": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        }
-      },
-      "blockRestrictions": {},
-      "entityRestrictions": {},
-      "name": "Laser Mining",
-      "cost": 12,
       "usesKnowledge": true
     },
     {
@@ -958,23 +881,7 @@
       "blockRestrictions": {},
       "entityRestrictions": {},
       "name": "Digital Miner",
-      "cost": 8,
-      "usesKnowledge": true
-    },
-    {
-      "itemRestrictions": {
-        "immersiveengineering:cloche": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        }
-      },
-      "blockRestrictions": {},
-      "entityRestrictions": {},
-      "name": "Garden Cloche",
-      "cost": 4,
+      "cost": 6,
       "usesKnowledge": true
     },
     {
@@ -990,130 +897,7 @@
       "blockRestrictions": {},
       "entityRestrictions": {},
       "name": "Phytogenic Insulator",
-      "cost": 4,
-      "usesKnowledge": true
-    },
-    {
-      "itemRestrictions": {
-        "the_vault:sword": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:axe": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:dagger": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:helmet": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:boots": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:leggings": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:chestplate": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:vault_magnet_omega": {
-          "restricts": {
-            "HITTABILITY": false,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:paxel_charm": {
-          "restricts": {
-            "HITTABILITY": false,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:repair_core": {
-          "restricts": {
-            "HITTABILITY": false,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:etching": {
-          "restricts": {
-            "HITTABILITY": false,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:fabrication_jewel": {
-          "restricts": {
-            "HITTABILITY": false,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        }
-      },
-      "blockRestrictions": {},
-      "entityRestrictions": {},
-      "name": "Vault Blacksmith",
       "cost": 2,
-      "usesKnowledge": true
-    },
-    {
-      "itemRestrictions": {
-        "the_vault:drill_arrow": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "archers_paradox:diamond_arrow": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "archers_paradox:quartz_arrow": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        }
-      },
-      "blockRestrictions": {},
-      "entityRestrictions": {},
-      "name": "Powerful Arrows",
-      "cost": 1,
       "usesKnowledge": true
     },
     {
@@ -1156,113 +940,36 @@
       },
       "blockRestrictions": {},
       "entityRestrictions": {},
-      "name": "Vault Looter",
-      "cost": 6,
-      "usesKnowledge": true
+      "name": "Junk Management",
+      "cost": 2,
+      "usesKnowledge": true,
+      "discoversModels": [
+        "the_vault:gear/armor/dank/helmet",
+        "the_vault:gear/armor/dank/chestplate",
+        "the_vault:gear/armor/dank/leggings",
+        "the_vault:gear/armor/dank/boots"
+      ]
     },
+    
     {
       "itemRestrictions": {
-        "the_vault:jade_apple": {
+        "sophisticatedbackpacks:backpack": {
           "restricts": {
-            "HITTABILITY": true,
+            "HITTABILITY": false,
             "USABILITY": false,
             "CRAFTABILITY": true
           }
         },
-        "the_vault:cobalt_apple": {
+        "sophisticatedbackpacks:stack_upgrade_tier_1": {
           "restricts": {
-            "HITTABILITY": true,
+            "HITTABILITY": false,
             "USABILITY": false,
             "CRAFTABILITY": true
           }
         },
-        "the_vault:pixie_apple": {
+        "sophisticatedbackpacks:pickup_upgrade": {
           "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:bitter_lemon": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:sour_orange": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:sweet_kiwi": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:mystic_pear": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:vault_stew_mystery": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:lucky_apple": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:treasure_apple": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:power_apple": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:ghost_apple": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:golem_apple": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:sweet_apple": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": false,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:hearty_apple": {
-          "restricts": {
-            "HITTABILITY": true,
+            "HITTABILITY": false,
             "USABILITY": false,
             "CRAFTABILITY": true
           }
@@ -1270,8 +977,177 @@
       },
       "blockRestrictions": {},
       "entityRestrictions": {},
-      "name": "Vault Powerups",
+      "name": "Pouches",
+      "cost": 1,
+      "usesKnowledge": true
+    },
+    {
+      "itemRestrictions": {
+        "sophisticatedbackpacks:iron_backpack": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:refill_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:stack_upgrade_tier_2": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        }
+      },
+      "blockRestrictions": {},
+      "entityRestrictions": {},
+      "name": "Double Pouches",
+      "cost": 1,
+      "usesKnowledge": true
+    },
+    {
+      "itemRestrictions": {
+        "sophisticatedbackpacks:gold_backpack": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:deposit_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:restock_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:filter_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:advanced_pickup_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:stack_upgrade_tier_3": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        }
+      },
+      "blockRestrictions": {},
+      "entityRestrictions": {},
+      "name": "Belts",
+      "cost": 1,
+      "usesKnowledge": true
+    },
+    {
+      "itemRestrictions": {
+        "sophisticatedbackpacks:diamond_backpack": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:advanced_deposit_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:advanced_restock_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:advanced_filter_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:stack_upgrade_tier_4": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:void_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        }
+      },
+      "blockRestrictions": {},
+      "entityRestrictions": {},
+      "name": "Backpacks",
       "cost": 2,
+      "usesKnowledge": true
+    },
+    {
+      "itemRestrictions": {
+        "sophisticatedbackpacks:netherite_backpack": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:advanced_feeding_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:feeding_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        },
+        "sophisticatedbackpacks:advanced_void_upgrade": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        }
+      },
+      "blockRestrictions": {},
+      "entityRestrictions": {},
+      "name": "Big Backpacks",
+      "cost": 3,
       "usesKnowledge": true
     }
   ]

@@ -1,277 +1,155 @@
 {
   "styles": {
-    "Rampage_Dot": {
-      "x": 100,
-      "y": -120,
-      "frameType": "RECTANGULAR",
-      "u": 128,
-      "v": 16
-    },
-    "Ghost Walk_Parry": {
-      "x": 160,
+    "Hunter": {
+      "x": 418,
       "y": 0,
-      "frameType": "RECTANGULAR",
-      "u": 112,
-      "v": 48
-    },
-    "Execute": {
-      "x": -40,
-      "y": -130,
-      "frameType": "RECTANGULAR",
-      "u": 176,
-      "v": 0
-    },
-    "Rampage_Leech": {
-      "x": 150,
-      "y": -110,
-      "frameType": "RECTANGULAR",
-      "u": 128,
-      "v": 64
-    },
-    "Summon Eternal": {
-      "x": -80,
-      "y": 20,
-      "frameType": "RECTANGULAR",
-      "u": 192,
-      "v": 0
-    },
-    "Cleanse_Heal": {
-      "x": -140,
-      "y": -90,
-      "frameType": "RECTANGULAR",
-      "u": 144,
-      "v": 48
-    },
-    "Vein Miner": {
-      "x": 40,
-      "y": -130,
-      "frameType": "RECTANGULAR",
-      "u": 16,
-      "v": 0
-    },
-    "Mega Jump_Damage": {
-      "x": 50,
-      "y": 130,
-      "frameType": "RECTANGULAR",
-      "u": 48,
-      "v": 48
-    },
-    "Mega Jump_Break": {
-      "x": 70,
-      "y": 100,
-      "frameType": "RECTANGULAR",
-      "u": 48,
-      "v": 16
-    },
-    "Dash": {
-      "x": 80,
-      "y": 20,
-      "frameType": "RECTANGULAR",
-      "u": 0,
-      "v": 0
-    },
-    "Cleanse_Immune": {
-      "x": -90,
-      "y": -130,
-      "frameType": "RECTANGULAR",
-      "u": 144,
-      "v": 64
-    },
-    "Mega Jump_Knockback": {
-      "x": 20,
-      "y": 110,
-      "frameType": "RECTANGULAR",
-      "u": 48,
-      "v": 32
-    },
-    "Vein Miner_Durability": {
-      "x": 70,
-      "y": -160,
-      "frameType": "RECTANGULAR",
-      "u": 16,
-      "v": 48
-    },
-    "Vein Miner_Fortune": {
-      "x": 35,
-      "y": -200,
-      "frameType": "RECTANGULAR",
-      "u": 16,
-      "v": 32
-    },
-    "Cleanse_Effect": {
-      "x": -130,
-      "y": -120,
-      "frameType": "RECTANGULAR",
-      "u": 144,
-      "v": 32
-    },
-    "Tank_Slow": {
-      "x": -150,
-      "y": 10,
-      "frameType": "RECTANGULAR",
-      "u": 160,
-      "v": 32
-    },
-    "Dash_Buff": {
-      "x": 130,
-      "y": 40,
-      "frameType": "RECTANGULAR",
-      "u": 0,
-      "v": 32
-    },
-    "Execute_Damage": {
-      "x": -70,
-      "y": -170,
-      "frameType": "RECTANGULAR",
-      "u": 176,
-      "v": 16
+      "specializationStyles": {
+        "Hunter_Blocks": {
+          "icon": "the_vault:gui/abilities/hunter_blocks"
+        }
+      },
+      "icon": "the_vault:gui/abilities/hunter"
     },
     "Ghost Walk": {
-      "x": 120,
-      "y": -30,
-      "frameType": "RECTANGULAR",
-      "u": 112,
-      "v": 0
+      "x": 114,
+      "y": 0,
+      "specializationStyles": {},
+      "icon": "the_vault:gui/abilities/ghost_walk"
     },
-    "Vein Miner_Void": {
-      "x": 10,
-      "y": -170,
-      "frameType": "RECTANGULAR",
-      "u": 16,
-      "v": 64
+    "Taunt": {
+      "x": 494,
+      "y": 0,
+      "specializationStyles": {
+        "Taunt_Repel": {
+          "icon": "the_vault:gui/abilities/taunt_repel"
+        }
+      },
+      "icon": "the_vault:gui/abilities/taunt"
+    },
+    "Execute": {
+      "x": 266,
+      "y": 0,
+      "specializationStyles": {},
+      "icon": "the_vault:gui/abilities/execute"
     },
     "Mega Jump": {
-      "x": 30,
-      "y": 50,
-      "frameType": "RECTANGULAR",
-      "u": 48,
-      "v": 0
+      "x": 190,
+      "y": 0,
+      "specializationStyles": {
+        "Mega Jump_Break_Up": {
+          "icon": "the_vault:gui/abilities/mega_jump_break_up"
+        },
+        "Mega Jump_Break_Down": {
+          "icon": "the_vault:gui/abilities/mega_jump_break_down"
+        }
+      },
+      "icon": "the_vault:gui/abilities/mega_jump"
     },
-    "Tank_Parry": {
-      "x": -160,
-      "y": -60,
-      "frameType": "RECTANGULAR",
-      "u": 160,
-      "v": 48
+    "Summon Eternal": {
+      "x": 380,
+      "y": 0,
+      "specializationStyles": {},
+      "icon": "the_vault:gui/abilities/summon_eternal"
     },
-    "Rampage_Time": {
-      "x": 140,
-      "y": -70,
-      "frameType": "RECTANGULAR",
-      "u": 128,
-      "v": 32
+    "Nova": {
+      "x": 0,
+      "y": 0,
+      "specializationStyles": {
+        "Nova_Speed": {
+          "icon": "the_vault:gui/abilities/nova_speed"
+        },
+        "Nova_Dot": {
+          "icon": "the_vault:gui/abilities/nova_dot"
+        }
+      },
+      "icon": "the_vault:gui/abilities/nova"
     },
-    "Execute_Buff": {
-      "x": -30,
-      "y": -190,
-      "frameType": "RECTANGULAR",
-      "u": 176,
-      "v": 32
+    "Mana Shield": {
+      "x": 228,
+      "y": 0,
+      "specializationStyles": {},
+      "icon": "the_vault:gui/abilities/mana_shield"
+    },
+    "Heal": {
+      "x": 304,
+      "y": 0,
+      "specializationStyles": {
+        "Heal_Group": {
+          "icon": "the_vault:gui/abilities/heal_group"
+        },
+        "Heal_Effect": {
+          "icon": "the_vault:gui/abilities/heal_effect"
+        }
+      },
+      "icon": "the_vault:gui/abilities/heal"
+    },
+    "Vein Miner": {
+      "x": 38,
+      "y": 0,
+      "specializationStyles": {
+        "Vein Miner_Fortune": {
+          "icon": "the_vault:gui/abilities/vein_miner_fortune"
+        },
+        "Vein Miner_Durability": {
+          "icon": "the_vault:gui/abilities/vein_miner_durability"
+        },
+        "Vein Miner_Void": {
+          "icon": "the_vault:gui/abilities/vein_miner_void"
+        }
+      },
+      "icon": "the_vault:gui/abilities/vein_miner"
     },
     "Tank": {
-      "x": -120,
-      "y": -30,
-      "frameType": "RECTANGULAR",
-      "u": 160,
-      "v": 0
+      "x": 342,
+      "y": 0,
+      "specializationStyles": {
+        "Tank_Projectile": {
+          "icon": "the_vault:gui/abilities/tank_projectile"
+        },
+        "Tank_Reflect": {
+          "icon": "the_vault:gui/abilities/tank_reflect"
+        }
+      },
+      "icon": "the_vault:gui/abilities/tank"
     },
-    "Summon Eternal_Additional": {
-      "x": -130,
-      "y": 40,
-      "frameType": "RECTANGULAR",
-      "u": 192,
-      "v": 48
-    },
-    "Cleanse": {
-      "x": -80,
-      "y": -80,
-      "frameType": "RECTANGULAR",
-      "u": 144,
-      "v": 0
-    },
-    "Dash_Damage": {
-      "x": 100,
-      "y": 90,
-      "frameType": "RECTANGULAR",
-      "u": 0,
-      "v": 48
+    "Dash": {
+      "x": 152,
+      "y": 0,
+      "specializationStyles": {
+        "Dash_Damage": {
+          "icon": "the_vault:gui/abilities/dash_damage"
+        }
+      },
+      "icon": "the_vault:gui/abilities/dash"
     },
     "Rampage": {
-      "x": 80,
-      "y": -80,
-      "frameType": "RECTANGULAR",
-      "u": 128,
-      "v": 0
+      "x": 76,
+      "y": 0,
+      "specializationStyles": {
+        "Rampage_Leech": {
+          "icon": "the_vault:gui/abilities/rampage_leech"
+        },
+        "Rampage_Chain": {
+          "icon": "the_vault:gui/abilities/rampage_chain"
+        }
+      },
+      "icon": "the_vault:gui/abilities/rampage"
     },
-    "Dash_Heal": {
-      "x": 140,
-      "y": 80,
-      "frameType": "RECTANGULAR",
-      "u": 0,
-      "v": 16
-    },
-    "Ghost Walk_Damage": {
-      "x": 180,
-      "y": -50,
-      "frameType": "RECTANGULAR",
-      "u": 112,
-      "v": 32
-    },
-    "Summon Eternal_Debuffs": {
-      "x": -90,
-      "y": 90,
-      "frameType": "RECTANGULAR",
-      "u": 192,
-      "v": 32
-    },
-    "Ghost Walk_Regen": {
-      "x": 200,
-      "y": -20,
-      "frameType": "RECTANGULAR",
-      "u": 112,
-      "v": 64
-    },
-    "Tank_Reflect": {
-      "x": -180,
-      "y": -20,
-      "frameType": "RECTANGULAR",
-      "u": 160,
-      "v": 16
-    },
-    "Summon Eternal_Damage": {
-      "x": -140,
-      "y": 80,
-      "frameType": "RECTANGULAR",
-      "u": 192,
-      "v": 16
-    },
-    "Hunter": {
-      "x": -25,
-      "y": 60,
-      "frameType": "RECTANGULAR",
-      "u": 208,
-      "v": 0
-    },
-    "Hunter_Spawners": {
-      "x": -10,
-      "y": 120,
-      "frameType": "RECTANGULAR",
-      "u": 208,
-      "v": 16
-    },
-    "Hunter_Chests": {
-      "x": -40,
-      "y": 150,
-      "frameType": "RECTANGULAR",
-      "u": 208,
-      "v": 32
-    },
-    "Hunter_Blocks": {
-      "x": -55,
-      "y": 100,
-      "frameType": "RECTANGULAR",
-      "u": 208,
-      "v": 48
+    "Farmer": {
+      "x": 456,
+      "y": 0,
+      "specializationStyles": {
+        "Farmer_Melon": {
+          "icon": "the_vault:gui/abilities/farmer_melon"
+        },
+        "Farmer_Cactus": {
+          "icon": "the_vault:gui/abilities/farmer_cactus"
+        },
+        "Farmer_Animal": {
+          "icon": "the_vault:gui/abilities/farmer_animal"
+        }
+      },
+      "icon": "the_vault:gui/abilities/farmer"
     }
   }
 }

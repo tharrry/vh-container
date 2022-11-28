@@ -1,3619 +1,722 @@
 {
-  "MAX_MOBS_MODIFIERS": [
-    {
-      "maxMobsAddend": -4,
-      "name": "Silent",
-      "icon": "the_vault:textures/gui/modifiers/silent.png",
-      "color": "16364031",
-      "description": "-4 mobs spawning"
+  "modifiers": {
+    "the_vault:modifier_type/chance_artifact": {
+      "the_vault:prosperous": {
+        "properties": {
+          "chance": 0.1
+        },
+        "display": {
+          "name": "Prosperous",
+          "color": "#EBFF8D",
+          "description": "+10% Artifact Chance",
+          "descriptionFormatted": "+%d%% Artifact Chance",
+          "icon": "the_vault:gui/modifiers/more_artifact1"
+        }
+      }
     },
-    {
-      "maxMobsAddend": -2,
-      "name": "Personal Space",
-      "icon": "the_vault:textures/gui/modifiers/personalspace.png",
-      "color": "16364031",
-      "description": "-2 mobs spawning"
+    "the_vault:modifier_type/chance_catalyst": {
+      "the_vault:prismatic": {
+        "properties": {
+          "chance": 0.1
+        },
+        "display": {
+          "name": "Prismatic",
+          "color": "#FC00E3",
+          "description": "+10% Catalyst Fragments",
+          "descriptionFormatted": "+%d%% Catalyst Fragments",
+          "icon": "the_vault:gui/modifiers/more_catalyst"
+        }
+      }
     },
-    
-    {
-      "maxMobsAddend": 4,
-      "name": "Crowded",
-      "icon": "the_vault:textures/gui/modifiers/crowded.png",
-      "color": "15220516",
-      "description": "+4 mobs spawning"
-    },
-    
-    {
-      "maxMobsAddend": 7,
-      "name": "Chaotic",
-      "icon": "the_vault:textures/gui/modifiers/chaotic.png",
-      "color": "9633792",
-      "description": "+7 mobs spawning"
-    },
-    {
-      "maxMobsAddend": 10,
-      "name": "Impossible",
-      "icon": "the_vault:textures/gui/modifiers/impossible.png",
-      "color": "7143424",
-      "description": "+10 mobs spawning"
-    },
-    {
-      "maxMobsAddend": 1,
-      "name": "Mooore",
-      "icon": "the_vault:textures/gui/modifiers/mooore.png",
-      "color": "15220516",
-      "description": "+1 cow spawning"
-    },
-    {
-      "maxMobsAddend": -2,
-      "name": "Noooo",
-      "icon": "the_vault:textures/gui/modifiers/nooo.png",
-      "color": "16364031",
-      "description": "-1 cow spawning"
-    },
-    {
-      "maxMobsAddend": 1,
-      "name": "Mob",
-      "icon": "the_vault:textures/gui/modifiers/mobs.png",
-      "color": "15220516",
-      "description": "+1 mob spawning"
-    },
-    {
-      "maxMobsAddend": -1,
-      "name": "Silence",
-      "icon": "the_vault:textures/gui/modifiers/lessmobs.png",
-      "color": "16364031",
-      "description": "-1 mob spawning"
-    }
-  ],
-  "TIMER_MODIFIERS": [
-    {
-      "timerAddend": -3000,
-      "name": "Fast",
-      "icon": "the_vault:textures/gui/modifiers/fast.png",
-      "color": "16764271",
-      "description": "-2min 30sec vault time"
-    },
-    {
-      "timerAddend": -6000,
-      "name": "Faster",
-      "icon": "the_vault:textures/gui/modifiers/faster.png",
-      "color": "16764271",
-      "description": "-5min vault time"
-    },
-    {
-      "timerAddend": -12000,
-      "name": "Rush",
-      "icon": "the_vault:textures/gui/modifiers/rush.png",
-      "color": "16756847",
-      "description": "-10min vault time"
-    },
-    {
-      "timerAddend": 6000,
-      "name": "Optimistic",
-      "icon": "the_vault:textures/gui/modifiers/optimistic.png",
-      "color": "3165087",
-      "description": "+5min vault time"
-    },
-    {
-      "timerAddend": 12000,
-      "name": "Endless",
-      "icon": "the_vault:textures/gui/modifiers/optimistic.png",
-      "color": "3165173",
-      "description": "+10min vault time"
-    },
-    {
-      "timerAddend": 3000,
-      "name": "Extended",
-      "icon": "the_vault:textures/gui/modifiers/extended.png",
-      "color": "3114670",
-      "description": "+2min 30sec vault time"
-    }
-  ],
-  "LEVEL_MODIFIERS": [
-    {
-      "levelAddend": -10,
-      "name": "Easy",
-      "icon": "the_vault:textures/gui/modifiers/easy.png",
-      "color": "7405354",
-      "description": "-10 vault difficulty"
-    },
-    {
-      "levelAddend": -20,
-      "name": "Simple",
-      "icon": "the_vault:textures/gui/modifiers/simple.png",
-      "color": "7405354",
-      "description": "-20 vault difficulty"
-    },
-    {
-      "levelAddend": -30,
-      "name": "Trivial",
-      "icon": "the_vault:textures/gui/modifiers/trivial.png",
-      "color": "11468601",
-      "description": "-30 vault difficulty"
-    },
-    {
-      "levelAddend": 15,
-      "name": "Difficult",
-      "icon": "the_vault:textures/gui/modifiers/difficult.png",
-      "color": "14811136",
-      "description": "+15 vault difficulty"
-    },
-    {
-      "levelAddend": 30,
-      "name": "Hard",
-      "icon": "the_vault:textures/gui/modifiers/hard.png",
-      "color": "13107200",
-      "description": "+30 vault difficulty"
-    },
-    {
-      "levelAddend": 60,
-      "name": "Challenging",
-      "icon": "the_vault:textures/gui/modifiers/challenging.png",
-      "color": "10485760",
-      "description": "+60 vault difficulty"
-    },
-    {
-      "levelAddend": 100,
-      "name": "Unfair",
-      "icon": "the_vault:textures/gui/modifiers/challenging.png",
-      "color": "10485760",
-      "description": "+100 vault difficulty"
-    },
-    {
-      "levelAddend": 100,
-      "name": "Milky",
-      "icon": "the_vault:textures/gui/modifiers/milky.png",
-      "color": "14811136",
-      "description": "+100 cow level"
-    }
-  ],
-  "EFFECT_MODIFIERS": [
-    {
-      "effect": "minecraft:luck",
-      "value": 1,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Lucky",
-      "icon": "the_vault:textures/gui/modifiers/lucky.png",
-      "color": "16771328",
-      "description": "+1 Luck level"
-    },
-    {
-      "effect": "minecraft:unluck",
-      "value": 1,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Unlucky",
-      "icon": "the_vault:textures/gui/modifiers/unlucky.png",
-      "color": "10441472",
-      "description": "-1 Luck level"
-    },
-    {
-      "effect": "minecraft:unluck",
-      "value": 3,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Super Unlucky",
-      "icon": "the_vault:textures/gui/modifiers/super_unlucky.png",
-      "color": "10441472",
-      "description": "-3 Luck level"
-    }, 
-    {
-      "effect": "minecraft:hunger",
-      "value": 10,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Hunger",
-      "icon": "the_vault:textures/gui/modifiers/hunger.png",
-      "color": "15260365",
-      "description": "+1 Hunger"
-    },
-    {
-      "effect": "minecraft:hunger",
-      "value": 16,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Starving",
-      "icon": "the_vault:textures/gui/modifiers/starving.png",
-      "color": "15260365",
-      "description": "+2 Hunger"
-    },
-    {
-      "effect": "minecraft:mining_fatigue",
-      "value": 1,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Tired",
-      "icon": "the_vault:textures/gui/modifiers/tired.png",
-      "color": "15264225",
-      "description": "+1 Mining Fatigue"
-    },
-    {
-      "effect": "minecraft:mining_fatigue",
-      "value": 2,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Mega Tired",
-      "icon": "the_vault:textures/gui/modifiers/mega_tired.png",
-      "color": "15264225",
-      "description": "+2 Mining Fatigue"
-    },
-    {
-      "effect": "minecraft:slowness",
-      "value": 1,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Slowed",
-      "icon": "the_vault:textures/gui/modifiers/slowed.png",
-      "color": "5007238",
-      "description": "+1 Slowness"
-    },
-    {
-      "effect": "minecraft:slowness",
-      "value": 2,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Mega Slowed",
-      "icon": "the_vault:textures/gui/modifiers/mega_slowed.png",
-      "color": "5007238",
-      "description": "+2 Slowness"
-    },
-    {
-      "effect": "minecraft:weakness",
-      "value": 1,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Weakened",
-      "icon": "the_vault:textures/gui/modifiers/weakness.png",
-      "color": "10441472",
-      "description": "+1 Weakness"
-    },
-    {
-      "effect": "minecraft:weakness",
-      "value": 2,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Mega Weakened",
-      "icon": "the_vault:textures/gui/modifiers/mega_weakness.png",
-      "color": "10441472",
-      "description": "+2 Weakness"
-    },
-    {
-      "effect": "minecraft:speed",
-      "value": 1,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Speedy",
-      "icon": "the_vault:textures/gui/modifiers/speed.png",
-      "color": "52735",
-      "description": "+1 Speed"
-    },
-    {
-      "effect": "minecraft:speed",
-      "value": 2,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Super Speed",
-      "icon": "the_vault:textures/gui/modifiers/super_speedy.png",
-      "color": "52735",
-      "description": "+2 Speed"
-    },
-    {
-      "effect": "minecraft:luck",
-      "value": 2,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Luckier",
-      "icon": "the_vault:textures/gui/modifiers/super_luck.png",
-      "color": "14085376",
-      "description": "+2 Luck level"
-    },
-    {
-      "effect": "minecraft:luck",
-      "value": 3,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Super Lucky",
-      "icon": "the_vault:textures/gui/modifiers/super_luck.png",
-      "color": "14085376",
-      "description": "+3 Luck level"
-    },
-    {
-      "effect": "minecraft:regeneration",
-      "value": 1,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Healing",
-      "icon": "the_vault:textures/gui/modifiers/regeneration.png",
-      "color": "65431",
-      "description": "+1 Regeneration"
-    },
-    {
-      "effect": "minecraft:regeneration",
-      "value": 2,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Super Healing",
-      "icon": "the_vault:textures/gui/modifiers/super_healing.png",
-      "color": "65431",
-      "description": "+2 Regeneration"
-    },
-    {
-      "effect": "minecraft:strength",
-      "value": 1,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Stronk",
-      "icon": "the_vault:textures/gui/modifiers/plus1-strength.png",
-      "color": "6165221",
-      "description": "+1 Strength"
-    },
-    {
-      "effect": "minecraft:strength",
-      "value": 2,
-      "operator": "ADD",
-      "type": "icon_only",
-      "name": "Mega Stronk",
-      "icon": "the_vault:textures/gui/modifiers/mega_stronk.png",
-      "color": "6172133",
-      "description": "+2 Strength"
-    }
-  ],
-  "NO_EXIT_MODIFIERS": [
-    {
-      "name": "Raffle",
-      "icon": "the_vault:textures/gui/modifiers/raffle.png",
-      "color": "12910619",
-      "description": "This vault is locked"
-    },
-    {
-      "name": "Locked",
-      "icon": "the_vault:textures/gui/modifiers/no_exit.png",
-      "color": "16711680",
-      "description": "Locks the vault"
-    }
-  ],
-  "ADDITIONAL_CHEST_MODIFIERS": [
-    {
-      "additionalBonusChestPasses": 1,
-      "chestGenerationAttempts": 24,
-      "name": "Gilded",
-      "icon": "the_vault:textures/gui/modifiers/gilded.png",
-      "color": "16772096",
-      "description": "+1 set of Gilded Chests"
-    },
-    {
-      "additionalBonusChestPasses": 2,
-      "chestGenerationAttempts": 24,
-      "name": "Hoard",
-      "icon": "the_vault:textures/gui/modifiers/hoard.png",
-      "color": "16765440",
-      "description": "+2 sets of Gilded Chests"
-    },
-    {
-      "additionalBonusChestPasses": 3,
-      "chestGenerationAttempts": 24,
-      "name": "Treasure",
-      "icon": "the_vault:textures/gui/modifiers/treasure.png",
-      "color": "16760576",
-      "description": "+3 sets of Gilded Chests"
-    }
-  ],
-  "SCALE_MODIFIERS": [
-    {
-      "scale": 0.5,
-      "name": "Daycare",
-      "icon": "the_vault:textures/gui/modifiers/daycare.png",
-      "color": "13609471",
-      "description": "Makes mobs in the vault Babies"
-    },
-    {
-      "scale": 1.5,
-      "name": "Giant",
-      "icon": "the_vault:textures/gui/modifiers/daycare.png",
-      "color": "13631438",
-      "description": "Makes mobs in the vault Giants"
-    }
-  ],
-  "FRENZY_MODIFIERS": [
-    {
-      "damageMultiplier": 3.0,
-      "additionalMovementSpeed": 0.1,
-      "doHealthReduction": true,
-      "name": "Frenzy",
-      "icon": "the_vault:textures/gui/modifiers/frenzy.png",
-      "color": "16546908",
-      "description": "Mobs deal 3x damage, +10% movement speed and have only 1 health"
-    },
-    {
-      "damageMultiplier": 0.5,
-      "additionalMovementSpeed": 0.0,
-      "doHealthReduction": false,
-      "name": "Furious",
-      "icon": "the_vault:textures/gui/modifiers/furious.png",
-      "color": "15838575",
-      "description": "Mobs deal +50% damage in this vault."
-    },
-    {
-      "damageMultiplier": 1.0,
-      "additionalMovementSpeed": 0.0,
-      "doHealthReduction": false,
-      "name": "Raging",
-      "icon": "the_vault:textures/gui/modifiers/raging.png",
-      "color": "15832670",
-      "description": "Mobs deal +100% damage in this vault."
-    },
-    {
-      "damageMultiplier": 2.0,
-      "additionalMovementSpeed": 0.0,
-      "doHealthReduction": false,
-      "name": "Evul",
-      "icon": "the_vault:textures/gui/modifiers/raging.png",
-      "color": "15832670",
-      "description": "Mobs deal +200% damage in this vault."
-    },
-    {
-      "damageMultiplier": 0.0,
-      "additionalMovementSpeed": 0.05,
-      "doHealthReduction": false,
-      "name": "Mooove",
-      "icon": "the_vault:textures/gui/modifiers/mooove.png",
-      "color": "15832670",
-      "description": "Cows are +5% faster"
-    },
-    {
-      "damageMultiplier": 0.0,
-      "additionalMovementSpeed": 0.05,
-      "doHealthReduction": false,
-      "name": "Adrenaline",
-      "icon": "the_vault:textures/gui/modifiers/mobspeed.png",
-      "color": "15832670",
-      "description": "Mobs are +5% faster"
-    }
-  ],
-  "TRAPPED_CHESTS_MODIFIERS": [
-    {
-      "chanceOfTrappedChests": 0.0,
-      "name": "Safe Zone",
-      "icon": "the_vault:textures/gui/modifiers/safezone.png",
-      "color": "10740469",
-      "description": "No chests will be trapped"
-    },
-    {
-      "chanceOfTrappedChests": 3.0,
-      "name": "Trapped",
-      "icon": "the_vault:textures/gui/modifiers/trapped.png",
-      "color": "13851392",
-      "description": "Increases the chance of trapped chests by 3"
-    }
-  ],
-  "ARTIFACT_MODIFIERS": [
-    {
-      "artifactChanceIncrease": 0.15,
-      "name": "Journey",
-      "icon": "the_vault:textures/gui/modifiers/more-artifact1.png",
-      "color": "15466381",
-      "description": "+15% Artifact Chance"
-    },
-    {
-      "artifactChanceIncrease": 0.25,
-      "name": "Exploration",
-      "icon": "the_vault:textures/gui/modifiers/more-artifact1.png",
-      "color": "15466381",
-      "description": "+25% Artifact Chance"
-    },
-    {
-      "artifactChanceIncrease": 0.5,
-      "name": "Odyssey",
-      "icon": "the_vault:textures/gui/modifiers/more-artifact2.png",
-      "color": "14483250",
-      "description": "+50% Artifact Chance"
-    }
-  ],
-  "CATALYST_MODIFIERS": [
-    {
-      "catalystChanceIncrease": 4.0,
-      "name": "Prismatic",
-      "icon": "the_vault:textures/gui/modifiers/more-catalyst.png",
-      "color": "16515299",
-      "description": "3x Chance to find Catalyst Fragments"
-    }
-  ],
-  "LOOTABLE_MODIFIERS": [
-    {
-      "pool": "ORE",
-      "resultMultipliers": {
-        "the_vault:ore_larimar": 2.0,
-        "the_vault:ore_funsoide": 2.0,
-        "the_vault:ore_puffium": 2.0,
-        "the_vault:ore_ashium": 2.0,
-        "the_vault:ore_upaline": 2.0,
-        "the_vault:ore_painite": 2.0,
-        "the_vault:ore_echo": 2.0,
-        "the_vault:ore_iskallium": 2.0,
-        "the_vault:ore_benitoite": 2.0,
-        "the_vault:ore_tubium": 2.0,
-        "the_vault:ore_sparkletine": 2.0,
-        "the_vault:ore_wutodie": 2.0,
-        "the_vault:ore_gorginite": 2.0,
-        "the_vault:ore_alexandrite": 2.0,
-        "the_vault:ore_bomignite": 2.0,
-        "the_vault:ore_black_opal": 2.0
+    "the_vault:modifier_type/chance_chest_trap": {
+      "the_vault:looters_dream": {
+        "properties": {
+          "chance": 0.0
+        },
+        "display": {
+          "name": "Looter's Dream",
+          "color": "#A3E2F5",
+          "description": "No Trap Chance",
+          "icon": "the_vault:gui/modifiers/safezone"
+        }
       },
-      "name": "Plentiful",
-      "icon": "the_vault:textures/gui/modifiers/plentiful.png",
-      "color": "16745983",
-      "description": "2x Chance for Vault ores"
-    },
-    {
-      "pool": "ORE",
-      "resultMultipliers": {
-        "the_vault:ore_larimar": 3.0,
-        "the_vault:ore_funsoide": 3.0,
-        "the_vault:ore_puffium": 3.0,
-        "the_vault:ore_ashium": 3.0,
-        "the_vault:ore_upaline": 3.0,
-        "the_vault:ore_painite": 3.0,
-        "the_vault:ore_echo": 3.0,
-        "the_vault:ore_iskallium": 3.0,
-        "the_vault:ore_benitoite": 3.0,
-        "the_vault:ore_tubium": 3.0,
-        "the_vault:ore_sparkletine": 3.0,
-        "the_vault:ore_wutodie": 3.0,
-        "the_vault:ore_gorginite": 3.0,
-        "the_vault:ore_alexandrite": 3.0,
-        "the_vault:ore_bomignite": 3.0,
-        "the_vault:ore_black_opal": 3.0
+      "the_vault:trapped": {
+        "properties": {
+          "chance": 0.1
+        },
+        "display": {
+          "name": "Trapped",
+          "color": "#D35B00",
+          "description": "+10% Chest Trap Chance",
+          "descriptionFormatted": "+%d%% Chest Trap Chance",
+          "icon": "the_vault:gui/modifiers/trapped"
+        }
       },
-      "name": "Rich",
-      "icon": "the_vault:textures/gui/modifiers/rich.png",
-      "color": "16741375",
-      "description": "3x Chance for Vault ores"
+      "the_vault:minefield": {
+        "properties": {
+          "chance": 0.4
+        },
+        "display": {
+          "name": "Minefield",
+          "color": "#D35B00",
+          "description": "+40% Chest Trap Chance",
+          "descriptionFormatted": "+%d%% Chest Trap Chance",
+          "icon": "the_vault:gui/modifiers/trapped"
+        }
+      }
     },
-    {
-      "pool": "ORE",
-      "resultMultipliers": {
-        "the_vault:ore_larimar": 4.0,
-        "the_vault:ore_funsoide": 4.0,
-        "the_vault:ore_puffium": 4.0,
-        "the_vault:ore_ashium": 4.0,
-        "the_vault:ore_upaline": 4.0,
-        "the_vault:ore_painite": 4.0,
-        "the_vault:ore_echo": 4.0,
-        "the_vault:ore_iskallium": 4.0,
-        "the_vault:ore_benitoite": 4.0,
-        "the_vault:ore_tubium": 4.0,
-        "the_vault:ore_sparkletine": 4.0,
-        "the_vault:ore_wutodie": 4.0,
-        "the_vault:ore_gorginite": 4.0,
-        "the_vault:ore_alexandrite": 4.0,
-        "the_vault:ore_bomignite": 4.0,
-        "the_vault:ore_black_opal": 4.0
+    "the_vault:modifier_type/chance_soul_shard": {
+      "the_vault:haunted": {
+        "properties": {
+          "chance": 0.25
+        },
+        "display": {
+          "name": "Haunted",
+          "color": "#6410A1",
+          "description": "+25% Soul Shard Drop Rate",
+          "descriptionFormatted": "+%d%% Soul Shards",
+          "icon": "the_vault:gui/modifiers/haunted"
+        }
+      }
+    },
+    "the_vault:modifier_type/decorator_add": {
+      "the_vault:coin_pile": {
+        "properties": {
+          "output": "the_vault:placeholder[type=coin_stacks]",
+          "attemptsPerChunk": 16
+        },
+        "display": {
+          "name": "Wealthy",
+          "color": "#ffae00",
+          "description": "+1 Set of Coin Stacks",
+          "icon": "the_vault:gui/modifiers/wealthy"
+        }
       },
-      "name": "Copious",
-      "icon": "the_vault:textures/gui/modifiers/copious.png",
-      "color": "16730879",
-      "description": "4x Chance for Vault ores"
+      "the_vault:gilded": {
+        "properties": {
+          "output": "the_vault:placeholder[type=gilded_chest]",
+          "attemptsPerChunk": 10
+        },
+        "display": {
+          "name": "Gilded",
+          "color": "#FFEC00",
+          "description": "+1 Set of Gilded Chests",
+          "icon": "the_vault:gui/modifiers/gilded"
+        }
+      },
+      "the_vault:living": {
+        "properties": {
+          "output": "the_vault:placeholder[type=living_chest]",
+          "attemptsPerChunk": 10
+        },
+        "display": {
+          "name": "Living",
+          "color": "#38d800",
+          "description": "+1 Set of Living Chests",
+          "icon": "the_vault:gui/modifiers/living"
+        }
+      },
+      "the_vault:ornate": {
+        "properties": {
+          "output": "the_vault:placeholder[type=ornate_chest]",
+          "attemptsPerChunk": 10
+        },
+        "display": {
+          "name": "Ornate",
+          "color": "#c90d73",
+          "description": "+1 Set of Ornate Chests",
+          "icon": "the_vault:gui/modifiers/ornate"
+        }
+      },
+      "the_vault:wild": {
+        "properties": {
+          "output": "the_vault:wild_spawner",
+          "attemptsPerChunk": 16
+        },
+        "display": {
+          "name": "Wild",
+          "color": "#E83F24",
+          "description": "Mobs spawns Wildly inside the vault",
+          "descriptionFormatted": "+1 Set of Wildly Spawned Mobs",
+          "icon": "the_vault:gui/modifiers/crowded"
+        }
+      }
+    },
+    "the_vault:modifier_type/loot_item_quantity": {
+      "the_vault:item_quantity": {
+        "properties": {
+          "percentage": 0.05
+        },
+        "display": {
+          "name": "Opulent",
+          "color": "#38C9C0",
+          "description": "+5% Item Quantity",
+          "descriptionFormatted": "+%d%% Item Quantity",
+          "icon": "the_vault:gui/modifiers/opulent"
+        }
+      }
+    },
+    "the_vault:modifier_type/loot_item_rarity": {
+      "the_vault:item_rarity": {
+        "properties": {
+          "percentage": 0.05
+        },
+        "display": {
+          "name": "Lucky",
+          "color": "#b3ff20",
+          "description": "+5% Item Rarity",
+          "descriptionFormatted": "+%d%% Item Rarity",
+          "icon": "the_vault:gui/modifiers/lucky"
+        }
+      }
+    },
+    "the_vault:modifier_type/mob_attribute": {
+      "the_vault:chunky_mobs": {
+        "properties": {
+          "type": "max_health_additive_percentile",
+          "amount": 0.2,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Chunky Mobs",
+          "color": "#dc693c",
+          "description": "+20% Mob Health",
+          "descriptionFormatted": "+%d%% Mob Health",
+          "icon": "the_vault:gui/modifiers/chunky"
+        }
+      },
+      "the_vault:furious_mobs": {
+        "properties": {
+          "type": "attack_damage_additive_percentile",
+          "amount": 0.2,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Furious",
+          "color": "#da6d5a",
+          "description": "+20% Mob Damage",
+          "descriptionFormatted": "+%d%% Mob Damage",
+          "icon": "the_vault:gui/modifiers/furious"
+        }
+      },
+      "the_vault:infuriated_mobs": {
+        "properties": {
+          "type": "speed_additive_percentile",
+          "amount": 0.05,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Infuriated",
+          "color": "#f66868",
+          "description": "+5% Mob Speed",
+          "descriptionFormatted": "+%d%% Mob Speed",
+          "icon": "the_vault:gui/modifiers/speedy_mobs"
+        }
+      }
+    },
+    "the_vault:modifier_type/mob_curse_on_hit": {
+      "the_vault:fatiguing": {
+        "properties": {
+          "effect": "minecraft:mining_fatigue",
+          "effectAmplifier": 4,
+          "effectDurationTicks": 200,
+          "onHitApplyChance": 0.1
+        },
+        "display": {
+          "name": "Fatiguing",
+          "color": "#9B3E56",
+          "description": "+10% increased chance mobs Fatigue on hit",
+          "descriptionFormatted": "+%d%% increased chance mobs Fatigue on hit",
+          "icon": "the_vault:gui/modifiers/hex_chaining"
+        }
+      },
+      "the_vault:freezing": {
+        "properties": {
+          "effect": "minecraft:slowness",
+          "effectAmplifier": 5,
+          "effectDurationTicks": 200,
+          "onHitApplyChance": 0.1
+        },
+        "display": {
+          "name": "Freezing",
+          "color": "#2FFBF4",
+          "description": "+10% increased chance mobs Slow on hit",
+          "descriptionFormatted": "+%d%% increased chance mobs Slow on hit",
+          "icon": "the_vault:gui/modifiers/hex_chilling"
+        }
+      },
+      "the_vault:poisonous": {
+        "properties": {
+          "effect": "minecraft:poison",
+          "effectAmplifier": 3,
+          "effectDurationTicks": 200,
+          "onHitApplyChance": 0.1
+        },
+        "display": {
+          "name": "Poisonous",
+          "color": "#84BF17",
+          "description": "+10% increased chance mobs Poison on hit",
+          "descriptionFormatted": "+%d%% increased chance mobs Poison on hit",
+          "icon": "the_vault:gui/modifiers/hex_poison"
+        }
+      },
+      "the_vault:wither": {
+        "properties": {
+          "effect": "minecraft:wither",
+          "effectAmplifier": 5,
+          "effectDurationTicks": 200,
+          "onHitApplyChance": 0.1
+        },
+        "display": {
+          "name": "Withering",
+          "color": "#5A5851",
+          "description": "+10% increased chance mobs Wither on hit",
+          "descriptionFormatted": "+%d%% increased chance mobs Wither on hit",
+          "icon": "the_vault:gui/modifiers/hex_wither"
+        }
+      },
+      "the_vault:voiding": {
+        "properties": {
+          "effect": "the_vault:time_acceleration",
+          "effectAmplifier": 5,
+          "effectDurationTicks": 40,
+          "onHitApplyChance": 0.1
+        },
+        "display": {
+          "name": "Voiding",
+          "color": "#5A5851",
+          "description": "+10% increased chance mobs will void time on hit",
+          "descriptionFormatted": "+%d%% increased chance mobs will void time on hit",
+          "icon": "the_vault:gui/modifiers/hex_wither"
+        }
+      }
+    },
+    "the_vault:modifier_type/mob_frenzy": {
+      "the_vault:frenzy": {
+        "properties": {
+          "damage": 3.0,
+          "movementSpeed": 0.1,
+          "doHealthReduction": true
+        },
+        "display": {
+          "name": "Frenzy",
+          "color": "#FC7C5C",
+          "description": "+300% Mob Damage, +10% Mob Speed, Mob Health reduced to 1",
+          "icon": "the_vault:gui/modifiers/frenzy"
+        }
+      }
+    },
+    "the_vault:modifier_type/mob_spawn_count": {
+      "the_vault:crowded": {
+        "properties": {
+          "maxMobsAdded": 1
+        },
+        "display": {
+          "name": "Crowded",
+          "color": "#E83F24",
+          "description": "+1 Mob Spawns",
+          "descriptionFormatted": "+%d Mob Spawns",
+          "icon": "the_vault:gui/modifiers/crowded"
+        }
+      },
+      "the_vault:personal_space": {
+        "properties": {
+          "maxMobsAdded": -1
+        },
+        "display": {
+          "name": "Personal Space",
+          "color": "#F9B1FF",
+          "description": "-1 Mob Spawns",
+          "descriptionFormatted": "-%d Mob Spawns",
+          "icon": "the_vault:gui/modifiers/personalspace"
+        }
+      }
+    },
+    "the_vault:modifier_type/player_attribute": {
+      "the_vault:draining": {
+        "properties": {
+          "type": "mana_regen_additive_percentile",
+          "amount": -0.2,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Draining",
+          "color": "#849dc8",
+          "description": "-20% Mana Regeneration",
+          "descriptionFormatted": "-%d%% Mana Regeneration",
+          "icon": "the_vault:gui/modifiers/draining"
+        }
+      },
+      "the_vault:injured": {
+        "properties": {
+          "type": "max_health_additive",
+          "amount": -2.0,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Injured",
+          "color": "#631F1F",
+          "description": "-2 Health",
+          "descriptionFormatted": "-%d Health",
+          "icon": "the_vault:gui/modifiers/injured"
+        }
+      },
+      "the_vault:wounded": {
+        "properties": {
+          "type": "max_health_additive",
+          "amount": -10.0,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Wounded",
+          "color": "#631F1F",
+          "description": "Removes 5 hearts",
+          "descriptionFormatted": "-%d Health",
+          "icon": "the_vault:gui/modifiers/injured"
+        }
+      },
+      "the_vault:drained": {
+        "properties": {
+          "type": "mana_regen_additive_percentile",
+          "amount": -0.7,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Drained",
+          "color": "#849dc8",
+          "description": "-70% Mana Regeneration",
+          "descriptionFormatted": "-%d%% Mana Regeneration",
+          "icon": "the_vault:gui/modifiers/draining"
+        }
+      }
+    },
+    "the_vault:modifier_type/player_durability_damage": {
+      "the_vault:frail": {
+        "properties": {
+          "durabilityDamageTakenMultiplier": 1.2
+        },
+        "display": {
+          "name": "Frail",
+          "color": "#7B7E7F",
+          "description": "+20% Durability Damage",
+          "descriptionFormatted": "+%d%% Durability Damage",
+          "icon": "the_vault:gui/modifiers/frail"
+        }
+      },
+      "the_vault:reinforced": {
+        "properties": {
+          "durabilityDamageTakenMultiplier": 0.9
+        },
+        "display": {
+          "name": "Reinforced",
+          "color": "#9550FF",
+          "description": "-10% Durability Damage",
+          "descriptionFormatted": "-%d%% Durability Damage",
+          "icon": "the_vault:gui/modifiers/reinforced"
+        }
+      }
+    },
+    "the_vault:modifier_type/player_effect": {
+      "the_vault:hunger": {
+        "properties": {
+          "effect": "minecraft:hunger",
+          "effectAmplifier": 6,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Hunger",
+          "color": "#E8DACD",
+          "description": "Hunger",
+          "descriptionFormatted": "+%d Hunger",
+          "icon": "the_vault:gui/modifiers/hunger"
+        }
+      },
+      "the_vault:lucky": {
+        "properties": {
+          "effect": "minecraft:luck",
+          "effectAmplifier": 1,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Lucky",
+          "color": "#b3ff20",
+          "description": "+1 Luck",
+          "descriptionFormatted": "+%d Luck",
+          "icon": "the_vault:gui/modifiers/lucky"
+        }
+      },
+      "the_vault:slowed": {
+        "properties": {
+          "effect": "minecraft:slowness",
+          "effectAmplifier": 1,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Slowed",
+          "color": "#4C6786",
+          "description": "+1 Slowness",
+          "descriptionFormatted": "+%d Slowness",
+          "icon": "the_vault:gui/modifiers/slowed"
+        }
+      },
+      "the_vault:speedy": {
+        "properties": {
+          "effect": "minecraft:speed",
+          "effectAmplifier": 1,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Speedy",
+          "color": "#00CDFF",
+          "description": "+1 Speed",
+          "descriptionFormatted": "+%d Speed",
+          "icon": "the_vault:gui/modifiers/speed"
+        }
+      },
+      "the_vault:stronk": {
+        "properties": {
+          "effect": "minecraft:strength",
+          "effectAmplifier": 1,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Stronk",
+          "color": "#5E12E5",
+          "description": "+1 Strength",
+          "descriptionFormatted": "+%d Strength",
+          "icon": "the_vault:gui/modifiers/stronk"
+        }
+      },
+      "the_vault:tired": {
+        "properties": {
+          "effect": "minecraft:mining_fatigue",
+          "effectAmplifier": 1,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Tired",
+          "color": "#E8E9E1",
+          "description": "+1 Mining Fatigue",
+          "descriptionFormatted": "+%d Mining Fatigue",
+          "icon": "the_vault:gui/modifiers/tired"
+        }
+      },
+      "the_vault:unlucky": {
+        "properties": {
+          "effect": "minecraft:unluck",
+          "effectAmplifier": 1,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Unlucky",
+          "color": "#9F5300",
+          "description": "-1 Luck",
+          "descriptionFormatted": "-%d Luck",
+          "icon": "the_vault:gui/modifiers/unlucky"
+        }
+      },
+      "the_vault:weakened": {
+        "properties": {
+          "effect": "minecraft:weakness",
+          "effectAmplifier": 1,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Weakened",
+          "color": "#9F5300",
+          "description": "+1 Weakness",
+          "descriptionFormatted": "+%d Weakness",
+          "icon": "the_vault:gui/modifiers/weakness"
+        }
+      }
+    },
+    "the_vault:modifier_type/player_inventory_restore": {
+      "the_vault:afterlife": {
+        "properties": {
+          "preventsArtifact": false,
+          "experienceMultiplierOnDeath": 0.0,
+          "experienceMultiplierOnSuccess": 0.5
+        },
+        "display": {
+          "name": "Afterlife",
+          "color": "#0FA6E3",
+          "description": "All items you entered with will be restored on death; No artifact can be found",
+          "icon": "the_vault:gui/modifiers/afterlife"
+        }
+      },
+      "the_vault:phoenix": {
+        "properties": {
+          "preventsArtifact": false,
+          "experienceMultiplierOnDeath": 0.0,
+          "experienceMultiplierOnSuccess": 1.0
+        },
+        "display": {
+          "name": "Phoenix",
+          "color": "#FF8900",
+          "description": "All items you entered with will be restored on death",
+          "icon": "the_vault:gui/modifiers/phoenix"
+        }
+      },
+      "the_vault:beginners_grace": {
+        "properties": {
+          "preventsArtifact": false,
+          "experienceMultiplierOnDeath": 0.0,
+          "experienceMultiplierOnSuccess": 1.0
+        },
+        "display": {
+          "name": "Beginners Grace",
+          "color": "#FF8900",
+          "description": "All items you entered with will be restored on death; No experience on death",
+          "icon": "the_vault:gui/modifiers/beginners_grace"
+        }
+      }
+    },
+    "the_vault:modifier_type/player_no_exit": {
+      "the_vault:locked": {
+        "properties": {},
+        "display": {
+          "name": "Locked",
+          "color": "#FF0000",
+          "description": "Vault can't be bailed",
+          "icon": "the_vault:gui/modifiers/raffle"
+        }
+      },
+      "the_vault:raffle": {
+        "properties": {},
+        "display": {
+          "name": "Raffle",
+          "color": "#C5001B",
+          "description": "Locks the vault",
+          "icon": "the_vault:gui/modifiers/raffle"
+        }
+      }
+    },
+    "the_vault:modifier_type/player_no_vault_fruit": {
+      "the_vault:rotten": {
+        "properties": {},
+        "display": {
+          "name": "Rotten",
+          "color": "#A0AF5B",
+          "description": "Vault Powerups have no effect",
+          "icon": "the_vault:gui/modifiers/rotten"
+        }
+      }
+    },
+    "the_vault:modifier_type/player_stat": {
+      "the_vault:clumsy": {
+        "properties": {
+          "stat": "block_chance",
+          "multiplier": 0.9
+        },
+        "display": {
+          "name": "Clumsy",
+          "color": "#CB866D",
+          "description": "-10% Parry",
+          "descriptionFormatted": "-%d%% Parry",
+          "icon": "the_vault:gui/modifiers/clumsy"
+        }
+      },
+      "the_vault:inert": {
+        "properties": {
+          "stat": "cooldown_reduction",
+          "multiplier": 0.9
+        },
+        "display": {
+          "name": "Inert",
+          "color": "#6DACB5",
+          "description": "-10% Cooldown Reduction",
+          "descriptionFormatted": "-%d%% Cooldown Reduction",
+          "icon": "the_vault:gui/modifiers/inert"
+        }
+      },
+      "the_vault:vulnerable": {
+        "properties": {
+          "stat": "resistance",
+          "multiplier": 0.9
+        },
+        "display": {
+          "name": "Vulnerable",
+          "color": "#CA9A5B",
+          "description": "-10% Resistance",
+          "descriptionFormatted": "-%d%% Resistance",
+          "icon": "the_vault:gui/modifiers/vulnerable"
+        }
+      }
+    },
+    "the_vault:modifier_type/vault_level": {
+      "the_vault:difficult": {
+        "properties": {
+          "levelAdded": 3
+        },
+        "display": {
+          "name": "Difficult",
+          "color": "#E20000",
+          "description": "+3 Vault Level",
+          "descriptionFormatted": "+%d Vault Level",
+          "icon": "the_vault:gui/modifiers/difficult"
+        }
+      },
+      "the_vault:easy": {
+        "properties": {
+          "levelAdded": -3
+        },
+        "display": {
+          "name": "Easy",
+          "color": "#70FF2A",
+          "description": "-3 Vault Level",
+          "descriptionFormatted": "-%d Vault Level",
+          "icon": "the_vault:gui/modifiers/easy"
+        }
+      }
+    },
+    "the_vault:modifier_type/vault_lootable_weight": {
+      "the_vault:plentiful": {
+        "properties": {
+          "type": "ORE",
+          "multiplier": 0.2
+        },
+        "display": {
+          "name": "Plentiful",
+          "color": "#FF85FF",
+          "description": "+20% Vault Ores",
+          "descriptionFormatted": "+%d%% Vault Ores",
+          "icon": "the_vault:gui/modifiers/plentiful"
+        }
+      }
+    },
+    "the_vault:modifier_type/vault_time": {
+      "the_vault:extended": {
+        "properties": {
+          "timeAddedTicks": 1200
+        },
+        "display": {
+          "name": "Extended",
+          "color": "#2F86AE",
+          "description": "+1 minute Vault Time",
+          "descriptionFormatted": "+%d minutes Vault Time",
+          "icon": "the_vault:gui/modifiers/extended"
+        }
+      },
+      "the_vault:rushed": {
+        "properties": {
+          "timeAddedTicks": -1200
+        },
+        "display": {
+          "name": "Rushed",
+          "color": "#FFCD6F",
+          "description": "-1 minute Vault Time",
+          "descriptionFormatted": "-%d minutes Vault Time",
+          "icon": "the_vault:gui/modifiers/rush"
+        }
+      }
     }
-  ],
-  "INV_RESTORE_MODIFIERS": [
-    {
-      "preventsArtifact": false,
-      "name": "Phoenix",
-      "icon": "the_vault:textures/gui/modifiers/phoenix.png",
-      "color": "16746752",
-      "description": "All items you entered with will be restored on death"
-    },
-    {
-      "preventsArtifact": true,
-      "name": "Afterlife",
-      "icon": "the_vault:textures/gui/modifiers/afterlife.png",
-      "color": "1025763",
-      "description": "All items you entered with will be restored on death; No artifact can be found"
-    }
-  ],
-  "CURSE_ON_HIT_MODIFIERS": [
-    {
-      "effectName": "minecraft:poison",
-      "effectAmplifier": 3,
-      "effectDuration": 120,
-      "onHitApplyChance": 0.75,
-      "name": "Poisonous",
-      "icon": "the_vault:textures/gui/modifiers/hex_poison.png",
-      "color": "8699671",
-      "description": "Mobs have a chance of applying poison on hit"
-    },
-    {
-      "effectName": "minecraft:wither",
-      "effectAmplifier": 3,
-      "effectDuration": 120,
-      "onHitApplyChance": 0.75,
-      "name": "Withering",
-      "icon": "the_vault:textures/gui/modifiers/hex_wither.png",
-      "color": "5920849",
-      "description": "Mobs have a chance of applying withering on hit"
-    },
-    {
-      "effectName": "minecraft:mining_fatigue",
-      "effectAmplifier": 4,
-      "effectDuration": 200,
-      "onHitApplyChance": 0.75,
-      "name": "Fatiguing",
-      "icon": "the_vault:textures/gui/modifiers/hex_chaining.png",
-      "color": "10174038",
-      "description": "Mobs have a chance of applying mining fatigue on hit"
-    },
-    {
-      "effectName": "minecraft:slowness",
-      "effectAmplifier": 5,
-      "effectDuration": 200,
-      "onHitApplyChance": 0.75,
-      "name": "Freezing",
-      "icon": "the_vault:textures/gui/modifiers/hex_chilling.png",
-      "color": "3144692",
-      "description": "Mobs have a chance of applying slowness on hit"
-    },
-    {
-      "effectName": "the_vault:time_acceleration",
-      "effectAmplifier": 4,
-      "effectDuration": 20,
-      "onHitApplyChance": 1.0,
-      "name": "Void Hex",
-      "icon": "the_vault:textures/gui/modifiers/time_accel.png",
-      "color": "10950607",
-      "description": "Getting hit by mobs will rapidly decrease the vault timer"
-    }
-  ],
-  "DURABILITY_DAMAGE_MODIFIERS": [
-    {
-      "durabilityDamageTakenMultiplier": 0.7,
-      "icon": "the_vault:textures/gui/modifiers/resilient.png",
-      "name": "Resilient",
-      "color": "10834943",
-      "description": "-30% Durability Damage"
-    },
-    {
-      "durabilityDamageTakenMultiplier": 0.4,
-      "icon": "the_vault:textures/gui/modifiers/reinforced.png",
-      "name": "Reinforced",
-      "color": "9785599",
-      "description": "-60% Durability Damage"
-    },
-    {
-      "durabilityDamageTakenMultiplier": 0.0,
-      "icon": "the_vault:textures/gui/modifiers/indestructible.png",
-      "name": "Indestructible",
-      "color": "8337919",
-      "description": "-100% Durability Damage"
-    },
-    {
-      "durabilityDamageTakenMultiplier": 1.5,
-      "icon": "the_vault:textures/gui/modifiers/frail.png",
-      "name": "Frail",
-      "color": "8093311",
-      "description": "+50% Durability Damage"
-    },
-    {
-      "durabilityDamageTakenMultiplier": 2.0,
-      "icon": "the_vault:textures/gui/modifiers/fragile.png",
-      "name": "Fragile",
-      "color": "11118766",
-      "description": "+100% Durability Damage"
-    },
-    {
-      "durabilityDamageTakenMultiplier": 3.0,
-      "icon": "the_vault:textures/gui/modifiers/destructive.png",
-      "name": "Destructive",
-      "color": "13684942",
-      "description": "+200% Durability Damage"
-    },
-    {
-      "durabilityDamageTakenMultiplier": 0.0,
-      "icon": "the_vault:textures/gui/modifiers/finale.png",
-      "name": "Finale",
-      "color": "10288985",
-      "description": "Gear takes no durability damage"
-    }
-
-  ],
-  "STAT_MODIFIERS": [
-    {
-      "stat": "PARRY",
-      "multiplier": 0.0,
-      "icon": "the_vault:textures/gui/modifiers/clumsy.png",
-      "name": "Clumsy",
-      "color": "13338221",
-      "description": "-100% Parry"
-    },
-    {
-      "stat": "RESISTANCE",
-      "multiplier": 0.0,
-      "icon": "the_vault:textures/gui/modifiers/vulnurable.png",
-      "name": "Vulnerable",
-      "color": "13277787",
-      "description": "-100% Resistance"
-    },
-    {
-      "stat": "COOLDOWN_REDUCTION",
-      "multiplier": 0.0,
-      "icon": "the_vault:textures/gui/modifiers/inert.png",
-      "name": "Inert",
-      "color": "7187637",
-      "description": "-100% Cooldown Reduction"
-    },
-    {
-      "stat": "PARRY",
-      "multiplier": 0.85,
-      "icon": "the_vault:textures/gui/modifiers/awkward.png",
-      "name": "Awkward",
-      "color": "13338221",
-      "description": "You lost some Parry"
-    },
-    {
-      "stat": "RESISTANCE",
-      "multiplier": 0.85,
-      "icon": "the_vault:textures/gui/modifiers/exposed.png",
-      "name": "Exposed",
-      "color": "13277787",
-      "description": "You lost some Resistance"
-    },
-    {
-      "stat": "COOLDOWN_REDUCTION",
-      "multiplier": 0.85,
-      "icon": "the_vault:textures/gui/modifiers/static.png",
-      "name": "Static",
-      "color": "7187637",
-      "description": "You lost some Cooldown Reduction"
-    }
-  ],
-  "VAULT_FRUIT_PREVENTION_MODIFIERS": [
-    {
-      "icon": "the_vault:textures/gui/modifiers/rotten.png",
-      "name": "Rotten",
-      "color": "10530651",
-      "description": "Time Fruits have no effect"
-    },
-    {
-      "icon": "the_vault:textures/gui/modifiers/nofruit.png",
-      "name": "No Extras",
-      "color": "10530651",
-      "description": "Time Fruits have no effect"
-    }
-  ],
-  "MODIFIER_PREVENTIONS": {
-    "the_vault:scavenger_hunt":[
-      "Locked"
-    ],
-    "the_vault:ancients":[
-      "Locked"
-    ]
-  },
-  
-
-  "LEVELS": [
-    { "MIN_LEVEL": 0,
-      "DEFAULT_POOLS": [
-        { "_NAME": "Chests",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Gilded",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Luck",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Lucky",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            }
-          ]
-        },
-        {  "_NAME": "Mob Pool",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Personal Space",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Difficulty",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Difficult",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Curses",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Hunger",
-              "weight": 3
-            },
-            {
-              "value": "Tired",
-              "weight": 2
-            },
-            {
-              "value": "Slowed",
-              "weight": 4
-            },
-            {
-              "value": "Weakened",
-              "weight": 4
-            },
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Furious",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "OreMultipliers",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Plentiful",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },
-        { "_NAME": "Trap Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Safe Zone",
-              "weight": 1
-            },
-            {
-              "value": "Trapped",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Boosts",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Speedy",
-              "weight": 2
-            },
-            {
-              "value": "Healing",
-              "weight": 1
-            },
-            {
-              "value": "Stronk",
-              "weight": 3
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Exit Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        }
-      ],
-      "RAFFLE_POOLS": [
-        { "_NAME": "Chests",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Gilded",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Luck",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Lucky",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            }
-          ]
-        },
-        {  "_NAME": "Mob Pool",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Personal Space",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Difficulty",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Difficult",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Curses",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Hunger",
-              "weight": 3
-            },
-            {
-              "value": "Tired",
-              "weight": 2
-            },
-            {
-              "value": "Slowed",
-              "weight": 4
-            },
-            {
-              "value": "Weakened",
-              "weight": 4
-            },
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Furious",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "OreMultipliers",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Plentiful",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },
-        { "_NAME": "Time Effect",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Extended",
-              "weight": 1
-            }
-          ]
-        },  
-        { "_NAME": "Trap Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Safe Zone",
-              "weight": 1
-            },
-            {
-              "value": "Trapped",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Boosts",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Speedy",
-              "weight": 2
-            },
-            {
-              "value": "Healing",
-              "weight": 1
-            },
-            {
-              "value": "Stronk",
-              "weight": 3
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Frail",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Artifact",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Exit Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        }
-      ],
-      "RAID_POOLS": [
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 1
-            },
-            {
-              "value": "Reinforced",
-              "weight": 1
-            },
-            {
-              "value": "Indestructible",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Time",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Faster",
-              "weight": 2
-            },
-            {
-              "value": "Fast",
-              "weight": 2
-            },
-            {
-              "value": "Extended",
-              "weight": 2
-            },
-            {
-              "value": "Optimistic",
-              "weight": 2
-            },
-            {
-              "value": "Dummy",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "FINAL_VELARA_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_TENOS_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_WENDARR_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaotic",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_IDONA_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ]
-    },
-    { "MIN_LEVEL": 25,
-      "DEFAULT_POOLS": [
-        { "_NAME": "Chests",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Gilded",
-              "weight": 2
-            },
-            {
-              "value": "Hoard",
-              "weight": 2
-            }
-          ]
-        },
-        { "_NAME": "Luck",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Lucky",
-              "weight": 2
-            },
-            {
-              "value": "Unlucky",
-              "weight": 2
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Luckier",
-              "weight": 1
-            }
-          ]
-        },
-        {  "_NAME": "Mob Pool",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Personal Space",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Difficulty",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Easy",
-              "weight": 2
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Difficult",
-              "weight": 2
-            },
-            {
-              "value": "Simple",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Curses",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Hunger",
-              "weight": 3
-            },
-            {
-              "value": "Tired",
-              "weight": 2
-            },
-            {
-              "value": "Slowed",
-              "weight": 4
-            },
-            {
-              "value": "Weakened",
-              "weight": 4
-            },
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Furious",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "OreMultipliers",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Plentiful",
-              "weight": 2
-            },
-            {
-              "value": "Rich",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },
-        { "_NAME": "Time Effect",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Fast",
-              "weight": 2
-            },
-            {
-              "value": "Extended",
-              "weight": 2
-            },
-            {
-              "value": "Optimistic",
-              "weight": 1
-            }
-          ]
-        },  
-        { "_NAME": "Trap Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Safe Zone",
-              "weight": 1
-            },
-            {
-              "value": "Trapped",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Boosts",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Speedy",
-              "weight": 2
-            },
-            {
-              "value": "Healing",
-              "weight": 1
-            },
-            {
-              "value": "Stronk",
-              "weight": 3
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 2
-            },
-            {
-              "value": "Reinforced",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Frail",
-              "weight": 2
-            }
-          ]
-        },
-        { "_NAME": "Artifact",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Exit Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 20
-            },
-            {
-              "value": "Locked",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "RAFFLE_POOLS": [
-        { "_NAME": "Chests",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Gilded",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Luck",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Lucky",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            }
-          ]
-        },
-        {  "_NAME": "Mob Pool",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Personal Space",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Difficulty",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Difficult",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Curses",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Hunger",
-              "weight": 3
-            },
-            {
-              "value": "Tired",
-              "weight": 2
-            },
-            {
-              "value": "Slowed",
-              "weight": 4
-            },
-            {
-              "value": "Weakened",
-              "weight": 4
-            },
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Furious",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "OreMultipliers",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Plentiful",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },
-        { "_NAME": "Time Effect",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Extended",
-              "weight": 1
-            }
-          ]
-        },  
-        { "_NAME": "Trap Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Safe Zone",
-              "weight": 1
-            },
-            {
-              "value": "Trapped",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Boosts",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Speedy",
-              "weight": 2
-            },
-            {
-              "value": "Healing",
-              "weight": 1
-            },
-            {
-              "value": "Stronk",
-              "weight": 3
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Frail",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Artifact",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Exit Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Raffle",
-              "weight": 10
-            }
-          ]
-        }
-      ],
-      "RAID_POOLS": [
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 1
-            },
-            {
-              "value": "Reinforced",
-              "weight": 1
-            },
-            {
-              "value": "Indestructible",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Time",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Faster",
-              "weight": 2
-            },
-            {
-              "value": "Fast",
-              "weight": 2
-            },
-            {
-              "value": "Extended",
-              "weight": 2
-            },
-            {
-              "value": "Optimistic",
-              "weight": 2
-            },
-            {
-              "value": "Dummy",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "FINAL_VELARA_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_TENOS_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_WENDARR_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaotic",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_IDONA_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ]
-    },
-    { "MIN_LEVEL": 75,
-      "DEFAULT_POOLS": [
-        { "_NAME": "Chests",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Gilded",
-              "weight": 2
-            },
-            {
-              "value": "Hoard",
-              "weight": 2
-            }
-          ]
-        },
-        { "_NAME": "Luck",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Lucky",
-              "weight": 2
-            },
-            {
-              "value": "Unlucky",
-              "weight": 2
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Luckier",
-              "weight": 1
-            }
-          ]
-        },
-        {  "_NAME": "Mob Pool",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaotic",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Personal Space",
-              "weight": 2
-            }
-          ]
-        },
-        { "_NAME": "Difficulty",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Easy",
-              "weight": 3
-            },
-            {
-              "value": "Simple",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Difficult",
-              "weight": 3
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Curses",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Hunger",
-              "weight": 3
-            },
-            {
-              "value": "Tired",
-              "weight": 2
-            },
-            {
-              "value": "Slowed",
-              "weight": 4
-            },
-            {
-              "value": "Weakened",
-              "weight": 4
-            },
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Furious",
-              "weight": 2
-            },
-            {
-              "value": "Raging",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "OreMultipliers",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Plentiful",
-              "weight": 2
-            },
-            {
-              "value": "Rich",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },
-        { "_NAME": "Time Effect",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Fast",
-              "weight": 2
-            },
-            {
-              "value": "Faster",
-              "weight": 1
-            },
-            {
-              "value": "Extended",
-              "weight": 2
-            },
-            {
-              "value": "Optimistic",
-              "weight": 1
-            }
-          ]
-        },  
-        { "_NAME": "Trap Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Safe Zone",
-              "weight": 1
-            },
-            {
-              "value": "Trapped",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Boosts",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Speedy",
-              "weight": 2
-            },
-            {
-              "value": "Healing",
-              "weight": 1
-            },
-            {
-              "value": "Stronk",
-              "weight": 3
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 2
-            },
-            {
-              "value": "Reinforced",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Frail",
-              "weight": 2
-            },
-            {
-              "value": "Fragile",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Artifact",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 35
-            },
-            {
-              "value": "Journey",
-              "weight": 4
-            },
-            {
-              "value": "Exploration",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Exit Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 20
-            },
-            {
-              "value": "Locked",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "RAFFLE_POOLS": [
-        { "_NAME": "Chests",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Gilded",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Luck",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Lucky",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            }
-          ]
-        },
-        {  "_NAME": "Mob Pool",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Personal Space",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Difficulty",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Difficult",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Curses",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Hunger",
-              "weight": 3
-            },
-            {
-              "value": "Tired",
-              "weight": 2
-            },
-            {
-              "value": "Slowed",
-              "weight": 4
-            },
-            {
-              "value": "Weakened",
-              "weight": 4
-            },
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Furious",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "OreMultipliers",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Plentiful",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },
-        { "_NAME": "Time Effect",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Extended",
-              "weight": 1
-            }
-          ]
-        },  
-        { "_NAME": "Trap Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Safe Zone",
-              "weight": 1
-            },
-            {
-              "value": "Trapped",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Boosts",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Speedy",
-              "weight": 2
-            },
-            {
-              "value": "Healing",
-              "weight": 1
-            },
-            {
-              "value": "Stronk",
-              "weight": 3
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Frail",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Artifact",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 35
-            },
-            {
-              "value": "Journey",
-              "weight": 4
-            },
-            {
-              "value": "Exploration",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Exit Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Raffle",
-              "weight": 10
-            }
-          ]
-        }
-      ],
-      "RAID_POOLS": [
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 1
-            },
-            {
-              "value": "Reinforced",
-              "weight": 1
-            },
-            {
-              "value": "Indestructible",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Time",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Faster",
-              "weight": 2
-            },
-            {
-              "value": "Fast",
-              "weight": 2
-            },
-            {
-              "value": "Extended",
-              "weight": 2
-            },
-            {
-              "value": "Optimistic",
-              "weight": 2
-            },
-            {
-              "value": "Dummy",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "FINAL_VELARA_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_TENOS_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_WENDARR_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaotic",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_IDONA_POOLS": [
-        {
-          "MIN_ROLLS": 2,
-          "MAX_ROLLS": 2,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaos",
-              "weight": 1
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Rush",
-              "weight": 1
-            },
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            },
-            {
-              "value": "Treasure",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Locked",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 3
-            }
-          ]
-        }
-      ]
-    },
-    { "MIN_LEVEL": 100,
-      "DEFAULT_POOLS": [
-        { "_NAME": "Chests",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Gilded",
-              "weight": 2
-            },
-            {
-              "value": "Hoard",
-              "weight": 2
-            }
-          ]
-        },
-        { "_NAME": "Luck",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Lucky",
-              "weight": 2
-            },
-            {
-              "value": "Unlucky",
-              "weight": 2
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Luckier",
-              "weight": 1
-            }
-          ]
-        },
-        {  "_NAME": "Mob Pool",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Chaotic",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Personal Space",
-              "weight": 2
-            }
-          ]
-        },
-        { "_NAME": "Difficulty",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Easy",
-              "weight": 3
-            },
-            {
-              "value": "Simple",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Difficult",
-              "weight": 3
-            },
-            {
-              "value": "Hard",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Curses",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Hunger",
-              "weight": 3
-            },
-            {
-              "value": "Tired",
-              "weight": 2
-            },
-            {
-              "value": "Slowed",
-              "weight": 4
-            },
-            {
-              "value": "Weakened",
-              "weight": 4
-            },
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Furious",
-              "weight": 2
-            },
-            {
-              "value": "Raging",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "OreMultipliers",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Plentiful",
-              "weight": 2
-            },
-            {
-              "value": "Rich",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },
-        { "_NAME": "Time Effect",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Fast",
-              "weight": 2
-            },
-            {
-              "value": "Faster",
-              "weight": 1
-            },
-            {
-              "value": "Extended",
-              "weight": 2
-            },
-            {
-              "value": "Optimistic",
-              "weight": 1
-            }
-          ]
-        },  
-        { "_NAME": "Trap Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Safe Zone",
-              "weight": 1
-            },
-            {
-              "value": "Trapped",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Boosts",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Speedy",
-              "weight": 2
-            },
-            {
-              "value": "Healing",
-              "weight": 1
-            },
-            {
-              "value": "Stronk",
-              "weight": 3
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 2
-            },
-            {
-              "value": "Reinforced",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            },
-            {
-              "value": "Frail",
-              "weight": 2
-            },
-            {
-              "value": "Fragile",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Artifact",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 35
-            },
-            {
-              "value": "Journey",
-              "weight": 4
-            },
-            {
-              "value": "Exploration",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Exit Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 20
-            },
-            {
-              "value": "Locked",
-              "weight": 1
-            }
-          ]
-        },   
-        { "_NAME": "CatalystMods",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Prismatic",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },    
-        { "_NAME": "T3",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Treasure",
-              "weight": 2
-            },
-            {
-              "value": "Copius",
-              "weight": 2
-            },
-            {
-              "value": "Impossible",
-              "weight": 1
-            },
-            {
-              "value": "Trivial",
-              "weight": 2
-            },
-            {
-              "value": "Challenging",
-              "weight": 1
-            },
-            {
-              "value": "Super Lucky",
-              "weight": 2
-            },
-            {
-              "value": "Frenzy",
-              "weight": 1
-            },
-            {
-              "value": "Odyssey",
-              "weight": 2
-            }
-          ]
-        }
-      ],
-      "RAFFLE_POOLS": [
-        { "_NAME": "Chests",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Gilded",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Luck",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Lucky",
-              "weight": 1
-            },
-            {
-              "value": "Unlucky",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            }
-          ]
-        },
-        {  "_NAME": "Mob Pool",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Crowded",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Personal Space",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Difficulty",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Easy",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 6
-            },
-            {
-              "value": "Difficult",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Curses",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Hunger",
-              "weight": 3
-            },
-            {
-              "value": "Tired",
-              "weight": 2
-            },
-            {
-              "value": "Slowed",
-              "weight": 4
-            },
-            {
-              "value": "Weakened",
-              "weight": 4
-            },
-            {
-              "value": "Dummy",
-              "weight": 40
-            },
-            {
-              "value": "Furious",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "OreMultipliers",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Plentiful",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            }
-          ]
-        },
-        { "_NAME": "Time Effect",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Fast",
-              "weight": 1
-            },
-            {
-              "value": "Extended",
-              "weight": 1
-            }
-          ]
-        },  
-        { "_NAME": "Trap Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Safe Zone",
-              "weight": 1
-            },
-            {
-              "value": "Trapped",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Boosts",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Speedy",
-              "weight": 2
-            },
-            {
-              "value": "Healing",
-              "weight": 1
-            },
-            {
-              "value": "Stronk",
-              "weight": 3
-            },
-            {
-              "value": "Dummy",
-              "weight": 10
-            }
-          ]
-        },
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 8
-            },
-            {
-              "value": "Frail",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Artifact",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Dummy",
-              "weight": 35
-            },
-            {
-              "value": "Journey",
-              "weight": 4
-            },
-            {
-              "value": "Exploration",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Exit Modifications",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Raffle",
-              "weight": 10
-            }
-          ]
-        }
-      ],
-      "RAID_POOLS": [
-        { "_NAME": "Durability",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Resilient",
-              "weight": 1
-            },
-            {
-              "value": "Reinforced",
-              "weight": 1
-            },
-            {
-              "value": "Indestructible",
-              "weight": 1
-            },
-            {
-              "value": "Dummy",
-              "weight": 1
-            }
-          ]
-        },
-        { "_NAME": "Time",
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Faster",
-              "weight": 2
-            },
-            {
-              "value": "Fast",
-              "weight": 2
-            },
-            {
-              "value": "Extended",
-              "weight": 2
-            },
-            {
-              "value": "Optimistic",
-              "weight": 2
-            },
-            {
-              "value": "Dummy",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "FINAL_VELARA_POOLS": [
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Finale",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "No Extras",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "FINAL_TENOS_POOLS": [
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Finale",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Void Hex",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "No Extras",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "FINAL_WENDARR_POOLS": [
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Finale",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "No Extras",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Void Hex",
-              "weight": 1
-            }
-          ]
-        }
-        
-      ],
-      "FINAL_WENDARR_ADDS_POOLS": [
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Mob",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "FINAL_IDONA_POOLS": [
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Finale",
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "No Extras",
-              "weight": 1
-            }
-          ]
-        }
-      ],
-      "FINAL_VELARA_ADDS_POOLS": [
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Mooore",
-              "weight": 3
-            },
-            {
-              "value": "Mooove",
-              "weight": 5
-            },
-            {
-              "value": "Noooo",
-              "weight": 1
-            },
-            {
-              "value": "Milky",
-              "weight": 3
-            },
-            {
-              "value": "Awkward",
-              "weight": 6
-            },
-            {
-              "value": "Exposed",
-              "weight": 3
-            },
-            {
-              "value": "Static",
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "FINAL_TENOS_ADDS_POOLS": [
-        {
-          "MIN_ROLLS": 1,
-          "MAX_ROLLS": 1,
-          "POOL": [
-            {
-              "value": "Unfair",
-              "weight": 1
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  }
 }

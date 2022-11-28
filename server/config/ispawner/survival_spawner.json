@@ -1,39 +1,40 @@
 {
-  "defaultCharges": 60,
+  "defaultCharges": 10,
   "defaultSettings": {
     "attempts": 4,
-    "spawnDelay": 50,
+    "spawnDelay": 500,
     "mode": "REDSTONE_ON",
     "checkRadius": 16,
-    "playerRadius": -1,
+    "playerRadius": 16,
     "capRestrictions": {
+      "WATER_CREATURE": {
+        "spawnGroup": "WATER_CREATURE",
+        "limit": -1
+      },
       "MONSTER": {
         "spawnGroup": "MONSTER",
         "limit": 16
-      },
-      "MISC": {
-        "spawnGroup": "MISC",
-        "limit": -1
       },
       "WATER_AMBIENT": {
         "spawnGroup": "WATER_AMBIENT",
         "limit": -1
       },
-      "AMBIENT": {
-        "spawnGroup": "AMBIENT",
-        "limit": -1
-      },
-      "WATER_CREATURE": {
-        "spawnGroup": "WATER_CREATURE",
+      "MISC": {
+        "spawnGroup": "MISC",
         "limit": -1
       },
       "CREATURE": {
         "spawnGroup": "CREATURE",
         "limit": -1
+      },
+      "AMBIENT": {
+        "spawnGroup": "AMBIENT",
+        "limit": -1
       }
     }
   },
   "itemWhitelist": [
+    "minecraft:axolotl_spawn_egg",
     "minecraft:bat_spawn_egg",
     "minecraft:bee_spawn_egg",
     "minecraft:blaze_spawn_egg",
@@ -52,6 +53,8 @@
     "minecraft:evoker_spawn_egg",
     "minecraft:fox_spawn_egg",
     "minecraft:ghast_spawn_egg",
+    "minecraft:glow_squid_spawn_egg",
+    "minecraft:goat_spawn_egg",
     "minecraft:guardian_spawn_egg",
     "minecraft:hoglin_spawn_egg",
     "minecraft:horse_spawn_egg",

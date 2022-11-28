@@ -1,6 +1,50 @@
 {
   "tooltips": [
     {
+      "item": "the_vault:vault_compass",
+      "value": "Points to the home portal in a Vault"
+    },
+    {
+      "item": "the_vault:plain_burger",
+      "value": "Consume to gain Vault Experience"
+    },
+    {
+      "item": "the_vault:cheese_burger",
+      "value": "Consume to gain Vault Experience"
+    },
+    {
+      "item": "the_vault:double_cheese_burger",
+      "value": "Consume to gain Vault Experience"
+    },
+    {
+      "item": "the_vault:deluxe_cheese_burger",
+      "value": "Consume to gain Vault Experience"
+    },
+    {
+      "item": "the_vault:crispy_deluxe_cheese_burger",
+      "value": "Consume to gain Vault Experience"
+    },
+    {
+      "item": "the_vault:salty_deluxe_cheese_burger",
+      "value": "Consume to gain Vault Experience"
+    },
+    {
+      "item": "the_vault:cheese_burger_feast",
+      "value": "Consume to gain Vault Experience"
+    },
+    {
+      "item": "the_vault:spicy_hearty_burger",
+      "value": "Consume to gain Vault Experience"
+    },
+    {
+      "item": "the_vault:phoenix_feather",
+      "value": "Uber Catalyst\nApply to a crystal to add the Phoenix modifier\nExhausts the crystal"
+    },
+    {
+      "item": "the_vault:eye_of_avarice",
+      "value": "Uber Catalyst\nApply to a crystal to add the Safe Zone Modifier\nExhausts the crystal"
+    },
+    {
       "item": "the_vault:vault_burger",
       "value": "Eat to gain 0-3% of required\nexperience to next level"
     },
@@ -510,7 +554,7 @@
     },
     {
       "item": "the_vault:eternal_soul",
-      "value": "The soul of a fallen eternal, found in boss crates once you have at least one eternal\nUsed as a crafting ingredient"
+      "value": "The soul of a fallen Vault Hunter\nUsed in a Cryo Chamber to create Eternals"
     },
     {
       "item": "the_vault:spark",
@@ -610,7 +654,7 @@
     },
     {
       "item": "the_vault:soul_flame",
-      "value": "Combine with a Vault Crystal to add the Afterlife modifier\nPreventing loss of items if you die\nBeware though, it also removes the chance of an artifact"
+      "value": "Combine with a Vault Crystal to add the Afterlife modifier\nPreventing loss of items if you die\nSets the experience multiplier to 50%"
     },
     {
       "item": "the_vault:soul_shard",

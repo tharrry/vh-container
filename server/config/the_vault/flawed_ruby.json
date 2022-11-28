@@ -3,15 +3,15 @@
     "outcomes": [
       {
         "value": "FAIL",
-        "weight": 25
+        "weight": 5
       },
       {
         "value": "IMBUE",
-        "weight": 70
+        "weight": 25
       },
       {
         "value": "BREAK",
-        "weight": 5
+        "weight": 70
       }
     ],
     "additionModifierCount": {
@@ -23,15 +23,15 @@
     "outcomes": [
       {
         "value": "FAIL",
-        "weight": 70
+        "weight": 5
       },
       {
         "value": "IMBUE",
-        "weight": 25
+        "weight": 5
       },
       {
         "value": "BREAK",
-        "weight": 5
+        "weight": 90
       }
     ],
     "additionModifierCount": {

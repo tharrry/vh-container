@@ -2,7 +2,7 @@
   "ENHANCEMENT_WEIGHTS": [
     {
       "value": "the_vault:auto_smelt",
-      "weight": 10
+      "weight": 1
     },
     {
       "value": "the_vault:fortunate",
@@ -14,27 +14,27 @@
     },
     {
       "value": "the_vault:hammer",
-      "weight": 6
+      "weight": 1
     },
     {
       "value": "the_vault:rush_2",
-      "weight": 4
+      "weight": 1
     },
     {
       "value": "the_vault:speedy",
-      "weight": 8
+      "weight": 1
     },
     {
       "value": "the_vault:fragile",
-      "weight": 10
+      "weight": 1
     },
     {
       "value": "the_vault:rush",
-      "weight": 8
+      "weight": 1
     },
     {
       "value": "the_vault:destructive",
-      "weight": 4
+      "weight": 1
     }
   ]
 }

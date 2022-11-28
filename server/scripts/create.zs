@@ -1,368 +1,212 @@
 /* scripts made by Douwsky
 for Iskall85's Vaulthunters */
 
-import crafttweaker.api.SmithingManager;
-import crafttweaker.api.Brewing;
-import crafttweaker.api.registries.IRecipeManager;
-import mods.botania.ElvenTrade;
-
 // adding recipes
 
-craftingTable.addShaped("createcrushingwheel", <item:create:crushing_wheel>, [
-    [<item:create:andesite_alloy>, <tag:items:minecraft:logs>, <item:create:andesite_alloy>],
-    [<item:create:andesite_alloy>, <item:the_vault:gem_alexandrite>, <item:create:andesite_alloy>],
-    [<item:create:andesite_alloy>, <tag:items:minecraft:logs>, <item:create:andesite_alloy>]
-]);
+<recipetype:create:crushing>.addRecipe("crushed_vaultstone_to_rock", [<item:the_vault:chipped_vault_rock> % 50, <item:the_vault:vault_cobblestone>], <item:the_vault:vault_stone>, 350);
 
-craftingTable.addShaped("createencasedfan", <item:create:encased_fan>, [
-    [<item:the_vault:gem_black_opal>, <item:create:shaft>, <item:the_vault:gem_black_opal>],
-    [<item:create:cogwheel>, <item:create:andesite_casing>, <item:create:cogwheel>],
-    [<item:the_vault:gem_black_opal>, <item:create:propeller>, <item:the_vault:gem_black_opal>]
-]);
+<recipetype:create:cutting>.addRecipe("crushed", [<item:create:shaft> *2],
+<item:create:andesite_alloy>, 450);
 
-craftingTable.addShaped("createfurnaceengine", <item:create:furnace_engine>, [
-    [<item:create:brass_sheet>, <item:create:brass_ingot>, <item:create:brass_block>],
-    [<item:the_vault:perfect_black_opal>, <item:create:brass_casing>, <item:the_vault:gem_pog>],
-    [<item:create:brass_sheet>, <item:create:brass_ingot>, <item:create:brass_block>]
-]);
+<recipetype:create:deploying>.addRecipe("cogwheel",
+<item:create:shaft>, <item:the_vault:gem_larimar>, [<item:create:cogwheel>]);
 
-craftingTable.addShaped("createcart_assembler", <item:create:cart_assembler>, [
-    [<item:minecraft:air>, <item:the_vault:vault_diamond_block>, <item:minecraft:air>],
-    [<item:create:andesite_alloy>, <item:the_vault:echo_pog>, <item:create:andesite_alloy>],
-    [<item:the_vault:vault_diamond_block>, <item:the_vault:gem_pog>, <item:the_vault:vault_diamond_block>]
-]);
+<recipetype:create:deploying>.addRecipe("large_cogwheel",
+<item:create:cogwheel>, <item:the_vault:perfect_larimar>, [<item:create:large_cogwheel>]);
 
-craftingTable.addShaped("createbasin", <item:create:basin>, [
+<recipetype:create:deploying>.addRecipe("andesite_casing",
+<item:the_vault:raw_chromatic_iron_block>, <item:create:andesite_alloy>, [<item:create:andesite_casing>]);
+
+<recipetype:create:item_application>.addRecipe("andesite_casing_in_world", [<item:create:andesite_casing>],
+<item:the_vault:raw_chromatic_iron_block>, <item:create:andesite_alloy>);
+
+<recipetype:create:deploying>.addRecipe("brass_casing",
+<item:the_vault:raw_chromatic_iron_block>, <item:create:brass_block>, [<item:create:brass_casing>]);
+
+<recipetype:create:item_application>.addRecipe("brass_casing_in_world", [<item:create:brass_casing>],
+<item:the_vault:raw_chromatic_iron_block>, <item:create:brass_block>);
+
+<recipetype:create:deploying>.addRecipe("copper_casing",
+<item:the_vault:raw_chromatic_iron_block>, <tag:items:forge:storage_blocks/copper>, [<item:create:copper_casing>]);
+
+<recipetype:create:item_application>.addRecipe("copper_casing_in_world", [<item:create:copper_casing>],
+<item:the_vault:raw_chromatic_iron_block>, <tag:items:forge:storage_blocks/copper>);
+
+<recipetype:create:item_application>.addRecipe("track_signal", [<item:create:track_signal>],
+<item:create:railway_casing>, <item:create:electron_tube>);
+
+<recipetype:create:item_application>.addRecipe("track_station", [<item:create:track_station>],
+<item:create:railway_casing>, <item:minecraft:compass>);
+
+<recipetype:create:sequenced_assembly>.builder("sequenced");
+
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_blast_brick")
+                                                      .transitionTo(<item:create:incomplete_track>)
+                                                      .require(<tag:items:minecraft:slabs>)
+                                                      .loops(2)
+                                                      .addOutput(<item:create:track> * 24, 32)
+                                                      .addOutput(<item:minecraft:andesite>, 1)
+                                                      .addOutput(<item:create:cogwheel>, 1)
+                                                      .addOutput(<item:minecraft:stick>, 1)
+                                                      .addOutput(<item:minecraft:iron_nugget>, 1)
+                                                      .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:the_vault:perfect_larimar>))
+                                                      .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:the_vault:chromatic_iron_ingot>))
+                                                      .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(50)));
+
+craftingTable.addShaped("create_andesite_alloy", <item:create:andesite_alloy> *2, [
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:create:andesite_alloy>, <item:the_vault:gem_alexandrite>, <item:create:andesite_alloy>],
-    [<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>]
-]);
-
-craftingTable.addShaped("createandesite_alloy", <item:create:andesite_alloy>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:andesite>, <item:the_vault:gem_benitoite>, <item:minecraft:andesite>],
+    [<item:minecraft:andesite>, <item:the_vault:chromatic_iron_ingot>, <item:minecraft:andesite>],
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("createandesite_alloy2", <item:create:andesite_alloy>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:andesite>, <item:the_vault:gem_larimar>, <item:minecraft:andesite>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+craftingTable.addShaped("create_shaft", <item:create:shaft> *5, [
+    [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:the_vault:chromatic_iron_ingot>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("createwindmill_bearing", <item:create:windmill_bearing>, [
-    [<item:the_vault:vault_diamond>, <item:create:turntable>, <item:the_vault:vault_diamond>],
-    [<item:the_vault:gem_black_opal>, <item:the_vault:gem_pog>, <item:the_vault:gem_black_opal>],
-    [<item:the_vault:vault_diamond>, <item:create:shaft>, <item:the_vault:vault_diamond>]
-]);
-
-craftingTable.addShaped("createbelt_connector", <item:create:belt_connector>, [
+craftingTable.addShaped("create_belt", <item:create:belt_connector>, [
     [<item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>],
-    [<item:minecraft:dried_kelp>, <tag:items:the_vault:perfectcommongems>, <item:minecraft:dried_kelp>],
+    [<item:minecraft:air>, <item:the_vault:chromatic_iron_ingot>, <item:minecraft:air>],
     [<item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>]
 ]);
 
-craftingTable.addShaped("createflywheel", <item:create:flywheel>, [
-    [<item:create:brass_ingot>, <item:the_vault:gem_black_opal>, <item:create:brass_ingot>],
-    [<item:the_vault:gem_black_opal>, <item:create:brass_casing>, <item:the_vault:gem_black_opal>],
-    [<item:create:brass_ingot>, <item:the_vault:gem_black_opal>, <item:create:brass_ingot>]
+craftingTable.addShapeless("create_cogwheel_shapeless", <item:create:cogwheel>, [
+    <item:create:shaft>, <item:the_vault:gem_larimar>,
 ]);
 
-craftingTable.addShaped("createbrass_funnel", <item:create:brass_funnel>, [
-    [<item:minecraft:air>, <item:the_vault:gem_wutodie>, <item:minecraft:air>],
-    [<item:create:brass_ingot>, <item:create:electron_tube>, <item:create:brass_ingot>],
-    [<item:minecraft:air>, <item:create:belt_connector>, <item:minecraft:air>]
+craftingTable.addShapeless("create_large_cogwheel_shapeless", <item:create:large_cogwheel>, [
+    <item:create:cogwheel>, <item:the_vault:perfect_larimar>,
 ]);
 
-craftingTable.addShaped("createextendogrip", <item:create:extendo_grip>, [
-    [<item:the_vault:perfect_black_opal>, <item:the_vault:omega_pog>, <item:the_vault:perfect_black_opal>],
-    [<tag:items:forge:storage_blocks/brass>, <item:create:brass_hand>, <tag:items:forge:storage_blocks/brass>],
-    [<item:the_vault:perfect_black_opal>, <item:the_vault:omega_pog>, <item:the_vault:perfect_black_opal>]
+craftingTable.addShapeless("create_large_cogwheel_shapeless2", <item:create:large_cogwheel>, [
+    <item:create:shaft>, <item:the_vault:perfect_larimar>, <item:the_vault:driftwood>
 ]);
 
-craftingTable.addShapeless("createcopper_nugget", <item:create:copper_nugget> * 9, [
-    <item:create:copper_ingot>
+craftingTable.addShaped("create_hand_crank", <item:create:hand_crank>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:the_vault:driftwood>, <item:the_vault:chromatic_iron_ingot>, <item:the_vault:driftwood>],
+    [<item:minecraft:air>, <item:minecraft:air>, <item:create:andesite_alloy>]
 ]);
 
-craftingTable.addShaped("createmechanical_crafter", <item:create:mechanical_crafter>, [
-    [<item:the_vault:echo_pog>, <item:create:electron_tube>, <item:the_vault:echo_pog>],
-    [<item:create:large_cogwheel>, <item:create:brass_casing>, <item:create:large_cogwheel>],
-    [<item:the_vault:gem_pog>, <item:minecraft:crafting_table>, <item:the_vault:gem_pog>]
+craftingTable.addShaped("create_crushing_wheel", <item:create:crushing_wheel>, [
+    [<item:create:andesite_alloy>, <item:the_vault:driftwood>, <item:create:andesite_alloy>],
+    [<item:the_vault:driftwood>, <item:the_vault:vault_stone>, <item:the_vault:driftwood>],
+    [<item:create:andesite_alloy>, <item:the_vault:driftwood>, <item:create:andesite_alloy>]
 ]);
 
-craftingTable.addShaped("createelectron_tube", <item:create:electron_tube>, [
+craftingTable.addShaped("create_cart_assembler", <item:create:cart_assembler>, [
+    [<item:the_vault:extraordinary_larimar>, <item:create:andesite_alloy>, <item:the_vault:extraordinary_larimar>],
+    [<item:the_vault:vault_diamond_block>, <item:the_vault:echo_pog>, <item:the_vault:vault_diamond_block>],
+    [<item:the_vault:extraordinary_larimar>, <item:create:andesite_alloy>, <item:the_vault:extraordinary_larimar>]
+]);
+
+craftingTable.addShaped("create_electron_tube", <item:create:electron_tube>, [
     [<item:minecraft:air>, <item:create:polished_rose_quartz>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:minecraft:redstone_torch>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:the_vault:vault_nugget>, <item:minecraft:air>]
+    [<item:minecraft:air>, <item:the_vault:chromatic_iron_nugget>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("createrotation_speed_controller", <item:create:rotation_speed_controller>, [
-    [<item:minecraft:air>, <item:the_vault:gem_pog>, <item:minecraft:air>],
-    [<item:the_vault:gem_echo>, <item:create:blaze_cake>, <item:the_vault:gem_echo>],
-    [<item:create:shaft>, <item:create:brass_casing>, <item:create:shaft>]
-]);
-
-craftingTable.addShaped("createmechanical_mixer", <item:create:mechanical_mixer>, [
-    [<item:the_vault:gem_black_opal>, <item:create:andesite_alloy>, <item:the_vault:gem_black_opal>],
-    [<item:create:cogwheel>, <item:create:andesite_casing>, <item:create:cogwheel>],
-    [<item:the_vault:gem_black_opal>, <item:create:whisk>, <item:the_vault:gem_black_opal>]
-]);
-
-craftingTable.addShaped("createmechanical_press", <item:create:mechanical_press>, [
-    [<item:the_vault:gem_black_opal>, <item:create:andesite_alloy>, <item:the_vault:gem_black_opal>],
-    [<item:create:cogwheel>, <item:create:andesite_casing>, <item:create:cogwheel>],
-    [<item:the_vault:gem_black_opal>, <tag:items:forge:storage_blocks/iron>, <item:the_vault:gem_black_opal>]
-]);
-
-craftingTable.addShaped("createcogwheel", <item:create:cogwheel>, [
-    [<tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:wooden_buttons>],
-    [<tag:items:minecraft:wooden_buttons>, <item:create:andesite_alloy>, <tag:items:minecraft:wooden_buttons>],
-    [<tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:wooden_buttons>]
-]);
-
-craftingTable.addShaped("createlarge_cogwheel", <item:create:large_cogwheel>, [
-    [<tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:planks>, <tag:items:minecraft:wooden_buttons>],
-    [<tag:items:minecraft:planks>, <item:create:andesite_alloy>, <tag:items:minecraft:planks>],
-    [<tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:planks>, <tag:items:minecraft:wooden_buttons>]
-]);
-
-craftingTable.addShaped("createwrench", <item:create:wrench>, [
-    [<item:create:golden_sheet>, <item:create:golden_sheet>, <tag:items:the_vault:playergems>],
-    [<item:create:golden_sheet>, <item:create:large_cogwheel>, <item:minecraft:air>],
-    [<tag:items:the_vault:playergems>, <tag:items:forge:rods/wooden>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("createwaterwheel", <item:create:water_wheel>, [
-    [<item:the_vault:vault_diamond>, <item:the_vault:perfect_black_opal>, <item:the_vault:vault_diamond>],
-    [<item:the_vault:perfect_black_opal>, <item:the_vault:gem_pog>, <item:the_vault:perfect_black_opal>],
-    [<item:the_vault:vault_diamond>, <item:the_vault:perfect_black_opal>, <item:the_vault:vault_diamond>]
-]);
-
-craftingTable.addShaped("createwand_of_symmetry", <item:create:wand_of_symmetry>, [
-    [<tag:items:the_vault:perfectcommongems>, <item:the_vault:vault_diamond>, <item:create:refined_radiance>],
-    [<item:create:brass_block>, <item:the_vault:echo_pog>, <item:the_vault:vault_diamond>],
-    [<item:compressium:obsidian_3>, <item:create:brass_block>, <tag:items:the_vault:perfectcommongems>]
-]);
-
-craftingTable.addShaped("millstone", <item:create:millstone>, [
-    [<item:minecraft:air>, <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:create:andesite_alloy>, <item:create:cogwheel>, <item:create:andesite_alloy>],
-    [<item:the_vault:gem_black_opal>, <tag:items:forge:stone>, <item:the_vault:gem_black_opal>]
-]);
-
-craftingTable.addShaped("chute", <item:create:chute> *2, [
+craftingTable.addShaped("create_chute", <item:create:chute> *2, [
     [<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:minecraft:air>],
     [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("smart_chute", <item:create:smart_chute>, [
+craftingTable.addShaped("create_smart_chute", <item:create:smart_chute>, [
     [<item:minecraft:air>, <tag:items:forge:plates/gold>, <item:minecraft:air>],
-    [<item:the_vault:perfect_wutodie>, <item:create:chute>, <item:the_vault:perfect_wutodie>],
+    [<item:the_vault:perfect_larimar>, <item:create:chute>, <item:the_vault:perfect_larimar>],
     [<item:minecraft:air>, <item:create:electron_tube>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("spout", <item:create:spout>, [
-    [<item:minecraft:air>, <item:create:fluid_tank>, <item:minecraft:air>],
-    [<item:the_vault:perfect_alexandrite>, <item:minecraft:dried_kelp>, <item:the_vault:perfect_alexandrite>],
-    [<item:minecraft:air>, <item:the_vault:vault_nugget>, <item:minecraft:air>]
+craftingTable.addShaped("create_waterwheel", <item:create:water_wheel>, [
+    [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>],
+    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:infinite_water_bucket>, <item:the_vault:black_chromatic_steel_ingot>],
+    [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>]
 ]);
 
-craftingTable.addShaped("createpipe", <item:create:fluid_pipe> *4, [
+craftingTable.addShaped("create_basin", <item:create:basin>, [
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:create:copper_sheet>, <tag:items:the_vault:perfectcommongems>, <item:create:copper_sheet>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [<item:create:andesite_alloy>, <item:the_vault:perfect_larimar>, <item:create:andesite_alloy>],
+    [<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>]
 ]);
 
-craftingTable.addShaped("createtank", <item:create:fluid_tank>, [
-    [<tag:items:the_vault:perfectcommongems>, <item:create:copper_casing>, <tag:items:the_vault:perfectcommongems>],
-    [<item:create:copper_nugget>, <tag:items:forge:glass>, <item:create:copper_nugget>],
-    [<tag:items:the_vault:perfectcommongems>, <item:create:copper_casing>, <tag:items:the_vault:perfectcommongems>]
-]);
-
-craftingTable.addShaped("mechanical_saw", <item:create:mechanical_saw>, [
-    [<item:the_vault:gem_black_opal>, <tag:items:forge:plates/iron>, <item:the_vault:gem_black_opal>],
-    [<tag:items:forge:plates/iron>, <item:minecraft:iron_ingot>, <tag:items:forge:plates/iron>],
-    [<item:the_vault:gem_black_opal>, <item:create:andesite_casing>, <item:the_vault:gem_black_opal>]
-]);
-
-craftingTable.addShaped("deployer", <item:create:deployer>, [
-    [<item:the_vault:gem_black_opal>, <item:create:electron_tube>, <item:the_vault:gem_black_opal>],
+craftingTable.addShaped("create_mechanical_bearing", <item:create:mechanical_bearing>, [
+    [<item:minecraft:air>, <item:the_vault:driftwood>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:create:andesite_casing>, <item:minecraft:air>],
-    [<item:the_vault:gem_black_opal>, <item:create:brass_hand>, <item:the_vault:gem_black_opal>]
+    [<item:minecraft:air>, <item:create:shaft>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("mechanical_drill", <item:create:mechanical_drill>, [
-    [<item:the_vault:gem_black_opal>, <item:create:andesite_alloy>, <item:the_vault:gem_black_opal>],
-    [<item:create:andesite_alloy>, <item:minecraft:iron_ingot>, <item:create:andesite_alloy>],
-    [<item:the_vault:gem_black_opal>, <item:create:andesite_casing>, <item:the_vault:gem_black_opal>]
+craftingTable.addShaped("create_linear_chassis", <item:create:linear_chassis> *2, [
+    [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>],
+    [<item:the_vault:driftwood>, <item:the_vault:driftwood>, <item:the_vault:driftwood>],
+    [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("mechanical_harvester", <item:create:mechanical_harvester>, [
-    [<item:create:andesite_alloy>, <tag:items:forge:plates/iron>, <item:create:andesite_alloy>],
-    [<item:create:andesite_alloy>, <tag:items:forge:plates/iron>, <item:create:andesite_alloy>],
-    [<item:the_vault:gem_black_opal>, <item:create:andesite_casing>, <item:the_vault:gem_black_opal>]
+craftingTable.addShapeless("create_linear_chassis_shapeless", <item:create:linear_chassis>, [
+    <item:create:secondary_linear_chassis>
 ]);
 
-craftingTable.addShaped("mechanical_plough", <item:create:mechanical_plough>, [
-    [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>],
-    [<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>],
-    [<item:the_vault:gem_black_opal>, <item:create:andesite_casing>, <item:the_vault:gem_black_opal>]
+craftingTable.addShaped("create_radial_chassis", <item:create:radial_chassis> *2, [
+    [<item:minecraft:air>, <item:the_vault:driftwood>, <item:minecraft:air>],
+    [<item:create:andesite_alloy>, <item:the_vault:driftwood>, <item:create:andesite_alloy>],
+    [<item:minecraft:air>, <item:the_vault:driftwood>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("andesite_casing", <item:create:andesite_casing> *4, [
-    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <tag:items:minecraft:planks>],
-    [<item:create:andesite_alloy>, <item:the_vault:perfect_wutodie>, <item:create:andesite_alloy>],
-    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <tag:items:minecraft:planks>]
+craftingTable.addShaped("create_mechanical_piston", <item:create:mechanical_piston>, [
+    [<item:minecraft:air>, <item:the_vault:driftwood>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:create:andesite_casing>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:create:piston_extension_pole>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShaped("brass_casing", <item:create:brass_casing> *4, [
-    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <tag:items:minecraft:planks>],
-    [<item:create:brass_sheet>, <item:the_vault:gem_pog>, <item:create:brass_sheet>],
-    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <tag:items:minecraft:planks>]
+craftingTable.addShaped("create_piston_extension_pole", <item:create:piston_extension_pole>, [
+    [<item:minecraft:air>, <item:the_vault:driftwood>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:the_vault:driftwood>, <item:minecraft:air>]
 ]);
 
-<recipetype:create:mixing>.addRecipe("mixing_healing_potion", "heated",<fluid:create:potion>.withTag({Potion: "minecraft:healing", Bottle:"REGULAR"}) *1000, [
-    <item:minecraft:golden_apple>,], [<fluid:create:potion>.withTag({Potion: "minecraft:awkward", Bottle:"REGULAR"}) *1000]);
+craftingTable.addShapeless("create_sticky_mechanical_piston", <item:create:sticky_mechanical_piston>, [
+    <item:create:mechanical_piston>, <item:the_vault:magic_silk>
+]);
 
-<recipetype:create:mixing>.addRecipe("mixing_healing_potion_2", "heated",<fluid:create:potion>.withTag({Potion: "minecraft:strong_healing", Bottle:"REGULAR"}) *1000, [
-    <item:minecraft:glowstone_dust>,], [<fluid:create:potion>.withTag({Potion: "minecraft:healing", Bottle:"REGULAR"}) *1000]);
+craftingTable.addShaped("create_empty_blaze_burner", <item:create:empty_blaze_burner>, [
+    [<item:the_vault:chromatic_steel_ingot>, <tag:items:forge:plates/iron>, <item:the_vault:chromatic_steel_ingot>],
+    [<tag:items:forge:plates/iron>, <item:the_vault:vault_stone>, <tag:items:forge:plates/iron>],
+    [<item:the_vault:chromatic_steel_ingot>, <tag:items:forge:plates/iron>, <item:the_vault:chromatic_steel_ingot>]
+]);
 
-<recipetype:create:mixing>.addRecipe("mixing_regen_potion", "heated",<fluid:create:potion>.withTag({Potion: "minecraft:regeneration", Bottle:"REGULAR"}) *1000, [
-    <item:the_vault:vault_essence>,], [<fluid:create:potion>.withTag({Potion: "minecraft:awkward", Bottle:"REGULAR"}) *1000]);
+craftingTable.addShaped("create_wrench", <item:create:wrench>, [
+    [<tag:items:forge:plates/gold>, <tag:items:forge:plates/gold>, <item:minecraft:air>],
+    [<tag:items:forge:plates/gold>, <item:create:large_cogwheel>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:the_vault:driftwood>, <item:minecraft:air>]
+]);
 
-<recipetype:create:mixing>.addRecipe("mixing_regen_potion_2", "heated",<fluid:create:potion>.withTag({Potion: "minecraft:strong_regeneration", Bottle:"REGULAR"}) *1000, [
-    <item:minecraft:glowstone_dust>,], [<fluid:create:potion>.withTag({Potion: "minecraft:regeneration", Bottle:"REGULAR"}) *1000]);
+craftingTable.addShaped("create_gantry_shaft", <item:create:gantry_shaft> *2, [
+    [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>],
+    [<item:the_vault:vault_essence>, <item:minecraft:redstone_block>, <item:the_vault:vault_essence>],
+    [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>]
+]);
 
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_jade", { 
-  "ingredients": [
-    {"item": "the_vault:jade_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
+craftingTable.addShaped("create_rotation_speed_controller", <item:create:rotation_speed_controller> , [
+    [<item:minecraft:air>, <item:create:precision_mechanism>, <item:minecraft:air>],
+    [<item:the_vault:vault_essence>, <item:create:brass_casing>, <item:the_vault:vault_essence>],
+    [<item:minecraft:air>, <item:the_vault:gem_pog>, <item:minecraft:air>]
+]);
 
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_cobalt", { 
-  "ingredients": [
-    {"item": "the_vault:cobalt_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
+craftingTable.addShaped("createwindmill_bearing", <item:create:windmill_bearing>, [
+    [<item:the_vault:vault_diamond>, <item:the_vault:gem_pog>, <item:the_vault:vault_diamond>],
+    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_stone>, <item:the_vault:black_chromatic_steel_ingot>],
+    [<item:minecraft:air>, <item:create:shaft>,<item:minecraft:air>]
+]);
 
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_pixie", { 
-  "ingredients": [
-    {"item": "the_vault:pixie_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
+craftingTable.addShaped("create_gantry_carriage", <item:create:gantry_carriage>, [
+    [<item:minecraft:air>, <item:the_vault:driftwood>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:create:andesite_casing>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:create:cogwheel>, <item:minecraft:air>]
+]);
 
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_lucky", { 
-  "ingredients": [
-    {"item": "the_vault:lucky_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
-
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_treasure", { 
-  "ingredients": [
-    {"item": "the_vault:treasure_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
-
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_power", { 
-  "ingredients": [
-    {"item": "the_vault:power_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
-
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_ghost", { 
-  "ingredients": [
-    {"item": "the_vault:ghost_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
-
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_golem", { 
-  "ingredients": [
-    {"item": "the_vault:golem_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
-
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_sweet", { 
-  "ingredients": [
-    {"item": "the_vault:sweet_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
-
-<recipetype:create:crushing>.addJSONRecipe("vault_apple_hearty", { 
-  "ingredients": [
-    {"item": "the_vault:hearty_apple"}
-  ],
-  "results": [
-    {"item": "the_vault:vault_apple",
-      "count": 1}
-  ],
-  "processingTime": 400
-});
-
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("small_cog")
-    .transitionTo(<item:create:incomplete_cogwheel>)
-    .require(<item:create:andesite_alloy>)
-    .loops(1)
-    .addOutput(<item:create:cogwheel>, 1)
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:minecraft:wooden_buttons>))
-    .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(50)));
-
-    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("large_cog")
-    .transitionTo(<item:create:incomplete_large_cogwheel>)
-    .require(<item:create:andesite_alloy>)
-    .loops(1)
-    .addOutput(<item:create:large_cogwheel>, 1)
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:minecraft:planks>))
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:minecraft:wooden_buttons>))
-    .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(50)));
-
-    <recipetype:create:mixing>.addRecipe("vaulterite", "none", <item:the_vault:vaulterite_ingot>, [
-      <item:the_vault:vault_scrap>, <item:the_vault:vault_scrap>, <item:minecraft:netherite_scrap>, <item:the_vault:vault_scrap>, <item:the_vault:gem_painite>]);
-
-<recipetype:create:mixing>.addRecipe("red_vault_essence", "none", <item:the_vault:red_vault_essence>, [
-     <item:the_vault:vault_essence>, <item:the_vault:perfect_painite>]);
+craftingTable.addShaped("create_steam_engine", <item:create:steam_engine>, [
+    [<item:the_vault:black_chromatic_steel_ingot>, <tag:items:forge:plates/gold>, <item:the_vault:black_chromatic_steel_ingot>],
+    [<item:the_vault:vault_diamond>, <item:create:brass_casing>, <item:the_vault:vault_diamond>],
+    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:gem_pog>, <item:the_vault:black_chromatic_steel_ingot>]
+]);

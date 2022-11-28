@@ -1,495 +1,159 @@
 {
-  "TAGGED_MODIFIER_POOLS": {
+  "MODIFIER_POOLS": {
     "BAD": {
-      "displayName": "negative",
-      "color": 15597568,
       "modifiers": [
         {
-          "value": "Crowded",
-          "weight": 100
+          "value": "the_vault:injured",
+          "weight": 6
         },
         {
-          "value": "Chaotic",
-          "weight": 8
-        },
-        {
-          "value": "Impossible",
-          "weight": 2
-        },
-        {
-          "value": "Hard",
-          "weight": 80
-        },
-        {
-          "value": "Challenging",
-          "weight": 12
-        },
-        {
-          "value": "Difficult",
-          "weight": 120
-        },
-        {
-          "value": "Unlucky",
-          "weight": 40
-        },
-        {
-          "value": "Super Unlucky",
+          "value": "the_vault:draining",
           "weight": 10
         },
         {
-          "value": "Locked",
-          "weight": 20
-        },
-        {
-          "value": "Fast",
-          "weight": 80
-        },
-        {
-          "value": "Faster",
-          "weight": 60
-        },
-        {
-          "value": "Rush",
-          "weight": 20
-        },
-        {
-          "value": "Furious",
-          "weight": 60
-        },
-        {
-          "value": "Raging",
-          "weight": 40
-        },
-        {
-          "value": "Frenzy",
+          "value": "the_vault:poisonous",
           "weight": 10
         },
         {
-          "value": "Giant",
-          "weight": 20
+          "value": "the_vault:freezing",
+          "weight": 10
         },
         {
-          "value": "Daycare",
-          "weight": 20
+          "value": "the_vault:voiding",
+          "weight": 6
         },
         {
-          "value": "Trapped",
-          "weight": 80
+          "value": "the_vault:chunky_mobs",
+          "weight": 28
         },
         {
-          "value": "Poisonous",
-          "weight": 40
+          "value": "the_vault:furious_mobs",
+          "weight": 28
         },
         {
-          "value": "Withering",
-          "weight": 40
+          "value": "the_vault:wild",
+          "weight": 28
         },
         {
-          "value": "Freezing",
-          "weight": 40
+          "value": "the_vault:trapped",
+          "weight": 16
         },
         {
-          "value": "Fatiguing",
-          "weight": 40
-        },
-        {
-          "value": "Clumsy",
-          "weight": 20
-        },
-        {
-          "value": "Vulnerable",
-          "weight": 20
-        },
-        {
-          "value": "Inert",
-          "weight": 20
-        },
-        {
-          "value": "Rotten",
-          "weight": 20
-        },
-        {
-          "value": "Frail",
-          "weight": 40
-        },
-        {
-          "value": "Fragile",
-          "weight": 30
-        },
-        {
-          "value": "Destructive",
+          "value": "the_vault:frail",
           "weight": 10
         }
-
       ]
     },
     "GOOD": {
-      "displayName": "positive",
-      "color": 4325149,
       "modifiers": [
         {
-          "value": "Easy",
-          "weight": 160
+          "value": "the_vault:coin_pile",
+          "weight": 12
         },
         {
-          "value": "Extended",
-          "weight": 160
+          "value": "the_vault:gilded",
+          "weight": 10
         },
         {
-          "value": "Optimistic",
-          "weight": 40
+          "value": "the_vault:living",
+          "weight": 10
         },
         {
-          "value": "Trivial",
-          "weight": 60
+          "value": "the_vault:ornate",
+          "weight": 8
         },
         {
-          "value": "Simple",
-          "weight": 100
+          "value": "the_vault:plentiful",
+          "weight": 10
         },
         {
-          "value": "Treasure",
-          "weight": 1
-        },
-        {
-          "value": "Endless",
-          "weight": 1
-        },
-        {
-          "value": "Gilded",
-          "weight": 60
-        },
-        {
-          "value": "Hoard",
+          "value": "the_vault:item_rarity",
           "weight": 6
         },
         {
-          "value": "Resilient",
-          "weight": 60
+          "value": "the_vault:item_quantity",
+          "weight": 6
         },
         {
-          "value": "Reinforced",
+          "value": "the_vault:haunted",
           "weight": 10
         },
         {
-          "value": "Indestructible",
+          "value": "the_vault:prosperous",
           "weight": 4
-        },
+        },        
         {
-          "value": "Personal Space",
-          "weight": 160
-        },
-        {
-          "value": "Silent",
-          "weight": 40
-        },
-        {
-          "value": "Lucky",
-          "weight": 60
-        },
-        {
-          "value": "Luckier",
-          "weight": 10
-        },
-        {
-          "value": "Super Lucky",
-          "weight": 3
-        },
-        {
-          "value": "Healing",
-          "weight": 80
-        },
-        {
-          "value": "Super Healing",
-          "weight": 50
-        },
-        {
-          "value": "Speedy",
-          "weight": 80
-        },
-        {
-          "value": "Super Speed",
-          "weight": 40
-        },
-        {
-          "value": "Stronk",
-          "weight": 80
-        },
-        {
-          "value": "Mega Stronk",
-          "weight": 40
-        },
-        {
-          "value": "Exploration",
-          "weight": 10
-        },
-        {
-          "value": "Journey",
-          "weight": 40
-        },
-        {
-          "value": "Odyssey",
-          "weight": 1
-        },
-        {
-          "value": "Plentiful",
-          "weight": 60
-        },
-        {
-          "value": "Rich",
-          "weight": 10
-        },
-        {
-          "value": "Copious",
-          "weight": 2
-        },
-        {
-          "value": "Phoenix",
-          "weight": 10
-        },
-        {
-          "value": "Safe Zone",
-          "weight": 80
+          "value": "the_vault:extended",
+          "weight": 8
         }
       ]
     },
-    "CURSES": {
-      "displayName": "cursed",
-      "color": 7489536,
+    "CURSE": {
       "modifiers": [
         {
-          "value": "Hunger",
+          "value": "the_vault:hunger",
           "weight": 10
         },
         {
-          "value": "Tired",
-          "weight": 3
+          "value": "the_vault:tired",
+          "weight": 10
         },
         {
-          "value": "Slowed",
+          "value": "the_vault:slowed",
           "weight": 6
         },
         {
-          "value": "Weakened",
-          "weight": 1
+          "value": "the_vault:weakened",
+          "weight": 10
+        },
+        {
+          "value": "the_vault:inert",
+          "weight": 10
+        },
+        {
+          "value": "the_vault:locked",
+          "weight": 8
+        },
+        {
+          "value": "the_vault:frenzy",
+          "weight": 0
+        },
+        {
+          "value": "the_vault:rotten",
+          "weight": 10
+        },
+        {
+          "value": "the_vault:wounded",
+          "weight": 10
+        },
+        {
+          "value": "the_vault:drained",
+          "weight": 10
+        },
+        {
+          "value": "the_vault:minefield",
+          "weight": 10
         }
       ]
     }
   },
-  "OUTCOMES": [
+  "MODIFIER_POOL_GROUPS": [
     {
       "value": {
-        "rolls": [
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "GOOD"
-          }
+        "pools": [
+          "GOOD"
         ]
       },
       "weight": 1
     },
     {
       "value": {
-        "rolls": [
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "GOOD"
-          }
+        "pools": [
+          "GOOD",
+          "BAD"
         ]
       },
-      "weight": 2
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "BAD"
-          }
-        ]
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "BAD"
-          }
-        ]
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "BAD"
-          }
-        ]
-      },
-      "weight": 6
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "BAD"
-          }
-        ]
-      },
-      "weight": 4
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "BAD"
-          }
-        ]
-      },
-      "weight": 4
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "BAD"
-          }
-        ]
-      },
-      "weight": 2
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "BAD"
-          },
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "CURSES"
-          }
-        ]
-      },
-      "weight": 6
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "BAD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "CURSES"
-          }
-        ]
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "CURSES"
-          }
-        ]
-      },
-      "weight": 4
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "CURSES"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "CURSES"
-          }
-        ]
-      },
-      "weight": 4
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "BAD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "BAD"
-          }
-        ]
-      },
-      "weight": 4
-    },
-    {
-      "value": {
-        "rolls": [
-          {
-            "type": "ADD_SPECIFIC_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "GOOD"
-          },
-          {
-            "type": "ADD_RANDOM_MODIFIER",
-            "pool": "BAD"
-          }
-        ]
-      },
-      "weight": 1
+      "weight": 99
     }
   ]
 }

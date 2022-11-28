@@ -58,50 +58,122 @@
         ]
       },
       "Careless": {
-        "dependsOn": [
-          "Elvish"
-        ],
         "lockedBy": [
         ]
       },
       "Angel": {
-        "dependsOn": [
-          "Careless"
-        ],
         "lockedBy": [
         ]
       },
       "Fatal Strike Chance": {
-        "dependsOn": [
-          "Fatal Strike"
-        ],
         "lockedBy": [
           "Fatal Strike Damage"
         ]
       },
       "Fatal Strike Damage": {
-        "dependsOn": [
-          "Fatal Strike"
-        ],
         "lockedBy": [
           "Fatal Strike Chance"
         ]
       },
       "Thorns Damage": {
-        "dependsOn": [
-          "Thorns"
-        ],
         "lockedBy": [
           "Thorns Chance"
         ]
       },
       "Thorns Chance": {
-        "dependsOn": [
-          "Thorns"
-        ],
         "lockedBy": [
           "Thorns Damage"
         ]
+      },
+      "Last Stand": {
+        "lockedBy": [
+          "Berserking"
+        ]
+      },
+      "Berserking": {
+        "lockedBy": [
+          "Last Stand"
+        ]
+      },
+      "Weakness Affinity": {
+        "lockedBy": [
+          "Slowness Affinity",
+          "Wither Affinity"
+        ]
+      },
+      "Slowness Affinity": {
+        "lockedBy": [
+          "Weakness Affinity",
+          "Wither Affinity"
+        ]
+      },
+      "Wither Affinity": {
+        "lockedBy": [
+          "Slowness Affinity",
+          "Weakness Affinity"
+        ]
+      },
+      "Mekanism Generators": {
+        "dependsOn": [
+          "Mekanism"
+        ],
+        "ignoreArrow": true
+      },
+      "Digital Miner": {
+        "dependsOn": [
+          "Mekanism"
+        ],
+        "ignoreArrow": true
+      },
+      "Mekanism QIO": {
+        "dependsOn": [
+          "Mekanism"
+        ],
+        "ignoreArrow": true
+      },
+      "Thermal Dynamos": {
+        "dependsOn": [
+          "Thermal Expansion"
+        ],
+        "ignoreArrow": true
+      },
+      "Phytogenic Insulator": {
+        "dependsOn": [
+          "Thermal Expansion"
+        ],
+        "ignoreArrow": true
+      },
+      "Belts": {
+        "dependsOn": [
+          "Double Pouches"
+        ],
+        "ignoreArrow": true
+      },
+      "Double Pouches": {
+        "dependsOn": [
+          "Pouches"
+        ],
+        "ignoreArrow": true
+      },
+      "Backpacks": {
+        "dependsOn": [
+          "Belts"
+        ],
+        "ignoreArrow": true
+      },
+      "Big Backpacks": {
+        "dependsOn": [
+          "Backpacks"
+        ],
+        "ignoreArrow": true
+      },
+      "Automatic Genius": {
+        "dependsOn": [
+          "Applied Energistics",
+          "Refined Storage",
+          "Mekanism QIO"
+        ],
+        "ignoreArrow": true
       }
     }
   }

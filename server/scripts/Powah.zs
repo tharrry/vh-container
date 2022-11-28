@@ -1,71 +1,57 @@
 /* scripts made by Douwsky
 for Iskall85's Vaulthunters */
 
-import crafttweaker.api.SmithingManager;
-import crafttweaker.api.Brewing;
-import crafttweaker.api.registries.IRecipeManager;
-import mods.botania.ElvenTrade;
-
 // adding recipes
 
-craftingTable.addShapeless("powahdielectric_paste", <item:powah:dielectric_paste> * 20, [
-	<item:the_vault:vault_nugget>, <tag:items:minecraft:coals>, <tag:items:minecraft:coals>,
-	<tag:items:minecraft:coals>, <item:the_vault:gem_larimar>, <item:the_vault:vault_nugget>,
-	<item:the_vault:vault_nugget>, <tag:items:forge:clay>
-]);
-
-craftingTable.addShaped("powahbinding_card_dim", <item:powah:binding_card_dim>, [
-	[<item:powah:ender_gate_nitro>, <item:the_vault:vault_diamond_block>, <item:powah:ender_gate_nitro>],
-	[<item:powah:player_transmitter_nitro>, <item:the_vault:omega_pog>, <item:powah:player_transmitter_nitro>],
-	[<item:powah:ender_gate_nitro>, <item:the_vault:vault_diamond_block>, <item:powah:ender_gate_nitro>]
-]);
-
-<recipetype:powah:energizing>.addJSONRecipe("crystal_nitro", { //
+<recipetype:powah:energizing>.addJsonRecipe("crystal_nitro", { //
   "ingredients": [
 	{"tag": "forge:nether_stars"},
-	{"tag": "forge:storage_blocks/redstone"},
-	{"tag": "forge:storage_blocks/redstone"},
+	{"item": "compressium:redstone_2"},
+	{"item": "compressium:redstone_2"},
 	{"item": "powah:blazing_crystal_block"},
+    {"item": "the_vault:black_chromatic_steel_ingot"},
   	{"item": "the_vault:gem_echo"}
   ],
-  "energy": 60000000,
+  "energy": 85000000,
   "result": {
 	"item": "powah:crystal_nitro",
 	"count": 3
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("crystal_spirited", { //
+<recipetype:powah:energizing>.addJsonRecipe("crystal_spirited", { //
   "ingredients": [
 	{"tag": "forge:storage_blocks/emerald"},
-   	{"item": "the_vault:perfect_alexandrite"}
+    {"item": "the_vault:chromatic_steel_ingot"},
+   	{"item": "the_vault:extraordinary_larimar"}
   ],
-  "energy": 3000000,
+  "energy": 5000000,
   "result": {
 	"item": "powah:crystal_spirited",
 	"count": 1
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("crystal_niotic", { //
+<recipetype:powah:energizing>.addJsonRecipe("crystal_niotic", { //
   "ingredients": [
 	{"tag": "forge:storage_blocks/diamond"},
-   	{"item": "the_vault:perfect_alexandrite"}
+    {"item": "the_vault:chromatic_steel_ingot"},
+   	{"item": "the_vault:extraordinary_larimar"}
   ],
-  "energy": 900000,
+  "energy": 1200000,
   "result": {
 	"item": "powah:crystal_niotic",
 	"count": 1
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("crystal_blazing", { //
+<recipetype:powah:energizing>.addJsonRecipe("crystal_blazing", { //
   "ingredients": [
 	{"item": "minecraft:blaze_powder"},
 	{"item": "minecraft:blaze_powder"},
 	{"item": "minecraft:blaze_powder"},
 	{"item": "minecraft:blaze_powder"},
-   	{"item": "the_vault:perfect_alexandrite"}
+   	{"item": "the_vault:extraordinary_larimar"}
   ],
   "energy": 270000,
   "result": {
@@ -74,146 +60,209 @@ craftingTable.addShaped("powahbinding_card_dim", <item:powah:binding_card_dim>, 
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("crystal_blazing2", { //
+<recipetype:powah:energizing>.addJsonRecipe("crystal_blazing2", { //
   "ingredients": [
 	{"item": "minecraft:blaze_rod"},
-   	{"item": "the_vault:perfect_alexandrite"}
+   	{"item": "the_vault:extraordinary_larimar"}
   ],
-  "energy": 360000,
+  "energy": 480000,
   "result": {
 	"item": "powah:crystal_blazing",
 	"count": 1
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("steel_energized", { //
+<recipetype:powah:energizing>.addJsonRecipe("steel_energized", { //
   "ingredients": [
-	{"tag": "forge:ingots/iron"},
-	{"tag": "forge:ingots/gold"},
-  	{"item": "the_vault:perfect_alexandrite"}
+	{"item": "the_vault:chromatic_steel_ingot"},
+	{"item": "the_vault:perfect_larimar"},
+    {"item": "the_vault:vault_essence"},
+  	{"item": "the_vault:chromatic_steel_ingot"}
   ],
-  "energy": 30000,
+  "energy": 40000,
   "result": {
 	"item": "powah:steel_energized",
 	"count": 4
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("steel_energized_block", { //
+<recipetype:powah:energizing>.addJsonRecipe("steel_energized_block", { //
   "ingredients": [
-	{"tag": "forge:storage_blocks/iron"},
-	{"tag": "forge:storage_blocks/gold"},
-  	{"item": "the_vault:perfect_alexandrite"}
+	{"item": "the_vault:chromatic_steel_block"},
+	{"item": "the_vault:chromatic_steel_block"},
+  	{"item": "the_vault:extraordinary_larimar"}
   ],
-  "energy": 330000,
+  "energy": 440000,
   "result": {
 	"item": "powah:energized_steel_block",
 	"count": 4
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("ender_core", { //
+<recipetype:powah:energizing>.addJsonRecipe("ender_core", { //
   "ingredients": [
 	{"item": "quark:ender_watcher"},
 	{"item": "powah:dielectric_casing"},
 	{"item": "powah:capacitor_basic_tiny"},
-  	{"item": "the_vault:perfect_alexandrite"}
+  	{"item": "the_vault:extraordinary_larimar"}
   ],
-  "energy": 150000,
+  "energy": 230000,
   "result": {
 	"item": "powah:ender_core",
 	"count": 1
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("charged_snowball", { //
+<recipetype:powah:energizing>.addJsonRecipe("charged_snowball", { //
   "ingredients": [
 	{"item": "minecraft:snowball"},
-  	{"item": "the_vault:perfect_alexandrite"}
+  	{"item": "the_vault:perfect_larimar"}
   ],
-  "energy": 1500000,
+  "energy": 2300000,
   "result": {
 	"item": "powah:charged_snowball",
 	"count": 1
   }
 });
 
-<recipetype:powah:energizing>.addJSONRecipe("dry_ice", { //
+<recipetype:powah:energizing>.addJsonRecipe("dry_ice", { //
   "ingredients": [
 	{"item": "minecraft:blue_ice"},
 	{"item": "minecraft:blue_ice"},
 	{"item": "minecraft:blue_ice"},
-  	{"item": "the_vault:perfect_alexandrite"}
+    {"item": "the_vault:vault_essence"},
+  	{"item": "the_vault:perfect_larimar"}
   ],
-  "energy": 12500,
+  "energy": 24300,
   "result": {
 	"item": "powah:dry_ice",
 	"count": 1
   }
 });
 
-craftingTable.addShaped("powahcapacitor_basic", <item:powah:capacitor_basic>, [
-	[<item:minecraft:air>, <item:the_vault:gem_benitoite>, <item:powah:dielectric_paste>],
-	[<item:the_vault:gem_benitoite>, <item:minecraft:redstone_block>, <item:the_vault:gem_benitoite>],
-	[<item:powah:dielectric_paste>, <item:the_vault:gem_benitoite>, <item:minecraft:air>]
+craftingTable.addShapeless("powah_dielectric_paste", <item:powah:dielectric_paste> * 8, [
+	<item:the_vault:gem_larimar>, <tag:items:minecraft:coals>,
+	<item:the_vault:chromatic_iron_ingot>, <item:the_vault:magic_silk>
 ]);
 
-craftingTable.addShaped("powahdielectric_rod", <item:powah:dielectric_rod> *2, [
-	[<item:powah:dielectric_paste>, <item:the_vault:gem_benitoite>, <item:powah:dielectric_paste>],
+craftingTable.addShaped("powah_binding_card_dim", <item:powah:binding_card_dim>, [
+	[<item:powah:ender_gate_nitro>, <item:the_vault:vault_diamond_block>, <item:powah:ender_gate_nitro>],
+	[<item:powah:player_transmitter_nitro>, <item:the_vault:omega_pog>, <item:powah:player_transmitter_nitro>],
+	[<item:powah:ender_gate_nitro>, <item:the_vault:vault_diamond_block>, <item:powah:ender_gate_nitro>]
+]);
+
+craftingTable.addShaped("powah_capacitor_basic", <item:powah:capacitor_basic>, [
+	[<item:the_vault:magic_silk>, <item:the_vault:gem_larimar>, <item:powah:dielectric_paste>],
+	[<item:the_vault:gem_larimar>, <item:the_vault:chromatic_iron_ingot>, <item:the_vault:gem_larimar>],
+	[<item:powah:dielectric_paste>, <item:the_vault:gem_larimar>, <item:the_vault:magic_silk>]
+]);
+
+craftingTable.addShaped("powah_dielectric_rod", <item:powah:dielectric_rod> *2, [
 	[<item:powah:dielectric_paste>, <item:the_vault:gem_larimar>, <item:powah:dielectric_paste>],
-	[<item:powah:dielectric_paste>, <item:the_vault:gem_benitoite>, <item:powah:dielectric_paste>]
+	[<item:powah:dielectric_paste>, <item:the_vault:chromatic_iron_ingot>, <item:powah:dielectric_paste>],
+	[<item:powah:dielectric_paste>, <item:the_vault:gem_larimar>, <item:powah:dielectric_paste>]
 ]);
 
-craftingTable.addShaped("powahdielectric_rod_horizontal", <item:powah:dielectric_rod_horizontal> *2, [
+craftingTable.addShaped("powah_dielectric_rod_horizontal", <item:powah:dielectric_rod_horizontal> *2, [
 	[<item:powah:dielectric_paste>, <item:powah:dielectric_paste>, <item:powah:dielectric_paste>],
-	[<item:the_vault:gem_benitoite>, <item:the_vault:gem_larimar>, <item:the_vault:gem_benitoite>],
+	[<item:the_vault:gem_larimar>, <item:the_vault:chromatic_iron_ingot>, <item:the_vault:gem_larimar>],
 	[<item:powah:dielectric_paste>, <item:powah:dielectric_paste>, <item:powah:dielectric_paste>]
 ]);
 
-craftingTable.addShaped("powahdielectric_casing", <item:powah:dielectric_casing>, [
+craftingTable.addShaped("powah_dielectric_casing", <item:powah:dielectric_casing>, [
 	[<tag:items:forge:storage_blocks/iron>, <item:powah:dielectric_rod_horizontal>, <tag:items:forge:storage_blocks/iron>],
-	[<item:powah:dielectric_rod>, <tag:items:the_vault:gems>, <item:powah:dielectric_rod>],
+	[<item:powah:dielectric_rod>, <item:the_vault:chromatic_steel_ingot>, <item:powah:dielectric_rod>],
 	[<tag:items:forge:storage_blocks/iron>, <item:powah:dielectric_rod_horizontal>, <tag:items:forge:storage_blocks/iron>]
 ]);
 
-craftingTable.addShaped("powahsolar_panel_starter", <item:powah:solar_panel_starter>, [
-	[<item:powah:photoelectric_pane>, <tag:items:the_vault:gems>, <item:powah:photoelectric_pane>],
+craftingTable.addShaped("powah_solar_panel_starter", <item:powah:solar_panel_starter>, [
+	[<item:powah:photoelectric_pane>, <item:the_vault:chromatic_iron_ingot>, <item:powah:photoelectric_pane>],
 	[<item:powah:capacitor_basic_tiny>, <item:powah:dielectric_casing>, <item:powah:capacitor_basic_tiny>],
 	[<item:powah:dielectric_paste>, <item:powah:dielectric_paste>, <item:powah:dielectric_paste>]
 ]);
 
-craftingTable.addShaped("powahsolar_panel_basic", <item:powah:solar_panel_basic>, [
-	[<item:powah:solar_panel_starter>, <tag:items:the_vault:gems>, <item:powah:solar_panel_starter>],
+craftingTable.addShaped("powah_solar_panel_basic", <item:powah:solar_panel_basic>, [
+	[<item:powah:solar_panel_starter>, <item:the_vault:chromatic_iron_ingot>, <item:powah:solar_panel_starter>],
 	[<item:powah:capacitor_basic>, <item:powah:dielectric_casing>, <item:powah:capacitor_basic>],
 	[<tag:items:forge:ingots/iron>, <tag:items:forge:ingots/iron>, <tag:items:forge:ingots/iron>]
 ]);
 
-craftingTable.addShaped("powahsolar_panel_hardened", <item:powah:solar_panel_hardened>, [
-	[<item:powah:solar_panel_basic>, <tag:items:the_vault:gems>, <item:powah:solar_panel_basic>],
+craftingTable.addShaped("powah_solar_panel_hardened", <item:powah:solar_panel_hardened>, [
+	[<item:powah:solar_panel_basic>, <item:the_vault:chromatic_iron_ingot>, <item:powah:solar_panel_basic>],
 	[<item:powah:capacitor_hardened>, <item:powah:dielectric_casing>, <item:powah:capacitor_hardened>],
 	[<item:powah:steel_energized>, <item:powah:steel_energized>, <item:powah:steel_energized>]
 ]);
 
-craftingTable.addShaped("powahsolar_panel_blazing", <item:powah:solar_panel_blazing>, [
-	[<item:powah:solar_panel_hardened>, <tag:items:the_vault:gems>, <item:powah:solar_panel_hardened>],
+craftingTable.addShaped("powah_solar_panel_blazing", <item:powah:solar_panel_blazing>, [
+	[<item:powah:solar_panel_hardened>, <item:the_vault:chromatic_iron_ingot>, <item:powah:solar_panel_hardened>],
 	[<item:powah:capacitor_blazing>, <item:powah:dielectric_casing>, <item:powah:capacitor_blazing>],
 	[<item:powah:crystal_blazing>, <item:powah:crystal_blazing>, <item:powah:crystal_blazing>]
 ]);
 
-craftingTable.addShaped("powahsolar_panel_niotic", <item:powah:solar_panel_niotic>, [
-	[<item:powah:solar_panel_blazing>, <tag:items:the_vault:playergems>, <item:powah:solar_panel_blazing>],
+craftingTable.addShaped("powah_solar_panel_niotic", <item:powah:solar_panel_niotic>, [
+	[<item:powah:solar_panel_blazing>, <item:the_vault:black_chromatic_steel_ingot>, <item:powah:solar_panel_blazing>],
 	[<item:powah:capacitor_niotic>, <item:powah:dielectric_casing>, <item:powah:capacitor_niotic>],
 	[<item:powah:crystal_niotic>, <item:powah:crystal_niotic>, <item:powah:crystal_niotic>]
 ]);
 
-craftingTable.addShaped("powahsolar_panel_spirited", <item:powah:solar_panel_spirited>, [
-	[<item:powah:solar_panel_niotic>, <tag:items:the_vault:playergems>, <item:powah:solar_panel_niotic>],
+craftingTable.addShaped("powah_solar_panel_spirited", <item:powah:solar_panel_spirited>, [
+	[<item:powah:solar_panel_niotic>, <item:the_vault:black_chromatic_steel_ingot>, <item:powah:solar_panel_niotic>],
 	[<item:powah:capacitor_spirited>, <item:powah:dielectric_casing>, <item:powah:capacitor_spirited>],
 	[<item:powah:crystal_spirited>, <item:powah:crystal_spirited>, <item:powah:crystal_spirited>]
 ]);
 
-craftingTable.addShaped("powahsolar_panel_nitro", <item:powah:solar_panel_nitro>, [
-	[<item:powah:solar_panel_spirited>, <tag:items:the_vault:playergems>, <item:powah:solar_panel_spirited>],
+craftingTable.addShaped("powah_solar_panel_nitro", <item:powah:solar_panel_nitro>, [
+	[<item:powah:solar_panel_spirited>, <item:the_vault:black_chromatic_steel_ingot>, <item:powah:solar_panel_spirited>],
 	[<item:powah:capacitor_nitro>, <item:powah:dielectric_casing>, <item:powah:capacitor_nitro>],
 	[<item:powah:crystal_nitro>, <item:powah:crystal_nitro>, <item:powah:crystal_nitro>]
+]);
+
+craftingTable.addShapeless("powah_tiny_basic_capacitor", <item:powah:capacitor_basic_tiny> * 2, [
+	<item:powah:capacitor_basic>, <item:the_vault:vault_essence>, <item:the_vault:gem_larimar>
+]);
+
+craftingTable.addShapeless("powah_large_basic_capacitor", <item:powah:capacitor_basic_large>, [
+	<item:powah:capacitor_basic>, <item:powah:capacitor_basic>, <item:the_vault:vault_essence>, <item:the_vault:magic_silk_block>
+]);
+
+craftingTable.addShaped("powah_thermoelectric_plate", <item:powah:thermoelectric_plate>, [
+	[<item:quark:blaze_lantern>, <item:the_vault:chromatic_iron_ingot>, <item:quark:blaze_lantern>],
+	[<item:the_vault:chromatic_iron_ingot>, <item:powah:capacitor_basic_tiny>, <item:the_vault:chromatic_iron_ingot>],
+	[<item:quark:blaze_lantern>, <item:the_vault:chromatic_iron_ingot>, <item:quark:blaze_lantern>]
+]);
+
+craftingTable.addShaped("powah_energizing_orb", <item:powah:energizing_orb>, [
+	[<item:minecraft:tinted_glass>, <item:minecraft:tinted_glass>, <item:minecraft:tinted_glass>],
+	[<item:minecraft:tinted_glass>, <item:powah:dielectric_casing>, <item:minecraft:tinted_glass>],
+	[<item:powah:dielectric_rod_horizontal>, <item:powah:dielectric_rod_horizontal>, <item:powah:dielectric_rod_horizontal>]
+]);
+
+craftingTable.addShaped("powah_photoelectric_pane", <item:powah:photoelectric_pane>, [
+	[<item:compressium:lapis_1>, <item:powah:dielectric_paste>, <item:compressium:lapis_1>],
+	[<item:powah:dielectric_paste>, <item:minecraft:tinted_glass>, <item:powah:dielectric_paste>],
+	[<item:compressium:lapis_1>, <item:powah:dielectric_paste>, <item:compressium:lapis_1>]
+]);
+
+craftingTable.addShaped("powah_capacitor_blazing", <item:powah:capacitor_blazing>, [
+	[<item:powah:dielectric_paste>, <item:powah:crystal_blazing>, <item:powah:dielectric_paste>],
+	[<item:powah:crystal_blazing>, <item:powah:capacitor_hardened>, <item:powah:crystal_blazing>],
+	[<item:powah:dielectric_paste>, <item:powah:crystal_blazing>, <item:powah:dielectric_paste>]
+]);
+
+craftingTable.addShaped("powah_capacitor_niotic", <item:powah:capacitor_niotic>, [
+	[<item:powah:dielectric_paste>, <item:powah:crystal_niotic>, <item:powah:dielectric_paste>],
+	[<item:powah:crystal_niotic>, <item:powah:capacitor_blazing>, <item:powah:crystal_niotic>],
+	[<item:powah:dielectric_paste>, <item:powah:crystal_niotic>, <item:powah:dielectric_paste>]
+]);
+
+craftingTable.addShaped("powah_capacitor_spirited", <item:powah:capacitor_spirited>, [
+	[<item:powah:dielectric_paste>, <item:powah:crystal_spirited>, <item:powah:dielectric_paste>],
+	[<item:powah:crystal_spirited>, <item:powah:capacitor_niotic>, <item:powah:crystal_spirited>],
+	[<item:powah:dielectric_paste>, <item:powah:crystal_spirited>, <item:powah:dielectric_paste>]
+]);
+
+craftingTable.addShaped("powah_capacitor_nitro", <item:powah:capacitor_nitro>, [
+	[<item:powah:dielectric_paste>, <item:powah:crystal_nitro>, <item:powah:dielectric_paste>],
+	[<item:powah:crystal_nitro>, <item:powah:capacitor_spirited>, <item:powah:crystal_nitro>],
+	[<item:powah:dielectric_paste>, <item:powah:crystal_nitro>, <item:powah:dielectric_paste>]
 ]);

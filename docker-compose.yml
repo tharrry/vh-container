@@ -3,7 +3,8 @@ services:
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # Minecraft Vault Hunters world with the 1.18.2 update
   vault-hunters:
-    image: wotupfoo/vault-hunters:1.18.2-alpha-0.0.1
+    # each release has an alias back to 1.18.2 (eg 1.18.2-alpha-0.0.1|3)
+    image: wotupfoo/vault-hunters:1.18.2
     tty: true
 #    stdin_open: true
     ports:

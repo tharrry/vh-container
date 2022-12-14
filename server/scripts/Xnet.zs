@@ -25,7 +25,7 @@ craftingTable.addShaped("xnet_router", <item:xnet:router>, [
 craftingTable.addShaped("xnet_wireless_router", <item:xnet:wireless_router>, [
     [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_iron_ingot>],
     [<item:the_vault:extraordinary_larimar>, <item:xnet:router>, <item:the_vault:extraordinary_larimar>],
-    [<item:compressium:redstone_1>, <item:quark:ender_watcher>, <item:compressium:redstone_1>]
+    [<item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_block>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("xnet_antenna", <item:xnet:antenna>, [
@@ -42,7 +42,7 @@ craftingTable.addShaped("xnet_antenna_base", <item:xnet:antenna_base>, [
 
 craftingTable.addShaped("xnet_antenna_dish", <item:xnet:antenna_dish>, [
     [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:perfect_larimar>, <item:the_vault:chromatic_iron_ingot>],
-    [<item:the_vault:chromatic_iron_ingot>, <item:quark:ender_watcher>, <item:the_vault:chromatic_iron_ingot>],
+    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:chromatic_steel_block>, <item:the_vault:chromatic_iron_ingot>],
     [<item:minecraft:air>, <item:the_vault:chromatic_steel_ingot>, <item:minecraft:air>]
 ]);
 
@@ -59,9 +59,9 @@ craftingTable.addShaped("xnet_connector_cable", <item:xnet:connector_routing>, [
 ]);
 
 craftingTable.addShaped("xnet_advanced_connector_cable", <item:xnet:advanced_connector_routing>, [
-    [<item:the_vault:magic_silk>, <item:quark:ender_watcher>, <item:the_vault:magic_silk>],
+    [<item:the_vault:magic_silk>, <item:the_vault:chromatic_steel_block>, <item:the_vault:magic_silk>],
     [<item:minecraft:redstone_block>, <item:xnet:connector_routing>, <item:minecraft:redstone_block>],
-    [<item:the_vault:magic_silk_block>, <item:compressium:redstone_1>, <item:the_vault:magic_silk_block>]
+    [<item:the_vault:magic_silk_block>, <item:minecraft:redstone_block>, <item:the_vault:magic_silk_block>]
 ]);
 
 for dyeId, dyeName in dyes {

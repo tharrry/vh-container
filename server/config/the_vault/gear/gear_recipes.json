@@ -28,6 +28,11 @@
           "AMOUNT": 2,
           "ITEM": "minecraft:netherite_ingot",
           "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "the_vault:vault_plating",
+          "NBT": "{}"
         }
       ]
     },
@@ -58,6 +63,11 @@
         {
           "AMOUNT": 2,
           "ITEM": "minecraft:netherite_ingot",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "the_vault:vault_plating",
           "NBT": "{}"
         }
       ]
@@ -90,6 +100,11 @@
           "AMOUNT": 2,
           "ITEM": "minecraft:netherite_ingot",
           "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "the_vault:vault_plating",
+          "NBT": "{}"
         }
       ]
     },
@@ -120,6 +135,11 @@
         {
           "AMOUNT": 2,
           "ITEM": "minecraft:netherite_ingot",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "the_vault:vault_plating",
           "NBT": "{}"
         }
       ]
@@ -152,6 +172,11 @@
           "AMOUNT": 2,
           "ITEM": "minecraft:netherite_ingot",
           "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "the_vault:vault_plating",
+          "NBT": "{}"
         }
       ]
     },
@@ -182,6 +207,11 @@
         {
           "AMOUNT": 2,
           "ITEM": "minecraft:netherite_ingot",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "the_vault:vault_plating",
           "NBT": "{}"
         }
       ]
@@ -214,6 +244,11 @@
           "AMOUNT": 2,
           "ITEM": "minecraft:netherite_ingot",
           "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "the_vault:vault_plating",
+          "NBT": "{}"
         }
       ]
     },
@@ -244,6 +279,11 @@
         {
           "AMOUNT": 2,
           "ITEM": "minecraft:netherite_ingot",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "the_vault:vault_plating",
           "NBT": "{}"
         }
       ]

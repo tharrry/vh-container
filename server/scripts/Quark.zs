@@ -18,9 +18,9 @@ craftingTable.addShaped("quark_pickarang", <item:quark:pickarang>, [
 ]);
 
 craftingTable.addShaped("quark_ender_watcher", <item:quark:ender_watcher>, [
-    [<item:the_vault:vault_diamond>, <item:compressium:redstone_1>, <item:the_vault:vault_diamond>],
-    [<item:compressium:redstone_1>, <item:minecraft:ender_eye>, <item:compressium:redstone_1>],
-    [<item:minecraft:obsidian>, <item:compressium:redstone_1>, <item:minecraft:obsidian>]
+    [<item:the_vault:vault_diamond>, <item:minecraft:redstone_block>, <item:the_vault:vault_diamond>],
+    [<item:minecraft:redstone_block>, <item:minecraft:ender_eye>, <item:minecraft:redstone_block>],
+    [<item:minecraft:obsidian>, <item:minecraft:redstone_block>, <item:minecraft:obsidian>]
 ]);
 
 craftingTable.addShaped("quark_grate", <item:quark:grate>.withTag({RepairCost: 0 as int, display: {Name: "{\"text\":\"Harry's special\"}" as string}}) *4, [

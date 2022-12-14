@@ -83,7 +83,7 @@
           "color": "$damage"
         },
         {
-          "text": " on your next hit\n\n",
+          "text": " on your next hit.\n\n",
           "color": "$text"
         },
         {
@@ -118,8 +118,12 @@
           "color": "$text"
         },
         {
-          "text": "delay\n",
+          "text": "delay",
           "color": "$delay"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "Farmer targets:\n",
@@ -234,8 +238,12 @@
           "color": "$text"
         },
         {
-          "text": "delay\n",
+          "text": "delay",
           "color": "$delay"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "Gardener targets:\n",
@@ -287,8 +295,12 @@
           "color": "$text"
         },
         {
-          "text": "delay\n",
+          "text": "delay",
           "color": "$delay"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "Cultivator targets:\n",
@@ -359,8 +371,12 @@
           "color": "$text"
         },
         {
-          "text": "hitpoints\n\n",
+          "text": "hitpoints",
           "color": "$heal"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u2734 Cast Ability ",
@@ -407,8 +423,12 @@
           "color": "$text"
         },
         {
-          "text": "hitpoints\n\n",
+          "text": "hitpoints",
           "color": "$heal"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u2734 Cast Ability ",
@@ -444,8 +464,12 @@
           "color": "$text"
         },
         {
-          "text": "duration of time\n\n",
+          "text": "duration of time",
           "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u2734 Cast Ability ",
@@ -481,8 +505,12 @@
           "color": "$text"
         },
         {
-          "text": "duration of time\n\n",
+          "text": "duration of time",
           "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u2734 Cast Ability ",
@@ -518,8 +546,12 @@
           "color": "$text"
         },
         {
-          "text": "mana pool\n\n",
+          "text": "mana pool",
           "color": "$manaCost"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u25d0 Toggle Ability ",
@@ -549,7 +581,7 @@
           "color": "$range"
         },
         {
-          "text": " up in the air\n\n",
+          "text": " up in the air.\n\n",
           "color": "$text"
         },
         {
@@ -572,7 +604,7 @@
     "Mega Jump_Break_Down": {
       "description": [
         {
-          "text": "Changes Mega Jump to a Mega Dig! Instead of launching you up in the air it drills you downwards in to blocks, breaking them on the way.\n",
+          "text": "Changes Mega Jump to a Mega Dig! Instead of launching you up in the air it drills you downwards in to blocks, breaking them on the way.\n\n",
           "color": "$text"
         },
         {
@@ -599,7 +631,7 @@
     "Mega Jump_Break_Up": {
       "description": [
         {
-          "text": "Changes your mega jump to break blocks that you jump in to.\n",
+          "text": "Changes your mega jump to break blocks that you jump in to.\n\n",
           "color": "$text"
         },
         {
@@ -687,8 +719,12 @@
           "color": "$text"
         },
         {
-          "text": "period of time\n\n",
+          "text": "period of time",
           "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u2734 Cast Ability ",
@@ -845,6 +881,41 @@
         "leech"
       ]
     },
+    "Stonefall": {
+      "description": [
+        {
+          "text": "Makes you immune to ",
+          "color": "$text"
+        },
+        {
+          "text": "fall damage",
+          "color": "$damage"
+        },
+        {
+          "text": " for the next ",
+          "color": "$text"
+        },
+        {
+          "text": "few seconds",
+          "color": "$duration"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration"
+      ],
+      "next": [
+        "level",
+        "cooldown",
+        "manaCost",
+        "duration"
+      ]
+    },
     "Summon Eternal": {
       "description": [
         {
@@ -999,8 +1070,12 @@
           "color": "$text"
         },
         {
-          "text": "thorns damage\n\n",
+          "text": "thorns damage",
           "color": "$damage"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u25d0 Toggle Ability ",
@@ -1036,8 +1111,12 @@
           "color": "$text"
         },
         {
-          "text": "duration of time\n\n",
+          "text": "duration of time",
           "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u2734 Cast Ability ",
@@ -1081,8 +1160,12 @@
           "color": "$text"
         },
         {
-          "text": "duration of time\n\n",
+          "text": "duration of time",
           "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
         },
         {
           "text": "\u2734 Cast Ability ",

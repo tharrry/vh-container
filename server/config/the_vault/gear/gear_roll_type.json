@@ -191,11 +191,11 @@
         },
         {
           "value": "EPIC",
-          "weight": 20
+          "weight": 24
         },
         {
           "value": "OMEGA",
-          "weight": 10
+          "weight": 6
         }
       ],
       "color": 16747008

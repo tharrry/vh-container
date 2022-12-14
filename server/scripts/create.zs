@@ -210,3 +210,9 @@ craftingTable.addShaped("create_steam_engine", <item:create:steam_engine>, [
     [<item:the_vault:vault_diamond>, <item:create:brass_casing>, <item:the_vault:vault_diamond>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:gem_pog>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
+
+craftingTable.addShaped("create_vault", <item:create:item_vault>, [
+    [<item:minecraft:air>, <item:the_vault:perfect_larimar>, <item:minecraft:air>],
+    [<item:create:iron_sheet>, <item:minecraft:barrel>, <item:create:iron_sheet>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
+]);

@@ -107,21 +107,21 @@ craftingTable.addShaped("sophisticatedbackpacks_stack_upgrade_4", <item:sophisti
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_refill_upgrade", <item:sophisticatedbackpacks:refill_upgrade>, [
-    [<item:the_vault:magic_silk>, <item:quark:ender_watcher>, <item:the_vault:magic_silk>],
+    [<item:the_vault:magic_silk>, <item:the_vault:gem_pog>, <item:the_vault:magic_silk>],
     [<item:the_vault:chromatic_steel_ingot>, <item:sophisticatedbackpacks:upgrade_base>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:compressium:redstone_1>, <item:the_vault:gem_pog>, <item:compressium:redstone_1>]
+    [<item:minecraft:redstone_block>, <item:the_vault:vault_diamond_block>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_void_upgrade", <item:sophisticatedbackpacks:void_upgrade>, [
     [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:gem_echo>, <item:the_vault:black_chromatic_steel_ingot>],
     [<item:the_vault:void_liquid_bucket>, <item:sophisticatedbackpacks:upgrade_base>, <item:the_vault:void_liquid_bucket>],
-    [<item:compressium:redstone_2>, <item:the_vault:void_liquid_bucket>, <item:compressium:redstone_2>]
+    [<item:the_vault:chromatic_steel_block>, <item:the_vault:void_liquid_bucket>, <item:the_vault:chromatic_steel_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_advanced_void_upgrade", <item:sophisticatedbackpacks:advanced_void_upgrade>, [
     [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:gem_echo>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:compressium:gold_2>, <item:sophisticatedbackpacks:void_upgrade>, <item:compressium:gold_2>],
-    [<item:compressium:redstone_1>, <item:the_vault:void_liquid_bucket>, <item:compressium:redstone_1>]
+    [<item:the_vault:chromatic_steel_block>, <item:sophisticatedbackpacks:void_upgrade>, <item:the_vault:chromatic_steel_block>],
+    [<item:minecraft:redstone_block>, <item:the_vault:void_liquid_bucket>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_feeding_upgrade", <item:sophisticatedbackpacks:feeding_upgrade>, [
@@ -132,54 +132,54 @@ craftingTable.addShaped("sophisticatedbackpacks_feeding_upgrade", <item:sophisti
 
 craftingTable.addShaped("sophisticatedbackpacks_advanced_feeding_upgrade", <item:sophisticatedbackpacks:advanced_feeding_upgrade>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:compressium:gold_1>, <item:sophisticatedbackpacks:feeding_upgrade>, <item:compressium:gold_1>],
-    [<item:compressium:redstone_1>, <item:the_vault:vault_diamond>, <item:compressium:redstone_1>]
+    [<item:minecraft:gold_block>, <item:sophisticatedbackpacks:feeding_upgrade>, <item:minecraft:gold_block>],
+    [<item:minecraft:redstone_block>, <item:the_vault:vault_diamond>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_pickup_upgrade", <item:sophisticatedbackpacks:pickup_upgrade>, [
     [<item:the_vault:magnet>, <item:minecraft:sticky_piston>, <item:the_vault:magnet>],
     [<item:the_vault:magic_silk>, <item:sophisticatedbackpacks:upgrade_base>, <item:the_vault:magic_silk>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:compressium:redstone_1>, <item:the_vault:chromatic_steel_ingot>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_advanced_pickup_upgrade", <item:sophisticatedbackpacks:advanced_pickup_upgrade>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:compressium:gold_1>, <item:sophisticatedbackpacks:pickup_upgrade>, <item:compressium:gold_1>],
-    [<item:compressium:redstone_1>, <item:the_vault:vault_diamond>, <item:compressium:redstone_1>]
+    [<item:minecraft:gold_block>, <item:sophisticatedbackpacks:pickup_upgrade>, <item:minecraft:gold_block>],
+    [<item:minecraft:redstone_block>, <item:the_vault:vault_diamond>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_filter_upgrade", <item:sophisticatedbackpacks:filter_upgrade>, [
     [<item:the_vault:perfect_larimar>, <item:the_vault:magic_silk>, <item:the_vault:perfect_larimar>],
     [<item:the_vault:magic_silk>, <item:sophisticatedbackpacks:upgrade_base>, <item:the_vault:magic_silk>],
-    [<item:compressium:redstone_1>, <item:the_vault:magic_silk>, <item:compressium:redstone_1>]
+    [<item:minecraft:redstone_block>, <item:the_vault:magic_silk>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_advanced_filter_upgrade", <item:sophisticatedbackpacks:advanced_filter_upgrade>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:compressium:gold_1>, <item:sophisticatedbackpacks:filter_upgrade>, <item:compressium:gold_1>],
-    [<item:compressium:redstone_1>, <item:the_vault:vault_diamond>, <item:compressium:redstone_1>]
+    [<item:minecraft:gold_block>, <item:sophisticatedbackpacks:filter_upgrade>, <item:minecraft:gold_block>],
+    [<item:minecraft:redstone_block>, <item:the_vault:vault_diamond>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_restock_upgrade", <item:sophisticatedbackpacks:restock_upgrade>, [
     [<item:the_vault:chromatic_iron_block>, <item:the_vault:gem_echo>, <item:the_vault:chromatic_iron_block>],
     [<item:the_vault:magic_silk>, <item:sophisticatedbackpacks:upgrade_base>, <item:the_vault:magic_silk>],
-    [<item:compressium:redstone_2>, <item:sophisticatedbackpacks:gold_backpack>, <item:compressium:redstone_2>]
+    [<item:the_vault:chromatic_steel_block>, <item:sophisticatedbackpacks:gold_backpack>, <item:the_vault:chromatic_steel_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_advanced_restock_upgrade", <item:sophisticatedbackpacks:advanced_restock_upgrade>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:compressium:gold_1>, <item:sophisticatedbackpacks:restock_upgrade>, <item:compressium:gold_1>],
-    [<item:compressium:redstone_1>, <item:the_vault:vault_diamond>, <item:compressium:redstone_1>]
+    [<item:minecraft:gold_block>, <item:sophisticatedbackpacks:restock_upgrade>, <item:minecraft:gold_block>],
+    [<item:minecraft:redstone_block>, <item:the_vault:vault_diamond>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_deposit_upgrade", <item:sophisticatedbackpacks:deposit_upgrade>, [
     [<item:the_vault:chromatic_iron_block>, <item:sophisticatedbackpacks:gold_backpack>, <item:the_vault:chromatic_iron_block>],
     [<item:the_vault:magic_silk>, <item:sophisticatedbackpacks:upgrade_base>, <item:the_vault:magic_silk>],
-    [<item:compressium:redstone_2>, <item:the_vault:gem_echo>, <item:compressium:redstone_2>]
+    [<item:the_vault:chromatic_steel_block>, <item:the_vault:gem_echo>, <item:the_vault:chromatic_steel_block>]
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_advanced_deposit_upgrade", <item:sophisticatedbackpacks:advanced_deposit_upgrade>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:compressium:gold_1>, <item:sophisticatedbackpacks:deposit_upgrade>, <item:compressium:gold_1>],
-    [<item:compressium:redstone_1>, <item:the_vault:vault_diamond>, <item:compressium:redstone_1>]
+    [<item:minecraft:gold_block>, <item:sophisticatedbackpacks:deposit_upgrade>, <item:minecraft:gold_block>],
+    [<item:minecraft:redstone_block>, <item:the_vault:vault_diamond>, <item:minecraft:redstone_block>]
 ]);

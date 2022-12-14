@@ -240,12 +240,12 @@
   "UPGRADES": {
     "DURABILITY": {
       "MATERIAL_COSTS": [
+        8,
+        16,
+        0,
         4,
-        1,
         0,
-        0,
-        0,
-        0
+        2
       ],
       "POSITIVE": true,
       "MIN_YIELD": 100.0,
@@ -257,11 +257,11 @@
     },
     "MINING_SPEED": {
       "MATERIAL_COSTS": [
+        16,
         4,
-        0,
         1,
-        1,
-        0,
+        6,
+        2,
         0
       ],
       "POSITIVE": true,
@@ -275,11 +275,11 @@
     },
     "REACH": {
       "MATERIAL_COSTS": [
+        8,
         4,
-        0,
-        1,
-        1,
-        0,
+        2,
+        6,
+        4,
         0
       ],
       "POSITIVE": true,
@@ -293,12 +293,12 @@
     },
     "COPIOUSLY": {
       "MATERIAL_COSTS": [
+        16,
+        8,
         4,
-        1,
-        1,
-        1,
-        1,
-        1
+        10,
+        10,
+        4
       ],
       "POSITIVE": true,
       "IS_PERCENT": true,

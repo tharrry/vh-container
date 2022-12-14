@@ -190,7 +190,7 @@
                 "weight": 2,
                 "item": {
                   "id": "minecraft:enchanted_book",
-                  "nbt": "{StoredEnchantments:[{id:mending}]}",
+                  "nbt": "{StoredEnchantments:[{id:mending,lvl:1}]}",
                   "count": {
                     "type": "uniform",
                     "min": 1,
@@ -202,7 +202,7 @@
                 "weight": 2,
                 "item": {
                   "id": "minecraft:enchanted_book",
-                  "nbt": "{StoredEnchantments:[{id:silk_touch}]}",
+                  "nbt": "{StoredEnchantments:[{id:silk_touch,lvl:1}]}",
                   "count": {
                     "type": "uniform",
                     "min": 1,

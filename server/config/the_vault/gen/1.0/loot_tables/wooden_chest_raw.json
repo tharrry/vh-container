@@ -129,6 +129,61 @@
                   "max": 3
                   }
               }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "minecraft:acacia_sapling",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "minecraft:jungle_sapling",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "minecraft:dark_oak_sapling",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 8,
+              "item": {
+                "id": "minecraft:birch_sapling",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 8,
+              "item": {
+                "id": "minecraft:oak_sapling",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
             }
           ]
         },
@@ -181,6 +236,17 @@
                     "max": 1
                     }
                 }
+            },
+            {
+              "weight": 8,
+              "item": {
+                "id": "minecraft:obsidian",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 3
+                  }
+              }
             },
             {
               "weight": 12,

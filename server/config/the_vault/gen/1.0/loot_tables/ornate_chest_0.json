@@ -165,7 +165,7 @@
             {
                 "weight": 4,
                 "item": {
-                  "id": "the_vauilt:vault_ingot",
+                  "id": "the_vault:vault_ingot",
                   "count": {
                     "type": "uniform",
                     "min": 1,
@@ -202,7 +202,7 @@
             {
               "weight": 64,
               "item": {
-                "id": "the_vauilt:vault_ingot",
+                "id": "the_vault:vault_ingot",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -213,7 +213,7 @@
             {
               "weight": 24,
               "item": {
-                "id": "the_vauilt:vault_alloy",
+                "id": "the_vault:vault_alloy",
                 "count": {
                   "type": "uniform",
                   "min": 1,

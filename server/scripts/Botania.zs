@@ -38,11 +38,13 @@ import mods.botania.recipe.manager.TerraPlateRecipeManager;
 
 <recipetype:botania:brew>.addRecipe("rune_altar_test", <brew:botania:healing>, <item:minecraft:golden_apple>, <item:minecraft:nether_wart>);
 
-<recipetype:create:item_application>.addRecipe("botania_mana_pool", [<item:botania:mana_pool>],
-<item:botania:livingrock_bricks>, <item:the_vault:perfect_larimar>);
+craftingTable.addShaped("botania_mana_pool", <item:botania:mana_pool>, [
+    [<item:the_vault:perfect_larimar>, <item:botania:livingrock_bricks>]
+]);
 
-<recipetype:create:item_application>.addRecipe("botania_runic_altar", [<item:botania:runic_altar>],
-<item:botania:mana_pool>, <item:botania:mana_diamond>);
+craftingTable.addShaped("botania_runic_altar", <item:botania:runic_altar>, [
+    [<item:botania:mana_diamond>, <item:botania:mana_pool>]
+]);
 
 <recipetype:botania:runic_altar>.addRecipe("rune_water", <item:botania:rune_water>, 10000,
  <item:minecraft:fishing_rod>, <item:botania:blue_petal>, <item:botania:manasteel_ingot>, <item:botania:mana_powder>, <item:the_vault:perfect_larimar>);
@@ -115,6 +117,9 @@ craftingTable.addShaped("botania_elvenwood_wand", <item:botania:dreamwood_wand>.
 
 craftingTable.addShaped("botania_spark", <item:botania:spark>, [
     [<item:the_vault:gem_larimar>, <tag:items:botania:petals>, <item:the_vault:gem_larimar>],
-    [<item:quark:blaze_lantern>, <item:compressium:gold_1>, <item:quark:blaze_lantern>],
+    [<item:quark:blaze_lantern>, <item:minecraft:gold_block>, <item:quark:blaze_lantern>],
     [<item:the_vault:gem_larimar>, <tag:items:botania:petals>, <item:the_vault:gem_larimar>]
 ]);
+
+// <recipetype:botania:mana_infusion>.addRecipe("mana_infusion_vault_stone",  <item:the_vault:chipped_vault_rock>,
+//  <item:the_vault:vault_stone> *2, 10000, <block:botania:alchemy_catalyst>);

@@ -11,6 +11,7 @@ craftingTable.addShaped("ae2_controller", <item:ae2:controller>, [
 
 <recipetype:ae2:inscriber>.addJsonRecipe("ae2_logic_processor", { 
 "result": {"item": "ae2:logic_processor"},
+ "mode": "press",
   "ingredients": {
     "middle": {"item": "the_vault:chromatic_steel_ingot"},
     "top": {"item": "ae2:printed_logic_processor"},
@@ -19,6 +20,7 @@ craftingTable.addShaped("ae2_controller", <item:ae2:controller>, [
 
 <recipetype:ae2:inscriber>.addJsonRecipe("ae2_printed_logic_processor", { 
 "result": {"item": "ae2:printed_logic_processor"},
+ "mode": "press",
   "ingredients": {
     "middle": {"item": "the_vault:gem_larimar"},
     "top": {"item": "ae2:logic_processor_press"}
@@ -26,6 +28,7 @@ craftingTable.addShaped("ae2_controller", <item:ae2:controller>, [
 
 <recipetype:ae2:inscriber>.addJsonRecipe("ae2_calculation_processor", { 
 "result": {"item": "ae2:calculation_processor"},
+ "mode": "press",
   "ingredients": {
     "middle": {"item": "the_vault:chromatic_steel_ingot"},
     "top": {"item": "ae2:printed_calculation_processor"},
@@ -34,6 +37,7 @@ craftingTable.addShaped("ae2_controller", <item:ae2:controller>, [
 
 <recipetype:ae2:inscriber>.addJsonRecipe("ae2_printed_calculation_processor", { 
 "result": {"item": "ae2:printed_calculation_processor"},
+ "mode": "press",
   "ingredients": {
     "middle": {"item": "the_vault:chromatic_iron_ingot"},
     "top": {"item": "ae2:calculation_processor_press"}
@@ -41,6 +45,7 @@ craftingTable.addShaped("ae2_controller", <item:ae2:controller>, [
 
 <recipetype:ae2:inscriber>.addJsonRecipe("ae2_engineering_processor", { 
 "result": {"item": "ae2:engineering_processor"},
+ "mode": "press",
   "ingredients": {
     "middle": {"item": "the_vault:chromatic_steel_ingot"},
     "top": {"item": "ae2:printed_engineering_processor"},
@@ -49,6 +54,7 @@ craftingTable.addShaped("ae2_controller", <item:ae2:controller>, [
 
 <recipetype:ae2:inscriber>.addJsonRecipe("ae2_printed_engineering_processor", { 
 "result": {"item": "ae2:printed_engineering_processor"},
+ "mode": "press",
   "ingredients": {
     "middle": {"item": "the_vault:perfect_larimar"},
     "top": {"item": "ae2:engineering_processor_press"}
@@ -63,7 +69,7 @@ craftingTable.addShaped("ae2_1k_component", <item:ae2:cell_component_1k>, [
 craftingTable.addShaped("ae2_storage_cell_1k", <item:ae2:item_storage_cell_1k>, [
     [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_iron_ingot>],
     [<item:minecraft:redstone_block>, <item:ae2:cell_component_1k>, <item:minecraft:redstone_block>],
-    [<item:minecraft:iron_block>, <item:minecraft:iron_block>, <item:minecraft:iron_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShapeless("ae2_storage_cell_1k_shapeless", <item:ae2:item_storage_cell_1k>, [
@@ -79,49 +85,49 @@ craftingTable.addShaped("ae2_4k_component", <item:ae2:cell_component_4k>, [
 craftingTable.addShaped("ae2_storage_cell_4k", <item:ae2:item_storage_cell_4k>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>],
     [<item:minecraft:redstone_block>, <item:ae2:cell_component_4k>, <item:minecraft:redstone_block>],
-    [<item:minecraft:iron_block>, <item:minecraft:iron_block>, <item:minecraft:iron_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("ae2_16k_component", <item:ae2:cell_component_16k>, [
-    [<item:the_vault:chromatic_steel_block>, <item:ae2:calculation_processor>, <item:the_vault:chromatic_steel_block>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:ae2:calculation_processor>, <item:the_vault:chromatic_steel_ingot>],
     [<item:ae2:cell_component_4k>, <item:ae2:quartz_vibrant_glass>, <item:ae2:cell_component_4k>],
     [<item:minecraft:redstone_block>, <item:ae2:cell_component_4k>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("ae2_storage_cell_16k", <item:ae2:item_storage_cell_16k>, [
-    [<item:the_vault:chromatic_steel_block>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_block>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>],
     [<item:minecraft:redstone_block>, <item:ae2:cell_component_16k>, <item:minecraft:redstone_block>],
-    [<item:minecraft:iron_block>, <item:minecraft:iron_block>, <item:minecraft:iron_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("ae2_64k_component", <item:ae2:cell_component_64k>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:ae2:calculation_processor>, <item:the_vault:chromatic_steel_ingot>],
     [<item:ae2:cell_component_16k>, <item:ae2:quartz_vibrant_glass>, <item:ae2:cell_component_16k>],
-    [<item:compressium:redstone_1>, <item:ae2:cell_component_16k>, <item:compressium:redstone_1>]
+    [<item:minecraft:redstone_block>, <item:ae2:cell_component_16k>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("ae2_storage_cell_64k", <item:ae2:item_storage_cell_64k>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>],
     [<item:minecraft:redstone_block>, <item:ae2:cell_component_64k>, <item:minecraft:redstone_block>],
-    [<item:minecraft:iron_block>, <item:minecraft:iron_block>, <item:minecraft:iron_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("ae2_256k_component", <item:ae2:cell_component_256k>, [
     [<item:the_vault:chromatic_steel_block>, <item:ae2:calculation_processor>, <item:the_vault:chromatic_steel_block>],
     [<item:ae2:cell_component_64k>, <item:ae2:quartz_vibrant_glass>, <item:ae2:cell_component_64k>],
-    [<item:compressium:redstone_3>, <item:ae2:cell_component_64k>, <item:compressium:redstone_3>]
+    [<item:minecraft:redstone_block>, <item:ae2:cell_component_64k>, <item:minecraft:redstone_block>]
 ]);
 
 craftingTable.addShaped("ae2_storage_cell_256k", <item:ae2:item_storage_cell_256k>, [
     [<item:the_vault:chromatic_steel_block>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_block>],
     [<item:minecraft:redstone_block>, <item:ae2:cell_component_256k>, <item:minecraft:redstone_block>],
-    [<item:minecraft:iron_block>, <item:minecraft:iron_block>, <item:minecraft:iron_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("ae2_cell_housing", <item:ae2:item_cell_housing>, [
     [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_iron_ingot>],
     [<item:minecraft:redstone_block>, <item:minecraft:air>, <item:minecraft:redstone_block>],
-    [<item:minecraft:iron_block>, <item:minecraft:iron_block>, <item:minecraft:iron_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("ae2_fluid_cell_housing", <item:ae2:fluid_cell_housing>, [

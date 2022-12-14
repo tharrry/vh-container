@@ -6,7 +6,7 @@ for Iskall85's Vaulthunters */
 import crafttweaker.api.recipe.Brewing;
 import mods.initialinventory.InvHandler;
 
-// InvHandler.addStartingItem("one", <item:patchouli:guide_book>.withTag({"patchouli:book": "patchouli:the_vault_main_guide" as string}), 0);
+InvHandler.addStartingItem("one", <item:patchouli:guide_book>.withTag({"patchouli:book": "patchouli:the_vault_main_guide" as string}), 0);
 
 var dyes = {
   "white_dye": "white",
@@ -45,11 +45,6 @@ craftingTable.addShapeless("minecraft_" + dyeName + "_shulker_box", <item:minecr
 ]);
 }
 
-craftingTable.addShaped("tinted_glass", <item:minecraft:tinted_glass> *2, [
-    [<item:the_vault:raw_chromatic_iron>, <item:minecraft:amethyst_block>, <item:the_vault:raw_chromatic_iron>],
-    [<item:minecraft:amethyst_block>, <tag:items:forge:glass>, <item:minecraft:amethyst_block>],
-    [<item:the_vault:raw_chromatic_iron>, <item:minecraft:amethyst_block>, <item:the_vault:raw_chromatic_iron>]
-]);
 
 craftingTable.addShaped("goldenapple", <item:minecraft:golden_apple>, [
     [<item:minecraft:gold_block>, <item:minecraft:gold_ingot>, <item:minecraft:gold_block>],
@@ -107,8 +102,8 @@ craftingTable.addShaped("honeycomb", <item:minecraft:honeycomb>, [
 
 craftingTable.addShaped("weirding_gadget", <item:weirdinggadget:weirding_gadget>, [
     [<item:the_vault:gem_larimar>, <item:the_vault:perfect_larimar>, <item:the_vault:gem_larimar>],
-    [<item:compressium:gold_1>, <item:quark:ender_watcher>, <item:compressium:gold_1>],
-    [<item:compressium:gold_1>, <item:the_vault:chromatic_steel_ingot>, <item:compressium:gold_1>]
+    [<item:minecraft:gold_block>, <item:the_vault:chromatic_steel_block>, <item:minecraft:gold_block>],
+    [<item:minecraft:gold_block>, <item:the_vault:chromatic_steel_ingot>, <item:minecraft:gold_block>]
 ]);
 
 craftingTable.addShapeless("suspicious_regen_stew", <item:minecraft:suspicious_stew>.withTag({Effects: [{EffectId: 10 as byte, EffectDuration: 160 as int}]}), [
@@ -245,7 +240,7 @@ brewing.addRecipe(<item:minecraft:lingering_potion>.withTag({Potion: "minecraft:
 brewing.addRecipe(<item:minecraft:lingering_potion>.withTag({Potion: "minecraft:long_slow_falling"}), <item:the_vault:vault_nugget>, <item:minecraft:lingering_potion>.withTag({Potion: "minecraft:slow_falling" as string}));
 
 craftingTable.addShapeless("vault_hunters_guide", <item:patchouli:guide_book>.withTag({"patchouli:book": "patchouli:the_vault_main_guide" as string}), [
-    <item:minecraft:book>, <item:the_vault:raw_chromatic_iron>
+    <item:minecraft:book>, <item:minecraft:cobblestone>
 ]);
 
 craftingTable.addShaped("bundle", <item:minecraft:bundle>, [
@@ -266,26 +261,26 @@ craftingTable.addShaped("forge", <item:the_vault:vault_forge>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
-craftingTable.addShaped("tubbo_special_boy", <item:the_vault:vault_doll>, [
-    [<tag:items:forge:gems/diamond>, <tag:items:forge:gems/diamond>, <tag:items:forge:gems/diamond>],
-    [<tag:items:forge:gems/diamond>, <item:the_vault:vault_crystal>, <tag:items:forge:gems/diamond>],
-    [<tag:items:forge:gems/diamond>, <tag:items:forge:gems/diamond>, <tag:items:forge:gems/diamond>]
-]);
-
 craftingTable.addShaped("orb_frame", <item:the_vault:orb_frame>, [
     [<item:the_vault:vault_essence>, <item:the_vault:gem_black_opal>, <item:the_vault:vault_essence>],
     [<item:the_vault:gem_black_opal>, <item:the_vault:extraordinary_benitoite>, <item:the_vault:gem_black_opal>],
     [<item:the_vault:vault_essence>, <item:the_vault:gem_black_opal>, <item:the_vault:vault_essence>]
 ]);
 
-craftingTable.addShaped("elytra", <item:minecraft:elytra>, [
-    [<item:the_vault:magic_silk>, <item:minecraft:string>, <item:the_vault:magic_silk>],
-    [<item:the_vault:magic_silk>, <item:the_vault:vault_essence>, <item:the_vault:magic_silk>],
-    [<item:minecraft:phantom_membrane>, <item:minecraft:air>, <item:minecraft:phantom_membrane>]
-]);
-
 craftingTable.addShaped("enercell", <item:enercell:enercell>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_essence>, <item:the_vault:chromatic_steel_ingot>],
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_iron_block>, <item:the_vault:chromatic_steel_ingot>],
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:extraordinary_larimar>, <item:the_vault:chromatic_steel_ingot>]
+]);
+
+craftingTable.addShaped("bamboo_planks", <item:twigs:stripped_bamboo_planks>, [
+    [<item:twigs:stripped_bamboo>, <item:twigs:stripped_bamboo>, <item:twigs:stripped_bamboo>],
+    [<item:twigs:stripped_bamboo>, <item:twigs:stripped_bamboo>, <item:twigs:stripped_bamboo>],
+    [<item:twigs:stripped_bamboo>, <item:twigs:stripped_bamboo>, <item:twigs:stripped_bamboo>]
+]);
+
+craftingTable.addShaped("quiver", <item:supplementaries:quiver>, [
+    [<item:minecraft:air>, <tag:items:forge:leather>, <item:the_vault:magic_silk>],
+    [<tag:items:forge:leather>, <tag:items:minecraft:arrows>, <item:the_vault:magic_silk>],
+    [<item:the_vault:magic_silk>, <item:the_vault:magic_silk>, <item:the_vault:perfect_larimar>]
 ]);

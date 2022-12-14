@@ -23,7 +23,7 @@ var dye = {
 craftingTable.addShaped("rs_storage_housing", <item:refinedstorage:storage_housing>, [
     [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_iron_ingot>],
     [<item:minecraft:redstone_block>, <item:minecraft:air>, <item:minecraft:redstone_block>],
-    [<item:minecraft:iron_block>, <item:minecraft:iron_block>, <item:minecraft:iron_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("rs_1k_storage_part", <item:refinedstorage:1k_storage_part>, [
@@ -56,7 +56,7 @@ craftingTable.addShaped("rs_4k_storage_disk", <item:refinedstorage:4k_storage_di
 
 craftingTable.addShaped("rs_16k_storage_part", <item:refinedstorage:16k_storage_part>, [
     [<item:the_vault:black_chromatic_steel_block>, <item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_block>],
-    [<item:refinedstorage:4k_storage_part>, <item:compressium:redstone_1>, <item:refinedstorage:4k_storage_part>],
+    [<item:refinedstorage:4k_storage_part>, <item:minecraft:redstone_block>, <item:refinedstorage:4k_storage_part>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:refinedstorage:4k_storage_part>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
 
@@ -68,7 +68,7 @@ craftingTable.addShaped("rs_16k_storage_disk", <item:refinedstorage:16k_storage_
 
 craftingTable.addShaped("rs_64k_storage_part", <item:refinedstorage:64k_storage_part>, [
     [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond_block>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:refinedstorage:16k_storage_part>, <item:compressium:redstone_1>, <item:refinedstorage:16k_storage_part>],
+    [<item:refinedstorage:16k_storage_part>, <item:minecraft:redstone_block>, <item:refinedstorage:16k_storage_part>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:refinedstorage:16k_storage_part>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
 

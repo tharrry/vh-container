@@ -54,7 +54,7 @@ craftingTable.addShaped("colossalchests_chest_interface_iron", <item:colossalche
 
 craftingTable.addShapeless("colossalchests_chest_iron", <item:colossalchests:colossal_chest_iron>, [
  <item:colossalchests:colossal_chest_copper>, <item:the_vault:gem_larimar>, <item:the_vault:gem_larimar>,
- <item:compressium:iron_1>, <item:the_vault:gem_larimar>
+ <item:the_vault:chromatic_steel_ingot>, <item:the_vault:gem_larimar>
 ]);
 
 // Gold
@@ -72,7 +72,7 @@ craftingTable.addShaped("colossalchests_chest_interface_gold", <item:colossalche
 
 craftingTable.addShapeless("colossalchests_chest_gold", <item:colossalchests:colossal_chest_gold>, [
  <item:colossalchests:colossal_chest_iron>, <item:the_vault:perfect_larimar>, <item:the_vault:perfect_larimar>,
- <item:compressium:gold_1>, <item:the_vault:perfect_larimar>
+ <item:minecraft:gold_block>, <item:the_vault:perfect_larimar>
 ]);
 
 // Diamond

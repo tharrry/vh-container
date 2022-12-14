@@ -1,3 +1,5 @@
 {
-  "growthChancePerRandomTick": 0.25
+  "maxSecondsBetweenGrowthUpdates": 400.0,
+  "minSecondsBetweenGrowthUpdates": 280.0,
+  "showParticles": true
 }

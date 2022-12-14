@@ -430,7 +430,7 @@
         "manaCost": 31.0,
         "learningCost": 1,
         "regretCost": 1,
-        "cooldownTicks": 900,
+        "cooldownTicks": 90,
         "levelRequirement": 0
       }
     ],
@@ -2093,7 +2093,7 @@
         "levelRequirement": 0
       },
       {
-        "leechPercent": 0.9,
+        "leechPercent": 0.09,
         "damageIncrease": 0.64,
         "manaCostPerSecond": 8.0,
         "learningCost": 1,
@@ -2286,7 +2286,7 @@
       {
         "additionalChainCount": 3,
         "damageIncrease": 0.42,
-        "manaCostPerSecond": 10.5,
+        "manaCostPerSecond": 10.0,
         "learningCost": 1,
         "regretCost": 1,
         "cooldownTicks": 200,
@@ -4292,7 +4292,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 32.0,
         "color": -14308352,
@@ -4314,7 +4315,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 34.0,
         "color": -14308352,
@@ -4336,7 +4338,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 36.0,
         "color": -14308352,
@@ -4358,7 +4361,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 38.0,
         "color": -14308352,
@@ -4380,7 +4384,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 40.0,
         "color": -14308352,
@@ -4402,7 +4407,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 42.0,
         "color": -14308352,
@@ -4424,7 +4430,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 44.0,
         "color": -14308352,
@@ -4446,7 +4453,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 46.0,
         "color": -14308352,
@@ -4468,7 +4476,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 48.0,
         "color": -14308352,
@@ -4490,7 +4499,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 50.0,
         "color": -14308352,
@@ -4512,7 +4522,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 52.0,
         "color": -14308352,
@@ -4534,7 +4545,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 54.0,
         "color": -14308352,
@@ -4556,7 +4568,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 56.0,
         "color": -14308352,
@@ -4578,7 +4591,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 58.0,
         "color": -14308352,
@@ -4600,7 +4614,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 60.0,
         "color": -14308352,
@@ -4622,7 +4637,8 @@
           "the_vault:time_altar_tile_entity",
           "the_vault:soul_altar_tile_entity",
           "the_vault:vault_treasure_chest_tile_entity",
-          "the_vault:scavenger_altar_tile_entity"
+          "the_vault:scavenger_altar_tile_entity",
+          "the_vault:monolith_tile_entity"
         ],
         "searchRadius": 62.0,
         "color": -14308352,
@@ -5784,6 +5800,59 @@
         "learningCost": 1,
         "regretCost": 1,
         "cooldownTicks": 120,
+        "levelRequirement": 0
+      }
+    ]
+  },
+  "STONEFALL": {
+    "name": "Stonefall",
+    "levelConfiguration": [
+      {
+        "durationTicks": 10,
+        "manaCost": 8.0,
+        "learningCost": 1,
+        "regretCost": 1,
+        "cooldownTicks": 200,
+        "levelRequirement": 0
+      },
+      {
+        "durationTicks": 20,
+        "manaCost": 8.0,
+        "learningCost": 1,
+        "regretCost": 1,
+        "cooldownTicks": 180,
+        "levelRequirement": 0
+      },
+      {
+        "durationTicks": 30,
+        "manaCost": 8.0,
+        "learningCost": 1,
+        "regretCost": 1,
+        "cooldownTicks": 160,
+        "levelRequirement": 0
+      },
+      {
+        "durationTicks": 40,
+        "manaCost": 8.0,
+        "learningCost": 1,
+        "regretCost": 1,
+        "cooldownTicks": 140,
+        "levelRequirement": 0
+      },
+      {
+        "durationTicks": 40,
+        "manaCost": 8.0,
+        "learningCost": 1,
+        "regretCost": 1,
+        "cooldownTicks": 120,
+        "levelRequirement": 0
+      },
+      {
+        "durationTicks": 40,
+        "manaCost": 8.0,
+        "learningCost": 1,
+        "regretCost": 1,
+        "cooldownTicks": 100,
         "levelRequirement": 0
       }
     ]

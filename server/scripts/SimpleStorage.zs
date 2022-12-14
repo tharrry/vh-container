@@ -40,9 +40,9 @@ craftingTable.addShaped("simplestorage_controller", <item:storagenetwork:master>
 ]);
 
 craftingTable.addShaped("simplestorage_speed_upgrade", <item:storagenetwork:speed_upgrade>, [
-    [<item:minecraft:air>, <item:compressium:redstone_1>, <item:minecraft:air>],
-    [<item:compressium:gold_1>, <item:storagenetwork:storage_kabel>, <item:compressium:gold_1>],
-    [<item:minecraft:air>, <item:compressium:redstone_1>, <item:minecraft:air>]
+    [<item:minecraft:air>, <item:minecraft:redstone_block>, <item:minecraft:air>],
+    [<item:minecraft:gold_block>, <item:storagenetwork:storage_kabel>, <item:minecraft:gold_block>],
+    [<item:minecraft:air>, <item:minecraft:redstone_block>, <item:minecraft:air>]
 ]);
 
 craftingTable.addShaped("simplestorage_stack_upgrade", <item:storagenetwork:stack_upgrade>, [

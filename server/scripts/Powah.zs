@@ -140,8 +140,8 @@ for Iskall85's Vaulthunters */
   }
 });
 
-craftingTable.addShapeless("powah_dielectric_paste", <item:powah:dielectric_paste> * 8, [
-	<item:the_vault:gem_larimar>, <tag:items:minecraft:coals>,
+craftingTable.addShapeless("powah_dielectric_paste", <item:powah:dielectric_paste> * 4, [
+	<item:the_vault:gem_larimar>, <item:the_vault:carbon>,
 	<item:the_vault:chromatic_iron_ingot>, <item:the_vault:magic_silk>
 ]);
 
@@ -238,9 +238,9 @@ craftingTable.addShaped("powah_energizing_orb", <item:powah:energizing_orb>, [
 ]);
 
 craftingTable.addShaped("powah_photoelectric_pane", <item:powah:photoelectric_pane>, [
-	[<item:compressium:lapis_1>, <item:powah:dielectric_paste>, <item:compressium:lapis_1>],
+	[<item:the_vault:chromatic_steel_block>, <item:powah:dielectric_paste>, <item:the_vault:chromatic_steel_block>],
 	[<item:powah:dielectric_paste>, <item:minecraft:tinted_glass>, <item:powah:dielectric_paste>],
-	[<item:compressium:lapis_1>, <item:powah:dielectric_paste>, <item:compressium:lapis_1>]
+	[<item:the_vault:chromatic_steel_block>, <item:powah:dielectric_paste>, <item:the_vault:chromatic_steel_block>]
 ]);
 
 craftingTable.addShaped("powah_capacitor_blazing", <item:powah:capacitor_blazing>, [

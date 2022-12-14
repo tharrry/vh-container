@@ -594,6 +594,31 @@
       "id": "the_vault:raw/farm/base",
       "name": "Base",
       "1.0": "config/the_vault/gen/1.0/palettes/raw/farm/base.json"
+    },
+    {
+      "id": "the_vault:raw/nether/base",
+      "name": "Nether Base",
+      "1.0": "config/the_vault/gen/1.0/palettes/raw/nether/base.json"
+    },
+    {
+      "id": "the_vault:raw/nether/crimson",
+      "name": "Nether Crimson",
+      "1.0": "config/the_vault/gen/1.0/palettes/raw/nether/crimson.json"
+    },
+    {
+      "id": "the_vault:raw/nether/warped",
+      "name": "Nether Warped",
+      "1.0": "config/the_vault/gen/1.0/palettes/raw/nether/warped.json"
+    },
+    {
+      "id": "the_vault:raw/nether/soul",
+      "name": "Nether Soul",
+      "1.0": "config/the_vault/gen/1.0/palettes/raw/nether/soul.json"
+    },
+    {
+      "id": "the_vault:raw/quarry/compressed_blocks",
+      "name": "Quarry Compressed Blocks",
+      "1.0": "config/the_vault/gen/1.0/palettes/raw/quarry/compressed_blocks.json"
     }
   ]
 }

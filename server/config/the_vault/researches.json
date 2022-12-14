@@ -174,7 +174,7 @@
     },
     {
       "modIds": [
-        "appliedenergistics2"
+        "ae2"
       ],
       "restrictions": {
         "restricts": {
@@ -209,7 +209,7 @@
         }
       },
       "name": "Iron Furnaces",
-      "cost": 1,
+      "cost": 4,
       "usesKnowledge": true
     },
     {
@@ -300,24 +300,7 @@
         }
       },
       "name": "Weirding Gadgets",
-      "cost": 2,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
-        "rftoolsbase"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": false,
-          "USABILITY": false,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "RFTools Base",
-      "cost": 1,
+      "cost": 5,
       "usesKnowledge": true
     },
     {
@@ -639,7 +622,7 @@
   "CUSTOM_RESEARCHES": [
     {
       "itemRestrictions": {
-        "appliedenergistics2:molecular_assembler": {
+        "ae2:molecular_assembler": {
           "restricts": {
             "HITTABILITY": true,
             "USABILITY": true,

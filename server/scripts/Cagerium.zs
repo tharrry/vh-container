@@ -21,9 +21,9 @@ craftingTable.addShaped("survival_spawner", <item:ispawner:survival_spawner>, [
 ]);
 
 craftingTable.addShaped("cagerium_cage", <item:cagerium:cage>, [
-    [<item:minecraft:iron_bars>, <item:minecraft:iron_bars>, <item:minecraft:iron_bars>],
-    [<item:minecraft:iron_bars>, <item:cagerium:ominous_skull>, <item:minecraft:iron_bars>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:cagerium:ominous_skull>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:the_vault:chromatic_steel_block>, <item:the_vault:chromatic_steel_block>, <item:the_vault:chromatic_steel_block>]
 ]);
 
 craftingTable.addShaped("cagerium_terrarium", <item:cagerium:terrarium>, [
@@ -60,6 +60,12 @@ craftingTable.addShaped("cagerium_burning_upgrade", <item:cagerium:burning_upgra
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:minecraft:flint_and_steel>, <item:minecraft:air>],
     [<item:the_vault:extraordinary_larimar>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:extraordinary_larimar>]
+]);
+
+craftingTable.addShaped("cagerium_skeleton_key", <item:cagerium:skeleton_key>, [
+    [<item:minecraft:air>, <item:the_vault:perfect_larimar>, <item:minecraft:air>],
+    [<item:the_vault:vault_diamond>, <item:the_vault:mystery_egg>, <item:the_vault:vault_diamond>],
+    [<item:minecraft:air>, <item:the_vault:perfect_larimar>, <item:minecraft:air>]
 ]);
 
 // <item:cagerium:capacity_upgrade>

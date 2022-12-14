@@ -62,9 +62,9 @@ craftingTable.addShapeless("mekanism_alloy_reinforced", <item:mekanism:alloy_rei
 ]);
 
 craftingTable.addShaped("mekanism_metallurgic_infuser", <item:mekanism:metallurgic_infuser>, [
-    [<item:compressium:iron_1>, <tag:items:forge:furnaces>, <item:compressium:iron_1>],
+    [<item:the_vault:chromatic_steel_ingot>, <tag:items:forge:furnaces>, <item:the_vault:chromatic_steel_ingot>],
     [<item:the_vault:vault_diamond>, <item:mekanism:block_osmium>, <item:the_vault:vault_diamond>],
-    [<item:compressium:iron_1>, <tag:items:forge:furnaces>, <item:compressium:iron_1>]
+    [<item:the_vault:chromatic_steel_ingot>, <tag:items:forge:furnaces>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("mekanism_basic_thermodynamic_conductor", <item:mekanism:basic_thermodynamic_conductor> *4, [
@@ -93,7 +93,7 @@ craftingTable.addShaped("mekanism_basic_mechanical_pipe", <item:mekanism:basic_m
 
 craftingTable.addShaped("mekanism_basic_universal_cable", <item:mekanism:basic_universal_cable> *4, [
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:compressium:redstone_1>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>],
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
@@ -169,5 +169,12 @@ craftingTable.addShaped("mekanism_basic_energy_cube", <item:mekanism:basic_energ
     [<item:minecraft:redstone_block>, <item:mekanism:energy_tablet>, <item:minecraft:redstone_block>]
 ]);
 
-<recipetype:create:item_application>.addRecipe("mekanism_steel_casing", [<item:mekanism:steel_casing>],
-<item:mekanism:block_steel>, <item:mekanism:block_osmium>);
+craftingTable.addShaped("mekanism_steel_casing", <item:mekanism:steel_casing>, [
+    [<item:mekanism:block_steel>, <item:mekanism:block_osmium>]
+]);
+
+craftingTable.addShaped("mekanism_basic_tank", <item:mekanism:basic_fluid_tank>, [
+    [<item:mekanism:ingot_steel>, <item:mekanism:ingot_steel>, <item:mekanism:ingot_steel>],
+    [<item:minecraft:tinted_glass>, <item:minecraft:air>, <item:minecraft:tinted_glass>],
+    [<item:mekanism:ingot_steel>, <item:mekanism:ingot_steel>, <item:mekanism:ingot_steel>]
+]);

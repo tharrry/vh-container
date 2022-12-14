@@ -246,6 +246,9 @@ craftingTable.remove(<item:ae2:wireless_access_point>);
 craftingTable.remove(<item:ae2:wireless_receiver>);
 craftingTable.remove(<item:ae2:quartz_growth_accelerator>);
 
+// Twigs
+craftingTable.remove(<item:twigs:stripped_bamboo_planks>);
+
 // Botania
 for ring in rings {
   craftingTable.remove(<item:botania:${ring}_ring>);
@@ -402,6 +405,9 @@ craftingTable.remove(<item:storagedrawers:compacting_drawers_3>);
 // Cagerium
 // craftingTable.remove(<item:cagerium:capacity_upgrade>);
 
+//Pipez
+craftingTable.removeByModid("pipez");
+
 // Mekanism
 for mekmachine in mekmachines {
     craftingTable.remove(<item:mekanism:basic_${mekmachine}>);
@@ -520,6 +526,32 @@ craftingTable.remove(<item:ironfurnaces:heater>);
 craftingTable.remove(<item:ironfurnaces:item_heater>);
 craftingTable.remove(<item:ironfurnaces:item_copy>);
 craftingTable.remove(<item:ironfurnaces:item_linker>);
+craftingTable.remove(<item:ironfurnaces:augment_generator>);
+craftingTable.remove(<item:ironfurnaces:augment_factory>);
+craftingTable.remove(<item:ironfurnaces:iron_furnace>);
+craftingTable.remove(<item:ironfurnaces:copper_furnace>);
+craftingTable.remove(<item:ironfurnaces:silver_furnace>);
+craftingTable.remove(<item:ironfurnaces:gold_furnace>);
+craftingTable.remove(<item:ironfurnaces:diamond_furnace>);
+craftingTable.remove(<item:ironfurnaces:emerald_furnace>);
+craftingTable.remove(<item:ironfurnaces:obsidian_furnace>);
+craftingTable.remove(<item:ironfurnaces:crystal_furnace>);
+craftingTable.remove(<item:ironfurnaces:netherite_furnace>);
+craftingTable.remove(<item:ironfurnaces:rainbow_plating>);
+craftingTable.remove(<item:ironfurnaces:rainbow_core>);
+craftingTable.remove(<item:ironfurnaces:upgrade_silver>);
+craftingTable.remove(<item:ironfurnaces:upgrade_iron2>);
+craftingTable.remove(<item:ironfurnaces:upgrade_gold2>);
+craftingTable.remove(<item:ironfurnaces:upgrade_copper>);
+craftingTable.remove(<item:ironfurnaces:upgrade_netherite>);
+craftingTable.remove(<item:ironfurnaces:upgrade_crystal>);
+craftingTable.remove(<item:ironfurnaces:upgrade_obsidian>);
+craftingTable.remove(<item:ironfurnaces:upgrade_emerald>);
+craftingTable.remove(<item:ironfurnaces:upgrade_diamond>);
+craftingTable.remove(<item:ironfurnaces:upgrade_gold>);
+craftingTable.remove(<item:ironfurnaces:upgrade_iron>);
+craftingTable.remove(<item:ironfurnaces:upgrade_silver2>);
+craftingTable.remove(<item:ironfurnaces:upgrade_obsidian2>);
 
 // Dark Utilities
 craftingTable.remove(<item:darkutils:charm_portal>);
@@ -538,11 +570,13 @@ craftingTable.remove(<item:darkutils:vector_plate_ultra>);
 craftingTable.remove(<item:darkutils:damage_plate>);
 craftingTable.remove(<item:darkutils:damage_plate_player>);
 stoneCutter.remove(<item:darkutils:blank_plate>);
+// villagerTrades.removeWanderingTrade(2, <item:darkutils>);
 
 // Cooking For Blockheads
 craftingTable.remove(<item:cookingforblockheads:sink>);
 
 // Thermal
+craftingTable.remove(<item:thermal:device_potion_diffuser>);
 craftingTable.remove(<item:thermal:rf_coil>);
 craftingTable.remove(<item:thermal:redstone_servo>);
 craftingTable.remove(<item:thermal:machine_frame>);
@@ -586,13 +620,13 @@ craftingTable.remove(<item:easy_villagers:farmer>);
 craftingTable.remove(<item:easy_villagers:iron_farm>);
 
 // Vanilla
-craftingTable.remove(<item:minecraft:tinted_glass>);
 craftingTable.remove(<item:minecraft:shield>);
 craftingTable.remove(<item:minecraft:golden_apple>);
 craftingTable.remove(<item:minecraft:bundle>);
 brewing.removeRecipeByOutputPotion(<potion:minecraft:healing>);
 brewing.removeRecipeByOutputPotion(<potion:minecraft:regeneration>);
 brewing.removeRecipeByOutputPotion(<potion:minecraft:turtle_master>);
+craftingTable.removeByName("minecraft:suspicious_stew");
 
 // Mining Gadgets
 craftingTable.remove(<item:mininggadgets:mininggadget>);
@@ -684,6 +718,7 @@ for materialId, materialName in materials {
 craftingTable.remove(<item:mcwbridges:most1>);
 
 // Create
+craftingTable.remove(<item:create:item_vault>);
 craftingTable.remove(<item:create:extendo_grip>);
 craftingTable.remove(<item:create:potato_cannon>);
 craftingTable.remove(<item:create:andesite_alloy>);
@@ -722,6 +757,7 @@ craftingTable.remove(<item:create:gantry_carriage>);
 craftingTable.remove(<item:create:steam_engine>);
 <recipetype:create:mechanical_crafting>.remove(<item:create:wand_of_symmetry>);
 <recipetype:create:mechanical_crafting>.remove(<item:create:extendo_grip>);
+<recipetype:create:mixing>.remove(<item:create:andesite_alloy>);
 <recipetype:create:deploying>.remove(<item:create:cogwheel>);
 <recipetype:create:deploying>.remove(<item:create:large_cogwheel>);
 <recipetype:create:cutting>.remove(<item:create:shaft>);
@@ -758,6 +794,7 @@ craftingTable.remove(<item:sophisticatedbackpacks:iron_backpack>);
 craftingTable.remove(<item:sophisticatedbackpacks:gold_backpack>);
 craftingTable.remove(<item:sophisticatedbackpacks:diamond_backpack>);
 craftingTable.remove(<item:sophisticatedbackpacks:netherite_backpack>);
+<recipetype:minecraft:smithing>.remove(<item:sophisticatedbackpacks:netherite_backpack>);
 craftingTable.remove(<item:sophisticatedbackpacks:upgrade_base>);
 craftingTable.remove(<item:sophisticatedbackpacks:stack_upgrade_tier_1>);
 craftingTable.remove(<item:sophisticatedbackpacks:stack_upgrade_tier_2>);
@@ -1097,3 +1134,17 @@ JEI.hideIngredient(<item:storagenetwork:builder_remote>);
 JEI.hideIngredient(<item:storagenetwork:crafting_remote>);
 // Vault
 JEI.hideIngredient(<item:the_vault:sugar_plum_fairy_flower>);
+// IronFurnaces
+JEI.hideIngredient(<item:ironfurnaces:upgrade_silver>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_iron2>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_gold2>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_copper>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_netherite>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_crystal>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_obsidian>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_emerald>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_diamond>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_gold>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_iron>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_silver2>);
+JEI.hideIngredient(<item:ironfurnaces:upgrade_obsidian2>);

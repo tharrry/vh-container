@@ -66,7 +66,15 @@
     },
     {
       "value": {
-        "id": "the_vault:key_puffium",
+        "id": "the_vault:key_petzanite",
+        "amountMin": 1,
+        "amountMax": 1
+      },
+      "weight": 1
+    },
+    {
+      "value": {
+        "id": "the_vault:key_xenium",
         "amountMin": 1,
         "amountMax": 1
       },

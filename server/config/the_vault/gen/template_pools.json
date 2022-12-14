@@ -1432,6 +1432,16 @@
       "id": "the_vault:vault/tunnels/factory_void_tunnels",
       "name": "Factory Void Tunnels",
       "1.0": "config/the_vault/gen/1.0/template_pools/vault/tunnels/factory_void_tunnels.json"
+    },
+    {
+      "id": "the_vault:vault/rooms/raw/nether",
+      "name": "Raw Nether",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/raw/nether.json"
+    },
+    {
+      "id": "the_vault:vault/decor/raw/quarry/compressed_pile1",
+      "name": "Quarry Compressed Pile 1",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/decor/raw/quarry/compressed_pile1.json"
     }
   ]
 }

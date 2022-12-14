@@ -49,7 +49,7 @@
 	"Jukebox Automation" = true
 	"Iron Rod" = false
 	Gravisand = true
-	"Feeding Trough" = true
+	"Feeding Trough" = false
 	"Ender Watcher" = true
 	"Dispensers Place Blocks" = true
 	Chute = true
@@ -386,7 +386,7 @@
 	"Snow Golem Player Heads" = true
 	"Simple Harvest" = true
 	"Sign Editing" = true
-	"Replace Scaffolding" = true
+	"Replace Scaffolding" = false
 	"Reacharound Placing" = true
 	"Poison Potato Usage" = true
 	"Pig Litters" = true

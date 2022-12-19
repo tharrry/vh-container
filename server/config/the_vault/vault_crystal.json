@@ -18,6 +18,10 @@
       {
         "minLevel": 0,
         "pool": [
+		  {
+            "value": "the_vault:classic_vault_sweet",
+            "weight": 3
+          },
           {
             "value": "the_vault:classic_vault_ice",
             "weight": 3
@@ -69,12 +73,24 @@
           {
             "value": "the_vault:classic_vault_deep_mesa",
             "weight": 4
+          },
+		      {
+            "value": "the_vault:classic_vault_festive",
+            "weight": 64
+          },
+		      {
+            "value": "the_vault:classic_vault_gingerbread",
+            "weight": 64
           }
         ]
       },
       {
         "minLevel": 20,
         "pool": [
+		  {
+            "value": "the_vault:classic_vault_sweet",
+            "weight": 6
+          },
           {
             "value": "the_vault:classic_vault_ice",
             "weight": 6
@@ -142,12 +158,24 @@
           {
             "value": "the_vault:classic_vault_nether_soul",
             "weight": 3
+          },
+          {
+            "value": "the_vault:classic_vault_festive",
+            "weight": 128
+          },
+		      {
+            "value": "the_vault:classic_vault_gingerbread",
+            "weight": 128
           }
         ]
       },
       {
         "minLevel": 30,
         "pool": [
+		  {
+            "value": "the_vault:classic_vault_sweet",
+            "weight": 6
+          },
           {
             "value": "the_vault:classic_vault_ice",
             "weight": 6
@@ -227,6 +255,14 @@
           {
             "value": "the_vault:classic_vault_factory_void",
             "weight": 2
+          },
+          {
+            "value": "the_vault:classic_vault_festive",
+            "weight": 128
+          },
+		      {
+            "value": "the_vault:classic_vault_gingerbread",
+            "weight": 128
           }
         ]
       }

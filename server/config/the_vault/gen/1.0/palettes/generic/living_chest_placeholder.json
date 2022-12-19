@@ -8,27 +8,47 @@
           "level": 0,
           "probability": 1.0,
           "success": {
-            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl0\"}": 1
+            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl0_v2\"}": 1
           },
           "failure": {
             "minecraft:air": 1
           }
         },
         {
-          "level": 9,
+          "level": 14,
           "probability": 1.0,
           "success": {
-            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl9\"}": 1
+            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl14_v2\"}": 1
           },
           "failure": {
             "minecraft:air": 1
           }
         },
         {
-          "level": 22,
+          "level": 21,
           "probability": 1.0,
           "success": {
-            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl22\"}": 1
+            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl21_v2\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 30,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl30_v2\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 41,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl41_v2\"}": 1
           },
           "failure": {
             "minecraft:air": 1

@@ -21,6 +21,7 @@ var materials = {
   "brown_terracotta": "brown",
   "pink_terracotta": "pink",
   "green_terracotta": "green",
+  "magenta_terracotta": "magenta",
 // glazed terracotta
   "white_glazed_terracotta": "white_glazed",
   "red_glazed_terracotta": "red_glazed",
@@ -54,6 +55,7 @@ var materials = {
   "pink_concrete": "pink_concrete",
   "magenta_concrete": "magenta_concrete",
   "green_concrete": "green_concrete",
+  "magenta_concrete": "magenta_concrete",
 };
 
 for materialId, materialName in materials {

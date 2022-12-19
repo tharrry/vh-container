@@ -8,8 +8,16 @@
             "type": "weighted_target",
             "target": "the_vault:xp_altar",
             "output": {
-                "the_vault:xp_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl0\\\"}\"}": 1
+                "the_vault:xp_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl0_v2\\\"}\"}": 1
             }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "the_vault:xp_altar",
+          "output": {
+              "the_vault:xp_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl20_v2\\\"}\"}": 1
+          }
         }
       ]
     },
@@ -21,8 +29,16 @@
             "type": "weighted_target",
             "target": "the_vault:blood_altar",
             "output": {
-              "the_vault:blood_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl0\\\"}\"}": 1
+              "the_vault:blood_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl0_v2\\\"}\"}": 1
             }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "the_vault:blood_altar",
+          "output": {
+            "the_vault:blood_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl20_v2\\\"}\"}": 1
+          }
         }
       ]
     },
@@ -30,12 +46,20 @@
       "type": "leveled",
       "levels": [
         {
-            "level": 0,
-            "type": "weighted_target",
-            "target": "the_vault:time_altar",
-            "output": {
-              "the_vault:time_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl0\\\"}\"}": 1
-            }
+          "level": 0,
+          "type": "weighted_target",
+          "target": "the_vault:time_altar",
+          "output": {
+            "the_vault:time_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl0_v2\\\"}\"}": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "the_vault:time_altar",
+          "output": {
+            "the_vault:time_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl20_v2\\\"}\"}": 1
+          }
         }
       ]
     },
@@ -43,12 +67,20 @@
       "type": "leveled",
       "levels": [
         {
-            "level": 0,
-            "type": "weighted_target",
-            "target": "the_vault:soul_altar",
-            "output": {
-              "the_vault:soul_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl0\\\"}\"}": 1
-            }
+          "level": 0,
+          "type": "weighted_target",
+          "target": "the_vault:soul_altar",
+          "output": {
+            "the_vault:soul_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl0_v2\\\"}\"}": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "the_vault:soul_altar",
+          "output": {
+            "the_vault:soul_altar{Replacement: \"the_vault:altar_chest{LootTable:\\\"the_vault:altar_chest_lvl20_v2\\\"}\"}": 1
+          }
         }
       ]
     },

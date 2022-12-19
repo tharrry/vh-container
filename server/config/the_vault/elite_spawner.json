@@ -150,6 +150,27 @@
           "weight": 1
         }
       ]
+    },
+	"the_vault:elite_gingerbread": {
+      "elite": {
+        "entityName": "auxiliaryblocks:gingerbread_man_giant"
+      },
+      "min": 6,
+      "max": 10,
+      "minions": [
+        {
+          "value": {
+            "entityName": "auxiliaryblocks:gingerbread_man"
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "entityName": "auxiliaryblocks:gingerbread_man_small"
+          },
+          "weight": 1
+        }
+      ]
     }
   }
 }

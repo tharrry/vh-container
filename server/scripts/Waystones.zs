@@ -33,7 +33,7 @@ craftingTable.addShaped("waystones_sandy_waystone", <item:waystones:sandy_waysto
 ]);
 
 craftingTable.addShaped("waystones_warp_plate", <item:waystones:warp_plate>, [
-    [<item:compressium:cobblestone_1>, <item:waystones:warp_dust>, <item:compressium:cobblestone_1>],
+    [<item:the_vault:polished_vault_stone>, <item:waystones:warp_dust>, <item:the_vault:polished_vault_stone>],
     [<item:waystones:warp_dust>, <item:the_vault:gem_larimar>, <item:waystones:warp_dust>],
-    [<item:compressium:cobblestone_1>, <item:waystones:warp_dust>, <item:compressium:cobblestone_1>]
+    [<item:the_vault:polished_vault_stone>, <item:waystones:warp_dust>, <item:the_vault:polished_vault_stone>]
 ]);

@@ -86,6 +86,21 @@
       "1.0": "config/the_vault/gen/1.0/palettes/universal_deep_mesa.json"
     },
     {
+      "id": "the_vault:universal_sweet",
+      "name": "Universal Sweet",
+      "1.0": "config/the_vault/gen/1.0/palettes/universal_sweet.json"
+    },
+    {
+      "id": "the_vault:universal_festive",
+      "name": "Universal Festive",
+      "1.0": "config/the_vault/gen/1.0/palettes/universal_festive.json"
+    },
+    {
+      "id": "the_vault:universal_gingerbread",
+      "name": "Universal Gingerbread",
+      "1.0": "config/the_vault/gen/1.0/palettes/universal_gingerbread.json"
+    },
+    {
       "id": "the_vault:arena/classic",
       "name": "Arena Classic",
       "1.0": "config/the_vault/gen/1.0/palettes/arena/classic.json"
@@ -619,6 +634,46 @@
       "id": "the_vault:raw/quarry/compressed_blocks",
       "name": "Quarry Compressed Blocks",
       "1.0": "config/the_vault/gen/1.0/palettes/raw/quarry/compressed_blocks.json"
+    },
+    {
+      "id": "the_vault:generic/spawners/sweet_mobs",
+      "name": "Sweet Mobs",
+      "1.0": "config/the_vault/gen/1.0/palettes/generic/spawners/sweet_mobs.json"
+    },
+    {
+      "id": "the_vault:generic/festive_common_elite_spawners",
+      "name": "Festive Common Elite Spawners",
+      "1.0": "config/the_vault/gen/1.0/palettes/generic/festive_common_elite_spawners.json"
+    },
+    {
+      "id": "the_vault:generic/spawners/festive_mobs",
+      "name": "Festive Mobs",
+      "1.0": "config/the_vault/gen/1.0/palettes/generic/spawners/festive_mobs.json"
+    },
+    {
+      "id": "the_vault:raw/chromatic_ore_placeholder",
+      "name": "Chromatic Ore Placeholder",
+      "1.0": "config/the_vault/gen/1.0/palettes/raw/chromatic_ore_placeholder.json"
+    },
+    {
+      "id": "the_vault:raw/chromatic_caves/base",
+      "name": "Base",
+      "1.0": "config/the_vault/gen/1.0/palettes/raw/chromatic_caves/base.json"
+    },
+    {
+      "id": "the_vault:raw/chromatic_caves/spawner_settings",
+      "name": "Spawner Settings",
+      "1.0": "config/the_vault/gen/1.0/palettes/raw/chromatic_caves/spawner_settings.json"
+    },
+    {
+      "id": "the_vault:treasure_rooms/festive_treasure_rooms",
+      "name": "Festive Treasure Rooms",
+      "1.0": "config/the_vault/gen/1.0/palettes/treasure_rooms/festive_treasure_rooms.json"
+    },
+    {
+      "id": "the_vault:festive/base",
+      "name": "Base",
+      "1.0": "config/the_vault/gen/1.0/palettes/festive/base.json"
     }
   ]
 }

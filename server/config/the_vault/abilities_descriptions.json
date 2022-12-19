@@ -171,7 +171,7 @@
     "Farmer_Animal": {
       "description": [
         {
-          "text": "Changes Farmer to instead incentivise ",
+          "text": "Changes Farmer to also incentivise ",
           "color": "$text"
         },
         {
@@ -200,6 +200,18 @@
         },
         {
           "text": " around you.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Rancher targets all base ability targets, plus:\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Baby Animals\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Baby Villagers\n\n",
           "color": "$text"
         },
         {
@@ -246,7 +258,7 @@
           "color": "$text"
         },
         {
-          "text": "Gardener targets:\n",
+          "text": "Gardener targets all base ability targets, plus:\n",
           "color": "$text"
         },
         {
@@ -303,7 +315,7 @@
           "color": "$text"
         },
         {
-          "text": "Cultivator targets:\n",
+          "text": "Cultivator targets all base ability targets, plus:\n",
           "color": "$text"
         },
         {

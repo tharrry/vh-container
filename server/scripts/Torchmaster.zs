@@ -10,9 +10,9 @@ craftingTable.addShaped("torchmaster_feral_flare_lantern", <item:torchmaster:fer
 ]);
 
 craftingTable.addShaped("torchmaster_dreadlamp", <item:torchmaster:dreadlamp>, [
-    [<item:compressium:obsidian_1>, <item:compressium:obsidian_1>, <item:compressium:obsidian_1>],
+    [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>],
     [<tag:items:forge:glass>, <item:minecraft:redstone_lamp>, <tag:items:forge:glass>],
-    [<item:compressium:obsidian_1>, <item:the_vault:perfect_larimar>, <item:compressium:obsidian_1>]
+    [<item:minecraft:obsidian>, <item:the_vault:perfect_larimar>, <item:minecraft:obsidian>]
 ]);
 
 craftingTable.addShaped("torchmaster_megatorch", <item:torchmaster:megatorch>, [

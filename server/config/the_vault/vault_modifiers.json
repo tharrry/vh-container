@@ -826,6 +826,20 @@
           "icon": "the_vault:gui/modifiers/jupiter_gravity"
         }
       }
+    },
+    "the_vault:modifier_type/experience": {
+      "the_vault:xp_reduction": {
+        "properties": {
+          "addend": -0.25
+        },
+        "display": {
+          "name": "Vault XP Reduction",
+          "color": "#DB7C00",
+          "description": "-25% Vault XP Gained",
+          "descriptionFormatted": "+%d%% Vault XP Gained",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
     }
   }
 }

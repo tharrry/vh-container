@@ -11,9 +11,9 @@ craftingTable.addShaped("colossalchests_chest_wall_wood", <item:colossalchests:c
 ]);
 
 craftingTable.addShaped("colossalchests_chest_interface_wood", <item:colossalchests:interface_wood>, [
-    [<item:the_vault:driftwood>, <item:the_vault:vault_stone>, <item:the_vault:driftwood>],
-    [<item:the_vault:vault_stone>, <item:colossalchests:colossal_chest_wood>, <item:the_vault:vault_stone>],
-    [<item:the_vault:driftwood>, <item:the_vault:vault_stone>, <item:the_vault:driftwood>]
+    [<item:the_vault:driftwood>, <item:the_vault:polished_vault_stone>, <item:the_vault:driftwood>],
+    [<item:the_vault:polished_vault_stone>, <item:colossalchests:colossal_chest_wood>, <item:the_vault:polished_vault_stone>],
+    [<item:the_vault:driftwood>, <item:the_vault:polished_vault_stone>, <item:the_vault:driftwood>]
 ]);
 
 craftingTable.addShapeless("colossalchests_chest_wood", <item:colossalchests:colossal_chest_wood>, [
@@ -36,7 +36,7 @@ craftingTable.addShaped("colossalchests_chest_interface_copper", <item:colossalc
 
 craftingTable.addShapeless("colossalchests_chest_copper", <item:colossalchests:colossal_chest_copper>, [
  <item:colossalchests:colossal_chest_wood>, <item:the_vault:gem_larimar>, <item:the_vault:gem_larimar>,
- <item:compressium:copper_1>, <item:the_vault:gem_larimar>
+ <item:minecraft:copper_block>, <item:the_vault:gem_larimar>
 ]);
 
 // Iron
@@ -90,25 +90,25 @@ craftingTable.addShaped("colossalchests_chest_interface_diamond", <item:colossal
 
 craftingTable.addShapeless("colossalchests_chest_diamond", <item:colossalchests:colossal_chest_diamond>, [
  <item:colossalchests:colossal_chest_gold>, <item:the_vault:extraordinary_larimar>, <item:the_vault:extraordinary_larimar>,
- <item:compressium:diamond_1>, <item:the_vault:extraordinary_larimar>
+ <item:minecraft:diamond_block>, <item:the_vault:extraordinary_larimar>
 ]);
 
 // Obsidian
 craftingTable.addShaped("colossalchests_chest_wall_obsidian", <item:colossalchests:chest_wall_obsidian>, [
     [<item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>],
-    [<item:compressium:obsidian_1>, <item:colossalchests:chest_wall_diamond>, <item:compressium:obsidian_1>],
+    [<item:minecraft:obsidian>, <item:colossalchests:chest_wall_diamond>, <item:minecraft:obsidian>],
     [<item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>]
 ]);
 
 craftingTable.addShaped("colossalchests_chest_interface_obsidian", <item:colossalchests:interface_obsidian>, [
     [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>],
-    [<item:compressium:obsidian_2>, <item:colossalchests:interface_diamond>, <item:compressium:obsidian_2>],
+    [<item:minecraft:obsidian>, <item:colossalchests:interface_diamond>, <item:minecraft:obsidian>],
     [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>]
 ]);
 
 craftingTable.addShapeless("colossalchests_chest_obsidian", <item:colossalchests:colossal_chest_obsidian>, [
  <item:colossalchests:colossal_chest_diamond>, <item:the_vault:extraordinary_larimar>, <item:the_vault:extraordinary_larimar>,
- <item:compressium:obsidian_1>, <item:the_vault:extraordinary_larimar>
+ <item:minecraft:obsidian>, <item:the_vault:extraordinary_larimar>
 ]);
 
 craftingTable.addShapeless("colossalchests_upgrade_tool", <item:colossalchests:upgrade_tool>, [

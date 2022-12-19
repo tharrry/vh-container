@@ -45,7 +45,7 @@
         ]
       }
     ],
-    "soulshard": [
+    "blackmarket": [
       {
         "level": 0,
         "rollTypeOutcomes": [
@@ -55,15 +55,19 @@
           },
           {
             "value": "Common+",
-            "weight": 20
+            "weight": 40
           },
           {
             "value": "Rare+",
-            "weight": 7
+            "weight": 18
           },
           {
             "value": "Epic+",
-            "weight": 3
+            "weight": 7
+          },
+          {
+            "value": "Omega",
+            "weight": 1
           }
         ]
       }
@@ -117,6 +121,27 @@
           {
             "value": "Common+",
             "weight": 30
+          },
+          {
+            "value": "Rare+",
+            "weight": 8
+          },
+          {
+            "value": "Epic+",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "level": 39,
+        "rollTypeOutcomes": [
+          {
+            "value": "Scrappy+",
+            "weight": 50
+          },
+          {
+            "value": "Common+",
+            "weight": 40
           },
           {
             "value": "Rare+",

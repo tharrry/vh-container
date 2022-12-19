@@ -4885,6 +4885,542 @@
         "type": "structure",
         "path": "config/the_vault/gen/1.0/structures/vault/decor/raw/quarry/compressed_pile3.nbt"
       }
+    },
+    {
+      "id": "the_vault:test/rooms/common1",
+      "name": "Common 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common19",
+      "name": "Common 19",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common19.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common20",
+      "name": "Common 20",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common20.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common21",
+      "name": "Common 21",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common21.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common22",
+      "name": "Common 22",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common22.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common23",
+      "name": "Common 23",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common23.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common24",
+      "name": "Common 24",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common24.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common25",
+      "name": "Common 25",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common25.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common26",
+      "name": "Common 26",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common26.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common27",
+      "name": "Common 27",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common27.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common28",
+      "name": "Common 28",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common28.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common29",
+      "name": "Common 29",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common29.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common30",
+      "name": "Common 30",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common30.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common31",
+      "name": "Common 31",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common31.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/common32",
+      "name": "Common 32",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/common32.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/rooms/s3graveyard1",
+      "name": "S 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/rooms/s3graveyard1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/starts/start1",
+      "name": "Start 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/starts/start1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/tunnels/tunnel1",
+      "name": "Tunnel 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/tunnels/tunnel1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/tunnels/tunnel2",
+      "name": "Tunnel 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/tunnels/tunnel2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/tunnels/tunnel3",
+      "name": "Tunnel 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/tunnels/tunnel3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/tunnels/tunnel4",
+      "name": "Tunnel 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/tunnels/tunnel4.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/tunnels/tunnel5",
+      "name": "Tunnel 5",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/tunnels/tunnel5.nbt"
+      }
+    },
+    {
+      "id": "the_vault:test/tunnels/tunnel6",
+      "name": "Tunnel 6",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/test/tunnels/tunnel6.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/common/5x5/hole2w",
+      "name": "Hole 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/common/5x5/hole2w.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/standing7",
+      "name": "Standing 7",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/standing7.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/challenge/s3graveyard1",
+      "name": "S 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/challenge/s3graveyard1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/raw/chromatic_caves/spawner_pillar1",
+      "name": "Spawner Pillar 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/raw/chromatic_caves/spawner_pillar1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/raw/chromatic_caves/spawner_pillar2",
+      "name": "Spawner Pillar 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/raw/chromatic_caves/spawner_pillar2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/raw/chromatic_cave1",
+      "name": "Chromatic Cave 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/raw/chromatic_cave1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/burrow1",
+      "name": "Burrow 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/burrow1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/burrow2",
+      "name": "Burrow 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/burrow2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/burrow3",
+      "name": "Burrow 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/burrow3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/burrow4",
+      "name": "Burrow 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/burrow4.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/burrow5",
+      "name": "Burrow 5",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/burrow5.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/burrow6",
+      "name": "Burrow 6",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/burrow6.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/hole1",
+      "name": "Hole 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/hole1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/hole2",
+      "name": "Hole 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/hole2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/hole3",
+      "name": "Hole 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/hole3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/hole4",
+      "name": "Hole 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/hole4.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/hole5",
+      "name": "Hole 5",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/hole5.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/hole6",
+      "name": "Hole 6",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/hole6.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/standing1",
+      "name": "Standing 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/standing1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/standing2",
+      "name": "Standing 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/standing2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/standing3",
+      "name": "Standing 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/standing3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/standing4",
+      "name": "Standing 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/standing4.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/standing5",
+      "name": "Standing 5",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/standing5.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/7x7/standing6",
+      "name": "Standing 6",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/7x7/standing6.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/burrow1",
+      "name": "Burrow 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/burrow1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/burrow2",
+      "name": "Burrow 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/burrow2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/burrow3",
+      "name": "Burrow 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/burrow3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/burrow4",
+      "name": "Burrow 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/burrow4.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/burrow5",
+      "name": "Burrow 5",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/burrow5.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/burrow6",
+      "name": "Burrow 6",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/burrow6.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/hole1",
+      "name": "Hole 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/hole1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/hole2",
+      "name": "Hole 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/hole2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/hole3",
+      "name": "Hole 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/hole3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/hole4",
+      "name": "Hole 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/hole4.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/hole5",
+      "name": "Hole 5",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/hole5.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/hole6",
+      "name": "Hole 6",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/hole6.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/standing1",
+      "name": "Standing 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/standing1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/standing2",
+      "name": "Standing 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/standing2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/standing3",
+      "name": "Standing 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/standing3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/standing4",
+      "name": "Standing 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/standing4.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/standing5",
+      "name": "Standing 5",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/standing5.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/generic/ore/9x9/standing6",
+      "name": "Standing 6",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/generic/ore/9x9/standing6.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/common/ore1",
+      "name": "Ore 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/common/ore1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/omega/cozy1",
+      "name": "Cozy 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/cozy1.nbt"
+      }
     }
   ]
 }

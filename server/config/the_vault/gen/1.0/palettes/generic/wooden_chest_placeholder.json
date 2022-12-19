@@ -8,7 +8,7 @@
           "level": 0,
           "probability": 1.0,
           "success": {
-            "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl0\"}": 1
+            "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl0_v2\"}": 1
           },
           "failure": {
             "minecraft:air": 1
@@ -18,7 +18,7 @@
           "level": 10,
           "probability": 1.0,
           "success": {
-            "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl10\"}": 1
+            "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl10_v2\"}": 1
           },
           "failure": {
             "minecraft:air": 1

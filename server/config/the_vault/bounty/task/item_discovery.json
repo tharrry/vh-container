@@ -6,8 +6,8 @@
           "value": {
             "value": "the_vault:vault_diamond",
             "amount": {
-              "min": 4,
-              "max": 18
+              "min": 2,
+              "max": 6
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -45,8 +45,8 @@
           "value": {
             "value": "the_vault:vault_essence",
             "amount": {
-              "min": 15,
-              "max": 36
+              "min": 10,
+              "max": 24
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -84,8 +84,8 @@
           "value": {
             "value": "the_vault:scavenger_red_scroll",
             "amount": {
-              "min": 4,
-              "max": 18
+              "min": 1,
+              "max": 4
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -97,8 +97,8 @@
           "value": {
             "value": "the_vault:scavenger_drowned_hide",
             "amount": {
-              "min": 4,
-              "max": 18
+              "min": 1,
+              "max": 4
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -110,8 +110,8 @@
           "value": {
             "value": "the_vault:scavenger_zombie_hide",
             "amount": {
-              "min": 4,
-              "max": 18
+              "min": 2,
+              "max": 8
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -124,7 +124,7 @@
             "value": "the_vault:scavenger_ripped_page",
             "amount": {
               "min": 4,
-              "max": 18
+              "max": 10
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -136,8 +136,8 @@
           "value": {
             "value": "the_vault:scavenger_pottery_shard",
             "amount": {
-              "min": 4,
-              "max": 18
+              "min": 1,
+              "max": 4
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -162,8 +162,8 @@
           "value": {
             "value": "the_vault:hunter_eye",
             "amount": {
-              "min": 2,
-              "max": 6
+              "min": 1,
+              "max": 3
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -186,7 +186,7 @@
         }
       ]
     },
-    "10": {
+    "20": {
       "pool": [
         {
           "value": {
@@ -231,8 +231,8 @@
           "value": {
             "value": "the_vault:vault_essence",
             "amount": {
-              "min": 8,
-              "max": 24
+              "min": 16,
+              "max": 32
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -270,8 +270,8 @@
           "value": {
             "value": "the_vault:scavenger_red_scroll",
             "amount": {
-              "min": 8,
-              "max": 24
+              "min": 4,
+              "max": 8
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -283,8 +283,8 @@
           "value": {
             "value": "the_vault:scavenger_drowned_hide",
             "amount": {
-              "min": 8,
-              "max": 24
+              "min": 4,
+              "max": 8
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -322,8 +322,8 @@
           "value": {
             "value": "the_vault:scavenger_pottery_shard",
             "amount": {
-              "min": 8,
-              "max": 24
+              "min": 2,
+              "max": 8
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -363,6 +363,19 @@
             "amount": {
               "min": 17,
               "max": 36
+            },
+            "floorToNearestTen": false,
+            "validDimensions": [],
+            "vaultOnly": true
+          },
+          "weight": 6
+        },
+        {
+          "value": {
+            "value": "the_vault:scavenger_empty_jar",
+            "amount": {
+              "min": 2,
+              "max": 8
             },
             "floorToNearestTen": false,
             "validDimensions": [],

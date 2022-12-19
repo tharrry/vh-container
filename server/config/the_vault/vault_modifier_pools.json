@@ -217,6 +217,123 @@
         ]
       }
     ],
+    "the_vault:raw": [
+      {
+        "level": 0,
+        "entries": [
+          {
+            "min": 1,
+            "max": 1,
+            "pool": [
+              {
+                "value": "the_vault:beginners_grace",
+                "weight": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "entries": [
+          {
+            "min": 1,
+            "max": 1,
+            "pool": [
+              {
+                "value": "the_vault:beginners_grace",
+                "weight": 1000
+              }
+            ]
+          },
+          {
+            "min": 1,
+            "max": 1,
+            "pool": [
+              {
+                "value": "the_vault:xp_reduction",
+                "weight": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "entries": [
+          {
+            "min": 1,
+            "max": 1,
+            "pool": [
+              {
+                "value": "the_vault:beginners_grace",
+                "weight": 1000
+              }
+            ]
+          },
+          {
+            "min": 2,
+            "max": 2,
+            "pool": [
+              {
+                "value": "the_vault:xp_reduction",
+                "weight": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "entries": [
+          {
+            "min": 1,
+            "max": 1,
+            "pool": [
+              {
+                "value": "the_vault:beginners_grace",
+                "weight": 1000
+              }
+            ]
+          },
+          {
+            "min": 3,
+            "max": 3,
+            "pool": [
+              {
+                "value": "the_vault:xp_reduction",
+                "weight": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "entries": [
+          {
+            "min": 1,
+            "max": 1,
+            "pool": [
+              {
+                "value": "the_vault:beginners_grace",
+                "weight": 1000
+              }
+            ]
+          },
+          {
+            "min": 4,
+            "max": 4,
+            "pool": [
+              {
+                "value": "the_vault:xp_reduction",
+                "weight": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "the_vault:cake_adds": [
       {
         "level": 0,

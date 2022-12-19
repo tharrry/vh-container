@@ -483,6 +483,7 @@ craftingTable.remove(<item:mekanism:module_electrolytic_breathing_unit>);
 craftingTable.remove(<item:mekanism:energy_tablet>);
 craftingTable.remove(<item:mekanism:steel_casing>);
 craftingTable.remove(<item:mekanism:digital_miner>);
+craftingTable.remove(<item:mekanism:dimensional_stabilizer>);
 
 // Enercell
 craftingTable.remove(<item:enercell:enercell>);
@@ -600,6 +601,9 @@ craftingTable.remove(<item:thermal:machine_pulverizer>);
 craftingTable.remove(<item:thermal:device_collector>);
 craftingTable.remove(<item:thermal:device_rock_gen>);
 craftingTable.remove(<item:thermal:device_water_gen>);
+<recipetype:thermal:press>.remove(<item:thermal:lead_gear>);
+<recipetype:thermal:press>.remove(<item:thermal:tin_gear>);
+<recipetype:thermal:press>.remove(<item:thermal:bronze_gear>);
 for ingot in ingots {
   craftingTable.remove(<item:thermal:${ingot}_gear>);
 }
@@ -833,6 +837,7 @@ craftingTable.remove(<item:waystones:warp_dust>);
 craftingTable.remove(<item:waystones:warp_plate>);
 
 // Modular Routers
+craftingTable.remove(<item:modularrouters:player_module>);
 craftingTable.remove(<item:modularrouters:sender_module_1>);
 craftingTable.remove(<item:modularrouters:sender_module_2>);
 craftingTable.remove(<item:modularrouters:sender_module_3>);

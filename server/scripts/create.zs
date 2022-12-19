@@ -15,22 +15,22 @@ for Iskall85's Vaulthunters */
 <item:create:cogwheel>, <item:the_vault:perfect_larimar>, [<item:create:large_cogwheel>]);
 
 <recipetype:create:deploying>.addRecipe("andesite_casing",
-<item:the_vault:raw_chromatic_iron_block>, <item:create:andesite_alloy>, [<item:create:andesite_casing>]);
+<item:the_vault:chromatic_iron_block>, <item:create:andesite_alloy>, [<item:create:andesite_casing>]);
 
 <recipetype:create:item_application>.addRecipe("andesite_casing_in_world", [<item:create:andesite_casing>],
-<item:the_vault:raw_chromatic_iron_block>, <item:create:andesite_alloy>);
+<item:the_vault:chromatic_iron_block>, <item:create:andesite_alloy>);
 
 <recipetype:create:deploying>.addRecipe("brass_casing",
-<item:the_vault:raw_chromatic_iron_block>, <item:create:brass_block>, [<item:create:brass_casing>]);
+<item:the_vault:chromatic_iron_block>, <item:create:brass_block>, [<item:create:brass_casing>]);
 
 <recipetype:create:item_application>.addRecipe("brass_casing_in_world", [<item:create:brass_casing>],
-<item:the_vault:raw_chromatic_iron_block>, <item:create:brass_block>);
+<item:the_vault:chromatic_iron_block>, <item:create:brass_block>);
 
 <recipetype:create:deploying>.addRecipe("copper_casing",
-<item:the_vault:raw_chromatic_iron_block>, <tag:items:forge:storage_blocks/copper>, [<item:create:copper_casing>]);
+<item:the_vault:chromatic_iron_block>, <tag:items:forge:storage_blocks/copper>, [<item:create:copper_casing>]);
 
 <recipetype:create:item_application>.addRecipe("copper_casing_in_world", [<item:create:copper_casing>],
-<item:the_vault:raw_chromatic_iron_block>, <tag:items:forge:storage_blocks/copper>);
+<item:the_vault:chromatic_iron_block>, <tag:items:forge:storage_blocks/copper>);
 
 <recipetype:create:item_application>.addRecipe("track_signal", [<item:create:track_signal>],
 <item:create:railway_casing>, <item:create:electron_tube>);
@@ -91,7 +91,7 @@ craftingTable.addShaped("create_hand_crank", <item:create:hand_crank>, [
 
 craftingTable.addShaped("create_crushing_wheel", <item:create:crushing_wheel>, [
     [<item:create:andesite_alloy>, <item:the_vault:driftwood>, <item:create:andesite_alloy>],
-    [<item:the_vault:driftwood>, <item:the_vault:vault_stone>, <item:the_vault:driftwood>],
+    [<item:the_vault:driftwood>, <item:the_vault:polished_vault_stone>, <item:the_vault:driftwood>],
     [<item:create:andesite_alloy>, <item:the_vault:driftwood>, <item:create:andesite_alloy>]
 ]);
 
@@ -171,7 +171,7 @@ craftingTable.addShapeless("create_sticky_mechanical_piston", <item:create:stick
 
 craftingTable.addShaped("create_empty_blaze_burner", <item:create:empty_blaze_burner>, [
     [<item:the_vault:chromatic_steel_ingot>, <tag:items:forge:plates/iron>, <item:the_vault:chromatic_steel_ingot>],
-    [<tag:items:forge:plates/iron>, <item:the_vault:vault_stone>, <tag:items:forge:plates/iron>],
+    [<tag:items:forge:plates/iron>, <item:the_vault:polished_vault_stone>, <tag:items:forge:plates/iron>],
     [<item:the_vault:chromatic_steel_ingot>, <tag:items:forge:plates/iron>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
@@ -195,7 +195,7 @@ craftingTable.addShaped("create_rotation_speed_controller", <item:create:rotatio
 
 craftingTable.addShaped("createwindmill_bearing", <item:create:windmill_bearing>, [
     [<item:the_vault:vault_diamond>, <item:the_vault:gem_pog>, <item:the_vault:vault_diamond>],
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_stone>, <item:the_vault:black_chromatic_steel_ingot>],
+    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:polished_vault_stone>, <item:the_vault:black_chromatic_steel_ingot>],
     [<item:minecraft:air>, <item:create:shaft>,<item:minecraft:air>]
 ]);
 
@@ -216,3 +216,9 @@ craftingTable.addShaped("create_vault", <item:create:item_vault>, [
     [<item:create:iron_sheet>, <item:minecraft:barrel>, <item:create:iron_sheet>],
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);
+
+<recipetype:create:mixing>.addRecipe("mixing_healing_potion", <constant:create:heat_condition:heated>, [<fluid:create:potion>.withTag({Potion: "minecraft:healing", Bottle:"REGULAR"}) *1000], [
+    <item:minecraft:golden_apple>,], [<fluid:create:potion>.withTag({Potion: "minecraft:awkward", Bottle:"REGULAR"}) *1000], 100);
+
+<recipetype:create:mixing>.addRecipe("mixing_healing_potion_2", <constant:create:heat_condition:heated>, [<fluid:create:potion>.withTag({Potion: "minecraft:strong_healing", Bottle:"REGULAR"}) *1000], [
+    <item:minecraft:glowstone_dust>,], [<fluid:create:potion>.withTag({Potion: "minecraft:healing", Bottle:"REGULAR"}) *1000], 100);

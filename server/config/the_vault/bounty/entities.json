@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "minecraft:stray": [
+      "the_vault:elite_stray",
+      "the_vault:t1_stray"
+    ],
+    "the_vault:vault_spider": [
+      "the_vault:elite_spider",
+      "the_vault:vault_spider_baby"
+    ],
+    "minecraft:zombie": [
+      "the_vault:elite_zombie",
+      "the_vault:t1_zombie"
+    ],
+    "minecraft:drowned": [
+      "the_vault:elite_drowned",
+      "the_vault:t1_drowned"
+    ],
+    "minecraft:husk": [
+      "the_vault:elite_husk",
+      "the_vault:t1_husk"
+    ],
+    "the_vault:vault_fighter": [
+      "the_vault:vault_fighter",
+      "the_vault:vault_fighter_1",
+      "the_vault:vault_fighter_2",
+      "the_vault:vault_fighter_3",
+      "the_vault:vault_fighter_4",
+      "the_vault:vault_fighter_5",
+      "the_vault:vault_fighter_6",
+      "the_vault:vault_fighter_7",
+      "the_vault:vault_fighter_8",
+      "the_vault:vault_fighter_9"
+    ],
+    "minecraft:skeleton": [
+      "the_vault:elite_skeleton",
+      "the_vault:elite_wither_skeleton",
+      "the_vault:t1_skeleton",
+      "the_vault:t1_wither_skeleton"
+    ],
+    "minecraft:piglin": [
+      "the_vault:t1_piglin"
+    ]
+  }
+}

@@ -27,15 +27,9 @@ craftingTable.addShaped("rs_storage_housing", <item:refinedstorage:storage_housi
 ]);
 
 craftingTable.addShaped("rs_1k_storage_part", <item:refinedstorage:1k_storage_part>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_iron_ingot>],
-    [<item:the_vault:vault_essence>, <item:minecraft:redstone_block>, <item:the_vault:vault_essence>],
-    [<item:refinedstorage:silicon>, <item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:silicon>]
-]);
-
-craftingTable.addShaped("rs_1k_storage_disk", <item:refinedstorage:1k_storage_disk>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_iron_ingot>],
-    [<item:minecraft:redstone_block>, <item:refinedstorage:1k_storage_part>, <item:minecraft:redstone_block>],
-    [<item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:quartz_enriched_iron_block>]
+    [<item:the_vault:vault_essence>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_essence>],
+    [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:redstone>, <item:the_vault:chromatic_iron_ingot>],
+    [<item:refinedstorage:silicon>, <item:the_vault:gem_larimar>, <item:refinedstorage:silicon>]
 ]);
 
 craftingTable.addShapeless("rs_1k_storage_disk_shapeless", <item:refinedstorage:1k_storage_disk>, [
@@ -44,38 +38,32 @@ craftingTable.addShapeless("rs_1k_storage_disk_shapeless", <item:refinedstorage:
 
 craftingTable.addShaped("rs_4k_storage_part", <item:refinedstorage:4k_storage_part>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:refinedstorage:1k_storage_part>, <item:the_vault:vault_diamond>, <item:refinedstorage:1k_storage_part>],
+    [<item:refinedstorage:1k_storage_part>, <item:the_vault:perfect_larimar>, <item:refinedstorage:1k_storage_part>],
     [<item:the_vault:chromatic_steel_ingot>, <item:refinedstorage:1k_storage_part>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
-craftingTable.addShaped("rs_4k_storage_disk", <item:refinedstorage:4k_storage_disk>, [
-    [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:minecraft:redstone_block>, <item:refinedstorage:1k_storage_part>, <item:minecraft:redstone_block>],
-    [<item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:quartz_enriched_iron_block>]
+craftingTable.addShapeless("rs_4k_storage_disk_shapeless", <item:refinedstorage:4k_storage_disk>, [
+    <item:refinedstorage:storage_housing>, <item:refinedstorage:4k_storage_part>
 ]);
 
 craftingTable.addShaped("rs_16k_storage_part", <item:refinedstorage:16k_storage_part>, [
-    [<item:the_vault:black_chromatic_steel_block>, <item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_block>],
-    [<item:refinedstorage:4k_storage_part>, <item:minecraft:redstone_block>, <item:refinedstorage:4k_storage_part>],
+    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>],
+    [<item:refinedstorage:4k_storage_part>, <item:minecraft:redstone>, <item:refinedstorage:4k_storage_part>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:refinedstorage:4k_storage_part>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
 
-craftingTable.addShaped("rs_16k_storage_disk", <item:refinedstorage:16k_storage_disk>, [
-    [<item:the_vault:chromatic_steel_block>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_iron_ingot>],
-    [<item:minecraft:redstone_block>, <item:refinedstorage:16k_storage_part>, <item:minecraft:redstone_block>],
-    [<item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:quartz_enriched_iron_block>]
+craftingTable.addShapeless("rs_16k_storage_disk_shapeless", <item:refinedstorage:16k_storage_disk>, [
+    <item:refinedstorage:storage_housing>, <item:refinedstorage:16k_storage_part>
 ]);
 
 craftingTable.addShaped("rs_64k_storage_part", <item:refinedstorage:64k_storage_part>, [
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond_block>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:refinedstorage:16k_storage_part>, <item:minecraft:redstone_block>, <item:refinedstorage:16k_storage_part>],
+    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>],
+    [<item:refinedstorage:16k_storage_part>, <item:the_vault:gem_pog>, <item:refinedstorage:16k_storage_part>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:refinedstorage:16k_storage_part>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
 
-craftingTable.addShaped("rs_64k_storage_disk", <item:refinedstorage:64k_storage_disk>, [
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:minecraft:redstone_block>, <item:refinedstorage:64k_storage_part>, <item:minecraft:redstone_block>],
-    [<item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:quartz_enriched_iron_block>, <item:refinedstorage:quartz_enriched_iron_block>]
+craftingTable.addShapeless("rs_64k_storage_disk_shapeless", <item:refinedstorage:64k_storage_disk>, [
+    <item:refinedstorage:storage_housing>, <item:refinedstorage:64k_storage_part>
 ]);
 
 craftingTable.addShaped("rs_processor_binding", <item:refinedstorage:processor_binding> *4, [
@@ -118,21 +106,21 @@ craftingTable.addShapeless("rs_shapeless_quartz_enriched_iron", <item:refinedsto
 ]);
 
 craftingTable.addShaped("rs_machine_casing", <item:refinedstorage:machine_casing>, [
-    [<item:the_vault:chromatic_steel_block>, <item:refinedstorage:quartz_enriched_iron_block>, <item:the_vault:chromatic_steel_block>],
-    [<item:refinedstorage:quartz_enriched_iron_block>, <item:the_vault:vault_diamond>, <item:refinedstorage:quartz_enriched_iron_block>],
-    [<item:the_vault:chromatic_steel_block>, <item:refinedstorage:quartz_enriched_iron_block>, <item:the_vault:chromatic_steel_block>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:refinedstorage:quartz_enriched_iron>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:refinedstorage:quartz_enriched_iron>, <item:the_vault:vault_diamond>, <item:refinedstorage:quartz_enriched_iron>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:refinedstorage:quartz_enriched_iron>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("rs_disk_drive", <item:refinedstorage:disk_drive>, [
-    [<item:the_vault:black_chromatic_steel_ingot>, <tag:items:forge:chests>, <item:the_vault:black_chromatic_steel_ingot>],
+    [<item:the_vault:chromatic_steel_ingot>, <tag:items:forge:chests>, <item:the_vault:chromatic_steel_ingot>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:refinedstorage:machine_casing>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:refinedstorage:advanced_processor>, <item:the_vault:black_chromatic_steel_ingot>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:refinedstorage:advanced_processor>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("rs_grid", <item:refinedstorage:grid>, [
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:minecraft:tinted_glass>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:refinedstorage:advanced_processor>, <item:the_vault:black_chromatic_steel_ingot>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:gem_pog>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:the_vault:gem_larimar>, <item:the_vault:perfect_larimar>, <item:the_vault:gem_larimar>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:refinedstorage:advanced_processor>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShapeless("rs_shapeless_grid", <item:refinedstorage:grid>, [

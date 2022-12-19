@@ -1,8 +1,8 @@
 {
   "totalBountyCount": 3,
   "maxActive": 1,
-  "abandonedPenaltyInHours": 8,
-  "waitingPeriodInHours": 2,
+  "abandonedPenaltySeconds": 28800,
+  "waitingPeriodSeconds": 3600,
   "weightedTaskList": [
     {
       "value": "the_vault:kill_entity",
@@ -31,9 +31,11 @@
   ],
   "rerollBronzeCost": {
     "0": 8,
-    "20": 256,
-    "5": 32,
-    "10": 64,
-    "15": 128
+    "10": 32,
+    "15": 64,
+    "30": 128,
+    "40": 192,
+    "45": 256
+    
   }
 }

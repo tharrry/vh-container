@@ -14,6 +14,7 @@ var dye = {
   "yellow_dye": "yellow",
   "cyan_dye": "cyan",
   "purple_dye": "purple",
+  "green_dye": "green",
   "blue_dye": "blue",
   "brown_dye": "brown",
   "pink_dye": "pink",

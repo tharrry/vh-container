@@ -162,19 +162,28 @@
   },
   "SHIELD_MODEL_ROLLS": {
     "SCRAPPY": [
-      "the_vault:gear/shield/vanilla"
+      "the_vault:gear/shield/vanilla",
+      "the_vault:gear/shield/scrap"
     ],
     "COMMON": [
-      "the_vault:gear/shield/wooden"
+      "the_vault:gear/shield/wooden",
+      "the_vault:gear/shield/gold_plated",
+      "the_vault:gear/shield/peppermint"
     ],
     "RARE": [
-      "the_vault:gear/shield/coconut"
+      "the_vault:gear/shield/coconut",
+      "the_vault:gear/shield/sculk",
+      "the_vault:gear/shield/flowah"
+      
     ],
     "EPIC": [
-      "the_vault:gear/shield/ender"
+      "the_vault:gear/shield/ender",
+      "the_vault:gear/shield/present",
+      "the_vault:gear/shield/druid"
     ],
     "OMEGA": [
-      "the_vault:gear/shield/inferno"
+      "the_vault:gear/shield/inferno",
+      "the_vault:gear/shield/emberwing"
     ],
     "UNIQUE": [
       "the_vault:gear/shield/bell",

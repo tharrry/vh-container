@@ -81,6 +81,21 @@
       "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/void_rooms.json"
     },
     {
+      "id": "the_vault:vault/rooms/sweet_rooms",
+      "name": "Sweet Rooms",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/sweet_rooms.json"
+    },
+    {
+      "id": "the_vault:vault/rooms/festive_rooms",
+      "name": "Festive Rooms",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/festive_rooms.json"
+    },
+    {
+      "id": "the_vault:vault/rooms/gingerbread_rooms",
+      "name": "Gingerbread Rooms",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/gingerbread_rooms.json"
+    },
+    {
       "id": "the_vault:vault/starts/plastic_starts",
       "name": "Plastic Starts",
       "1.0": "config/the_vault/gen/1.0/template_pools/vault/starts/plastic_starts.json"
@@ -154,6 +169,21 @@
       "id": "the_vault:vault/starts/void_starts",
       "name": "Void Starts",
       "1.0": "config/the_vault/gen/1.0/template_pools/vault/starts/void_starts.json"
+    },
+    {
+      "id": "the_vault:vault/starts/sweet_starts",
+      "name": "Sweet Starts",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/starts/sweet_starts.json"
+    },
+    {
+      "id": "the_vault:vault/starts/festive_starts",
+      "name": "Festive Starts",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/starts/festive_starts.json"
+    },
+    {
+      "id": "the_vault:vault/starts/gingerbread_starts",
+      "name": "Gingerbread Starts",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/starts/gingerbread_starts.json"
     },
     {
       "id": "the_vault:vault/portals/portals",
@@ -234,6 +264,21 @@
       "id": "the_vault:vault/tunnels/void_tunnels",
       "name": "Void Tunnels",
       "1.0": "config/the_vault/gen/1.0/template_pools/vault/tunnels/void_tunnels.json"
+    },
+    {
+      "id": "the_vault:vault/tunnels/sweet_tunnels",
+      "name": "Sweet Tunnels",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/tunnels/sweet_tunnels.json"
+    },
+    {
+      "id": "the_vault:vault/tunnels/festive_tunnels",
+      "name": "Festive Tunnels",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/tunnels/festive_tunnels.json"
+    },
+    {
+      "id": "the_vault:vault/tunnels/gingerbread_tunnels",
+      "name": "Gingerbread Tunnels",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/tunnels/gingerbread_tunnels.json"
     },
     {
       "id": "the_vault:vault/altars/altars",
@@ -1442,6 +1487,36 @@
       "id": "the_vault:vault/decor/raw/quarry/compressed_pile1",
       "name": "Quarry Compressed Pile 1",
       "1.0": "config/the_vault/gen/1.0/template_pools/vault/decor/raw/quarry/compressed_pile1.json"
+    },
+    {
+      "id": "the_vault:vault/rooms/festive_common_rooms",
+      "name": "Festive Common Rooms",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/festive_common_rooms.json"
+    },
+    {
+      "id": "the_vault:vault/rooms/sweet_common_rooms",
+      "name": "Sweet Common Rooms",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/sweet_common_rooms.json"
+    },
+    {
+      "id": "the_vault:vault/decor/raw/chromatic_caves/spawner_pedestal1",
+      "name": "Spawner Pedestal 1",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/decor/raw/chromatic_caves/spawner_pedestal1.json"
+    },
+    {
+      "id": "the_vault:vault/rooms/cave_resource_rooms",
+      "name": "Cave Resource Rooms",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/cave_resource_rooms.json"
+    },
+    {
+      "id": "the_vault:vault/rooms/raw/chromatic_caves",
+      "name": "Chromatic Caves",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/raw/chromatic_caves.json"
+    },
+    {
+      "id": "the_vault:vault/rooms/gingerbread_common_rooms",
+      "name": "Gingerbread Common Rooms",
+      "1.0": "config/the_vault/gen/1.0/template_pools/vault/rooms/gingerbread_common_rooms.json"
     }
   ]
 }

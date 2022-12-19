@@ -1,40 +1,50 @@
 /* scripts made by Douwsky
 for Iskall85's Vaulthunters */
 
+import crafttweaker.api.ingredient.IIngredient;
+
 // adding recipes
 
-var ingots = {
-  "iron": "minecraft:iron_ingot",
-  "gold": "minecraft:gold_ingot",
-  "copper": "minecraft:copper_ingot",
-  "netherite": "minecraft:netherite_ingot",
-  "tin": "thermal:tin_ingot",
-  "lead": "thermal:lead_ingot",
-  "silver": "thermal:silver_ingot",
-  "nickel": "thermal:nickel_ingot",
-  "bronze": "thermal:bronze_ingot",
-  "electrum": "thermal:electrum_ingot",
-  "invar": "thermal:invar_ingot",
-  "constantan": "thermal:constantan_ingot",
-  "signalum": "thermal:signalum_ingot",
-  "lumium": "thermal:lumium_ingot",
-  "enderium": "thermal:enderium_ingot",
-};
+var ingots as IIngredient[string] = {
+  "bronze": <tag:items:forge:ingots/bronze>.asIIngredient(),
+  "iron": <item:minecraft:iron_ingot> as IIngredient,
+  "gold": <item:minecraft:gold_ingot> as IIngredient,
+  "copper": <item:minecraft:copper_ingot> as IIngredient,
+  "netherite": <item:minecraft:netherite_ingot> as IIngredient,
+  "tin": <tag:items:forge:ingots/tin>.asIIngredient(),
+  "lead": <tag:items:forge:ingots/lead>.asIIngredient(),
+  "silver": <item:thermal:silver_ingot> as IIngredient,
+  "nickel": <item:thermal:nickel_ingot> as IIngredient,
+  "electrum": <item:thermal:electrum_ingot> as IIngredient,
+  "invar": <item:thermal:invar_ingot> as IIngredient,
+  "constantan": <item:thermal:constantan_ingot> as IIngredient,
+  "signalum": <item:thermal:signalum_ingot> as IIngredient,
+  "lumium": <item:thermal:lumium_ingot> as IIngredient,
+  "enderium": <item:thermal:enderium_ingot> as IIngredient,
+} as IIngredient[string];
 
 var gems = {
     "lapis": "lapis_lazuli",
     "diamond": "diamond",
     "emerald": "emerald",
     "quartz": "quartz",
-};    
+};  
 
 for ingotId, ingotName in ingots {
+  <recipetype:thermal:press>.remove(<item:thermal:${ingotId}_gear>);
+  <recipetype:thermal:press>.addRecipe("thermal_" + ingotId + "_gear_press_vh", [<item:thermal:${ingotId}_gear>], <fluid:minecraft:empty>, [ingotName * 4, <item:the_vault:perfect_larimar>], 500);
   craftingTable.addShaped("thermal_" + ingotId + "_gear", <item:thermal:${ingotId}_gear>, [
-    [<item:the_vault:gem_larimar>, <item:${ingotName}>, <item:the_vault:gem_larimar>],
-    [<item:${ingotName}>, <item:the_vault:chromatic_iron_ingot>, <item:${ingotName}>],
-    [<item:the_vault:gem_larimar>, <item:${ingotName}>, <item:the_vault:gem_larimar>]
+    [<item:the_vault:gem_larimar>, ingotName, <item:the_vault:gem_larimar>],
+    [ingotName, <item:the_vault:chromatic_iron_ingot>, ingotName],
+    [<item:the_vault:gem_larimar>, ingotName, <item:the_vault:gem_larimar>]
 ]);
 }
+
+<recipetype:thermal:press>.addRecipe("thermal_tin_gear_gear_press_vh_2", [<item:thermal:tin_gear>], <fluid:minecraft:empty>, [<item:thermal:tin_ingot> * 4, <item:the_vault:perfect_larimar>], 500);
+
+<recipetype:thermal:press>.addRecipe("thermal_lead_gear_press_vh_2", [<item:thermal:lead_gear>], <fluid:minecraft:empty>, [<item:thermal:lead_ingot> * 4, <item:the_vault:perfect_larimar>], 500);
+
+<recipetype:thermal:press>.addRecipe("thermal_bronze_gear_press_vh_2", [<item:thermal:bronze_gear>], <fluid:minecraft:empty>, [<item:thermal:bronze_ingot> * 4, <item:the_vault:perfect_larimar>], 500);
 
 for gemId, gemName in gems {
   craftingTable.addShaped("thermal_" + gemId + "_gear", <item:thermal:${gemId}_gear>, [
@@ -113,7 +123,7 @@ craftingTable.addShaped("thermal_numismatic_dynamo", <item:thermal:dynamo_numism
 craftingTable.addShaped("thermal_lapidary_dynamo", <item:thermal:dynamo_lapidary>, [
     [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
     [<item:the_vault:chromatic_steel_ingot>, <item:thermal:gold_gear>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:compressium:lapis_1>, <item:minecraft:redstone_block>, <item:compressium:lapis_1>]
+    [<item:minecraft:lapis_block>, <item:minecraft:redstone_block>, <item:minecraft:lapis_block>]
 ]);
 
 craftingTable.addShaped("thermal_disenchantment_dynamo", <item:thermal:dynamo_disenchantment>, [
@@ -131,7 +141,7 @@ craftingTable.addShaped("thermal_gourmand_dynamo", <item:thermal:dynamo_gourmand
 craftingTable.addShaped("thermal_stirling_dynamo", <item:thermal:dynamo_stirling>, [
     [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
     [<item:the_vault:chromatic_steel_ingot>, <item:thermal:iron_gear>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:the_vault:vault_stone>, <item:minecraft:redstone_block>, <item:the_vault:vault_stone>]
+    [<item:the_vault:polished_vault_stone>, <item:minecraft:redstone_block>, <item:the_vault:polished_vault_stone>]
 ]);
 
 craftingTable.addShaped("thermal_compression_dynamo", <item:thermal:dynamo_compression>, [
@@ -169,3 +179,6 @@ craftingTable.addShaped("thermal_aqueous_accumulator", <item:thermal:device_wate
     [<item:minecraft:tinted_glass>, <item:the_vault:infinite_water_bucket>, <item:minecraft:tinted_glass>],
     [<item:the_vault:chromatic_steel_ingot>, <item:thermal:redstone_servo>, <item:the_vault:chromatic_steel_ingot>]
 ]);
+
+<recipetype:thermal:brewer>.addRecipe("healing_pot", <fluid:cofh_core:potion>.withTag({Potion: "minecraft:healing"}) * 1000,
+ <item:minecraft:golden_apple>, <fluid:cofh_core:potion>.withTag({Potion: "minecraft:awkward"}) * 1000, 500);

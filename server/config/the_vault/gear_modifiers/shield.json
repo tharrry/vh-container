@@ -10,8 +10,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 800,
-              "max": 1600,
+              "min": 400,
+              "max": 600,
               "step": 1
             }
           },
@@ -20,8 +20,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 1601,
-              "max": 2400,
+              "min": 601,
+              "max": 800,
               "step": 1
             }
           },
@@ -30,8 +30,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 2401,
-              "max": 3200,
+              "min": 801,
+              "max": 1200,
               "step": 1
             }
           },
@@ -40,8 +40,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 3201,
-              "max": 4000,
+              "min": 1201,
+              "max": 1600,
               "step": 1
             }
           },
@@ -50,18 +50,18 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 4001,
-              "max": 5000,
+              "min": 1601,
+              "max": 2000,
               "step": 1
             }
           },
           {
-            "minLevel": 97,
+            "minLevel": 100,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 5001,
-              "max": 5800,
+              "min": 2001,
+              "max": 3000,
               "step": 1
             }
           }
@@ -160,7 +160,7 @@
             }
           },
           {
-            "minLevel": 16,
+            "minLevel": 27,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -170,7 +170,7 @@
             }
           },
           {
-            "minLevel": 29,
+            "minLevel": 53,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -180,7 +180,7 @@
             }
           },
           {
-            "minLevel": 47,
+            "minLevel": 80,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -190,7 +190,7 @@
             }
           },
           {
-            "minLevel": 69,
+            "minLevel": 92,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -200,7 +200,7 @@
             }
           },
           {
-            "minLevel": 88,
+            "minLevel": 101,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -216,16 +216,6 @@
             "value": {
               "min": 13,
               "max": 13,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 14,
-              "max": 14,
               "step": 1
             }
           }
@@ -470,7 +460,7 @@
             "weight": 10,
             "value": {
               "min": 0.14,
-              "max": 0.16,
+              "max": 0.14,
               "step": 0.01
             }
           },
@@ -479,8 +469,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.17,
-              "max": 0.2,
+              "min": 0.15,
+              "max": 0.15,
               "step": 0.01
             }
           }
@@ -573,8 +563,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 400,
-              "max": 800,
+              "min": 200,
+              "max": 400,
               "step": 1
             }
           },
@@ -583,8 +573,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 801,
-              "max": 1600,
+              "min": 401,
+              "max": 600,
               "step": 1
             }
           },
@@ -593,8 +583,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 1601,
-              "max": 2400,
+              "min": 601,
+              "max": 800,
               "step": 1
             }
           },
@@ -603,8 +593,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 2401,
-              "max": 3200,
+              "min": 801,
+              "max": 1000,
               "step": 1
             }
           },
@@ -613,8 +603,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 3201,
-              "max": 4000,
+              "min": 1001,
+              "max": 1400,
               "step": 1
             }
           },
@@ -623,8 +613,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 4001,
-              "max": 6000,
+              "min": 1401,
+              "max": 1800,
               "step": 1
             }
           },
@@ -633,8 +623,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 6001,
-              "max": 8000,
+              "min": 1801,
+              "max": 2400,
               "step": 1
             }
           }

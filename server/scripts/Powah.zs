@@ -266,3 +266,7 @@ craftingTable.addShaped("powah_capacitor_nitro", <item:powah:capacitor_nitro>, [
 	[<item:powah:crystal_nitro>, <item:powah:capacitor_spirited>, <item:powah:crystal_nitro>],
 	[<item:powah:dielectric_paste>, <item:powah:crystal_nitro>, <item:powah:dielectric_paste>]
 ]);
+
+craftingTable.addShapeless("powah_block_to_ingots", <item:powah:steel_energized> *9, [
+	<item:powah:energized_steel_block>
+]);

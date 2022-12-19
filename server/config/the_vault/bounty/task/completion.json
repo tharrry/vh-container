@@ -4,20 +4,25 @@
       "pool": [
         {
           "value": {
-            "value": "the_vault:vault",
+            "value": "vault",
             "amount": {
               "min": 1,
-              "max": 2
+              "max": 1
             },
             "floorToNearestTen": false,
             "validDimensions": [],
             "vaultOnly": false
           },
-          "weight": 3
-        },
+          "weight": 10
+        }
+      ]
+    },
+    
+    "10": {
+      "pool": [
         {
           "value": {
-            "value": "the_vault:monolith",
+            "value": "vault",
             "amount": {
               "min": 1,
               "max": 2
@@ -26,20 +31,7 @@
             "validDimensions": [],
             "vaultOnly": false
           },
-          "weight": 3
-        },
-        {
-          "value": {
-            "value": "the_vault:scavenger",
-            "amount": {
-              "min": 1,
-              "max": 2
-            },
-            "floorToNearestTen": false,
-            "validDimensions": [],
-            "vaultOnly": false
-          },
-          "weight": 3
+          "weight": 6
         }
       ]
     },
@@ -47,23 +39,23 @@
       "pool": [
         {
           "value": {
-            "value": "the_vault:vault",
+            "value": "vault",
             "amount": {
-              "min": 2,
-              "max": 5
+              "min": 1,
+              "max": 2
             },
             "floorToNearestTen": false,
             "validDimensions": [],
             "vaultOnly": true
           },
-          "weight": 3
+          "weight": 10
         },
         {
           "value": {
-            "value": "the_vault:cake",
+            "value": "cake",
             "amount": {
-              "min": 2,
-              "max": 5
+              "min": 1,
+              "max": 1
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -73,10 +65,23 @@
         },
         {
           "value": {
-            "value": "the_vault:scavenger",
+            "value": "scavenger",
             "amount": {
-              "min": 2,
-              "max": 5
+              "min": 1,
+              "max": 1
+            },
+            "floorToNearestTen": false,
+            "validDimensions": [],
+            "vaultOnly": false
+          },
+          "weight": 3
+        },
+        {
+          "value": {
+            "value": "boss",
+            "amount": {
+              "min": 1,
+              "max": 1
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -86,14 +91,40 @@
         }
       ]
     },
-    "10": {
+    "40": {
       "pool": [
         {
           "value": {
-            "value": "the_vault:vault",
+            "value": "vault",
             "amount": {
               "min": 1,
               "max": 3
+            },
+            "floorToNearestTen": false,
+            "validDimensions": [],
+            "vaultOnly": true
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "value": "cake",
+            "amount": {
+              "min": 1,
+              "max": 1
+            },
+            "floorToNearestTen": false,
+            "validDimensions": [],
+            "vaultOnly": true
+          },
+          "weight": 1
+        },
+        {
+          "value": {
+            "value": "scavenger",
+            "amount": {
+              "min": 1,
+              "max": 2
             },
             "floorToNearestTen": false,
             "validDimensions": [],
@@ -103,23 +134,10 @@
         },
         {
           "value": {
-            "value": "the_vault:cake",
+            "value": "boss",
             "amount": {
               "min": 1,
-              "max": 3
-            },
-            "floorToNearestTen": false,
-            "validDimensions": [],
-            "vaultOnly": false
-          },
-          "weight": 1
-        },
-        {
-          "value": {
-            "value": "the_vault:scavenger",
-            "amount": {
-              "min": 1,
-              "max": 3
+              "max": 2
             },
             "floorToNearestTen": false,
             "validDimensions": [],

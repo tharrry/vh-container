@@ -99,15 +99,23 @@
       "pool": [
         {
           "value": "SCRAPPY",
-          "weight": 84
+          "weight": 86
         },
         {
           "value": "COMMON",
-          "weight": 10
+          "weight": 12
         },
         {
           "value": "RARE",
           "weight": 6
+        },
+        {
+          "value": "EPIC",
+          "weight": 2
+        },
+        {
+          "value": "OMEGA",
+          "weight": 1
         }
       ],
       "color": 16773600
@@ -129,6 +137,10 @@
         {
           "value": "EPIC",
           "weight": 3
+        },
+        {
+          "value": "OMEGA",
+          "weight": 1
         }
       ],
       "color": 16768436

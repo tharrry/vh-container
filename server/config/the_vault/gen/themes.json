@@ -149,6 +149,21 @@
       "id": "the_vault:classic_vault_nether_soul",
       "name": "Classic Vault Nether Soul",
       "1.0": "config/the_vault/gen/1.0/themes/classic_vault_nether_soul.json"
+    },
+    {
+      "id": "the_vault:classic_vault_sweet",
+      "name": "Classic Vault Sweet",
+      "1.0": "config/the_vault/gen/1.0/themes/classic_vault_sweet.json"
+    },
+    {
+      "id": "the_vault:classic_vault_festive",
+      "name": "Classic Vault Festive",
+      "1.0": "config/the_vault/gen/1.0/themes/classic_vault_festive.json"
+    },
+    {
+      "id": "the_vault:classic_vault_gingerbread",
+      "name": "Classic Vault Gingerbread",
+      "1.0": "config/the_vault/gen/1.0/themes/classic_vault_gingerbread.json"
     }
   ]
 }

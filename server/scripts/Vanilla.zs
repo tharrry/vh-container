@@ -106,11 +106,6 @@ craftingTable.addShaped("weirding_gadget", <item:weirdinggadget:weirding_gadget>
     [<item:minecraft:gold_block>, <item:the_vault:chromatic_steel_ingot>, <item:minecraft:gold_block>]
 ]);
 
-craftingTable.addShapeless("suspicious_regen_stew", <item:minecraft:suspicious_stew>.withTag({Effects: [{EffectId: 10 as byte, EffectDuration: 160 as int}]}), [
-    <item:the_vault:vault_essence>, <item:minecraft:red_mushroom>, <item:minecraft:bowl>,
-    <item:minecraft:brown_mushroom>
-]);
-
 craftingTable.addShapeless("suspicious_weaknes_red_stew", <item:minecraft:suspicious_stew>.withTag({Effects: [{EffectId: 18 as byte, EffectDuration: 180 as int}]}), [
     <item:minecraft:red_tulip>, <item:minecraft:red_mushroom>, <item:minecraft:bowl>,
     <item:minecraft:brown_mushroom>
@@ -283,4 +278,16 @@ craftingTable.addShaped("quiver", <item:supplementaries:quiver>, [
     [<item:minecraft:air>, <tag:items:forge:leather>, <item:the_vault:magic_silk>],
     [<tag:items:forge:leather>, <tag:items:minecraft:arrows>, <item:the_vault:magic_silk>],
     [<item:the_vault:magic_silk>, <item:the_vault:magic_silk>, <item:the_vault:perfect_larimar>]
+]);
+
+craftingTable.addShaped("pink_to_green_azalea", <item:quark:azalea_log> *3, [
+    [<item:ecologics:azalea_log>],
+    [<item:ecologics:azalea_log>],
+    [<item:ecologics:azalea_log>]
+]);
+
+craftingTable.addShaped("green_to_pink_azalea", <item:ecologics:azalea_log> *3, [
+    [<item:quark:azalea_log>],
+    [<item:quark:azalea_log>],
+    [<item:quark:azalea_log>]
 ]);

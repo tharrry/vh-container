@@ -45,6 +45,11 @@
     "alpha": 0.125,
     "style": "vignette"
   },
+  "STONEFALL": {
+    "color": "#999999",
+    "alpha": 0.75,
+    "style": "vignette"
+  },
   "RAGE": {
     "color": "#FF0000",
     "alpha": 0.5,

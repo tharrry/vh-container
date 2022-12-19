@@ -49,7 +49,7 @@
     "crystals_crafted": "The total number of Vault Crystals you\u0027ve crafted.",
     "vaults_total": "The total number of vaults you\u0027ve run.",
     "vaults_completed": "The total number of vaults you\u0027ve successfully completed.",
-    "vaults_bailed": "The total number of vaults you\u0027ve bailed.",
+    "vaults_bailed": "The total number of vaults you\u0027ve survived.",
     "vaults_failed": "The total number of vaults you\u0027ve failed.",
     "experience": "The total vault experience you\u0027ve gained.",
     "damage_dealt": "The total amount of damage you\u0027ve dealt in vaults.",

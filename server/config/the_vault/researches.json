@@ -75,8 +75,8 @@
       "restrictions": {
         "restricts": {
           "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": true,
-          "USABILITY": true,
+          "BLOCK_INTERACTABILITY": false,
+          "USABILITY": false,
           "CRAFTABILITY": true,
           "ENTITY_INTERACTABILITY": false
         }
@@ -679,6 +679,20 @@
           }
         },
         "botania:crafty_crate": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "ae2:blank_pattern": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "refinedstorage:pattern": {
           "restricts": {
             "HITTABILITY": true,
             "USABILITY": true,

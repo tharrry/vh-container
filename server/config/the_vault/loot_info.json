@@ -21,10 +21,9 @@
     "the_vault:wooden_chest": {
       "display": "Wooden Chests",
       "lootTableKeys": [
-        "the_vault:wooden_chest_lvl0",
         "the_vault:wooden_chest_lvl0_v2",
         "the_vault:wooden_chest_lvl10_v2",
-        "the_vault:wooden_chest_lvl10"
+        "the_vault:wooden_chest_lvl24_v2"
       ]
     },
     "the_vault:cube_block": {
@@ -42,14 +41,11 @@
     "the_vault:living_chest": {
       "display": "Living Chests",
       "lootTableKeys": [
-        "the_vault:living_chest_lvl0",
         "the_vault:living_chest_lvl0_v2",
         "the_vault:living_chest_lvl14_v2",
         "the_vault:living_chest_lvl21_v2",
         "the_vault:living_chest_lvl30_v2",
-        "the_vault:living_chest_lvl41_v2",
-        "the_vault:living_chest_lvl9",
-        "the_vault:living_chest_lvl22"
+        "the_vault:living_chest_lvl41_v2"
       ]
     },
     "the_vault:treasure_sand": {
@@ -61,7 +57,6 @@
     "the_vault:treasure_chest": {
       "display": "Treasure Chests",
       "lootTableKeys": [
-        "the_vault:treasure_chest_lvl0"
       ]
     },
     "the_vault:completion_crate": {
@@ -81,19 +76,16 @@
     "the_vault:ornate_chest": {
       "display": "Ornate Chests",
       "lootTableKeys": [
-        "the_vault:ornate_chest_lvl0",
         "the_vault:ornate_chest_lvl0_v2",
         "the_vault:ornate_chest_lvl13_v2",
         "the_vault:ornate_chest_lvl27_v2",
         "the_vault:ornate_chest_lvl39_v2",
-        "the_vault:ornate_chest_lvl50_v2",
-        "the_vault:ornate_chest_lvl11"
+        "the_vault:ornate_chest_lvl50_v2"
       ]
     },
     "the_vault:altar_chest": {
       "display": "Altar Chests",
       "lootTableKeys": [
-        "the_vault:altar_chest_lvl0",
         "the_vault:altar_chest_lvl0_v2",
         "the_vault:altar_chest_lvl20_v2"
       ]
@@ -101,12 +93,10 @@
     "the_vault:gilded_chest": {
       "display": "Gilded Chests",
       "lootTableKeys": [
-        "the_vault:gilded_chest_lvl0",
         "the_vault:gilded_chest_lvl0_v2",
         "the_vault:gilded_chest_lvl11_v2",
         "the_vault:gilded_chest_lvl24_v2",
-        "the_vault:gilded_chest_lvl35_v2",
-        "the_vault:gilded_chest_lvl10"
+        "the_vault:gilded_chest_lvl35_v2"
       ]
     }
   }

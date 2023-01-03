@@ -76,11 +76,11 @@
           },
 		      {
             "value": "the_vault:classic_vault_festive",
-            "weight": 64
+            "weight": 8
           },
 		      {
             "value": "the_vault:classic_vault_gingerbread",
-            "weight": 64
+            "weight": 8
           }
         ]
       },
@@ -161,11 +161,11 @@
           },
           {
             "value": "the_vault:classic_vault_festive",
-            "weight": 128
+            "weight": 16
           },
 		      {
             "value": "the_vault:classic_vault_gingerbread",
-            "weight": 128
+            "weight": 16
           }
         ]
       },
@@ -258,11 +258,11 @@
           },
           {
             "value": "the_vault:classic_vault_festive",
-            "weight": 128
+            "weight": 16
           },
 		      {
             "value": "the_vault:classic_vault_gingerbread",
-            "weight": 128
+            "weight": 16
           }
         ]
       }

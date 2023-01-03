@@ -222,7 +222,7 @@
 		# How many furnaces that need to be linked in order for the Rainbow Furnace to generate power.
 		# Default: 9
 		#Range: 1 ~ 100
-		power = 9
+		power = 6
 		# Number of ticks to complete one smelting operation.
 		# 200 ticks is what a regular furnace takes.
 		# Default: 20

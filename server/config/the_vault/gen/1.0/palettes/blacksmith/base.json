@@ -5,7 +5,7 @@
       "target": "the_vault:placeholder[type=ornate_chest]",
       "output": {
         "the_vault:placeholder[type=ornate_chest]": 6,
-        "minecraft:air": 2
+        "minecraft:air": 3
       }
     },
     {

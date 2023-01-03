@@ -28,6 +28,14 @@
                     }
                 },
                 {
+                    "level": 40,
+                    "type": "weighted_target",
+                    "target": "ispawner:spawner",
+                    "output": {
+                        "ispawner:spawner{ Manager: { Settings: { SpawnDelay: 220 } } }": 1
+                    }
+                },
+                {
                     "level": 50,
                     "type": "weighted_target",
                     "target": "ispawner:spawner",

@@ -241,7 +241,7 @@
     "DURABILITY": {
       "MATERIAL_COSTS": [
         8,
-        16,
+        8,
         0,
         4,
         0,
@@ -294,10 +294,10 @@
     "COPIOUSLY": {
       "MATERIAL_COSTS": [
         16,
-        8,
         4,
-        10,
-        10,
+        4,
+        6,
+        16,
         4
       ],
       "POSITIVE": true,

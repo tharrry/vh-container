@@ -16,7 +16,7 @@
                     }
                 },
                 {
-                    "level": 0,
+                    "level": 30,
                     "type": "weighted_target",
                     "target": "ispawner:spawner",
                     "output": {

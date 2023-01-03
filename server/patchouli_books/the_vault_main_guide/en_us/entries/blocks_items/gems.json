@@ -7,7 +7,7 @@
 
         {
           "type": "patchouli:spotlight",
-          "item": "the_vault:ore_echo",
+          "item": "the_vault:vaultstone_ore_echo",
           "text": "There are different types of Gems, each obtainable inside the Vault as $(l)ores$() or as individual Gems $(l)in chests.$() $(br2)Ores can be mined and are affected by $(l)Fortune$(). 1 Gem is guaranteed when $(l)smelted$()."
         },
 

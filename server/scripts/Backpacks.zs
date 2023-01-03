@@ -35,7 +35,7 @@ craftingTable.addShaped("sophisticatedbackpacks_pouch", <item:sophisticatedbackp
     "SMS"],
   "key": {
     "I": {"item": "the_vault:vault_essence"},
-    "P": {"item": "the_vault:extraordinary_larimar"},
+    "P": {"item": "the_vault:gem_pog"},
     "L": {"item": "the_vault:vault_diamond"},
     "S": {"item": "the_vault:magic_silk"},
     "M": {"item": "the_vault:magic_silk_block"},

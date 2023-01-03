@@ -34,7 +34,7 @@
     "RANGE": {
       "MATERIAL_COSTS": [
         16,
-        8,
+        6,
         1,
         4
       ],
@@ -49,7 +49,7 @@
     "DURABILITY": {
       "MATERIAL_COSTS": [
         8,
-        6,
+        3,
         0,
         8
       ],

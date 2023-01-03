@@ -5,6 +5,9 @@ for Iskall85's Vaulthunters */
 
 <recipetype:create:crushing>.addRecipe("crushed_vaultstone_to_rock", [<item:the_vault:chipped_vault_rock> % 50, <item:the_vault:vault_cobblestone>], <item:the_vault:vault_stone>, 350);
 
+<recipetype:create:crushing>.addRecipe("chromatic_ore_to_dust", [<item:the_vault:chromatic_iron_dust> *2], <item:the_vault:chromatic_iron_ore>, 350);
+<recipetype:create:crushing>.addRecipe("raw_chromatic_ore_to_dust", [<item:the_vault:chromatic_iron_dust> *9], <item:the_vault:raw_chromatic_iron_block>, 2350);
+
 <recipetype:create:cutting>.addRecipe("crushed", [<item:create:shaft> *2],
 <item:create:andesite_alloy>, 450);
 

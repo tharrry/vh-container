@@ -53,6 +53,14 @@
                 "output": {
                     "ispawner:spawner{ Manager:{ UsesLeft:3 } }": 1
                 }
+            },
+            {
+              "level": 0,
+              "type": "weighted_target",
+              "target": "ispawner:spawner",
+              "output": {
+                  "ispawner:spawner{ Manager:{ UsesLeft:4 } }": 1
+              }
             }
         ]
       },

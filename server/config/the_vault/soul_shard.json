@@ -8,7 +8,7 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 800,
+        "minPrice": 1000,
         "maxPrice": 2000
       },
       "weight": 32
@@ -44,7 +44,7 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 800,
+        "minPrice": 1000,
         "maxPrice": 2000
       },
       "weight": 32
@@ -76,6 +76,18 @@
     {
       "value": {
         "item": {
+          "ITEM": "the_vault:sweet_kiwi",
+          "AMOUNT": 1, 
+          "NBT": "{}"
+        },
+        "minPrice": 80,
+        "maxPrice": 180
+      },
+      "weight": 64
+    },
+    {
+      "value": {
+        "item": {
           "ITEM": "the_vault:bitter_lemon",
           "AMOUNT": 1, 
           "NBT": "{}"
@@ -92,10 +104,10 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 60,
-        "maxPrice": 120
+        "minPrice": 160,
+        "maxPrice": 300
       },
-      "weight": 96
+      "weight": 64
     },
     {
       "value": {
@@ -104,10 +116,10 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 60,
-        "maxPrice": 120
+        "minPrice": 160,
+        "maxPrice": 300
       },
-      "weight": 96
+      "weight": 64
     },
     {
       "value": {
@@ -116,10 +128,10 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 600,
-        "maxPrice": 1400
+        "minPrice": 100,
+        "maxPrice": 600
       },
-      "weight": 32
+      "weight": 16
     },
     {
       "value": {
@@ -176,8 +188,8 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 1200,
-        "maxPrice": 3200
+        "minPrice": 2000,
+        "maxPrice": 4000
       },
       "weight": 4
     },
@@ -309,7 +321,7 @@
           "NBT": "{}"
         },
         "minPrice": 100,
-        "maxPrice": 600
+        "maxPrice": 400
       },
       "weight": 16
     },
@@ -383,7 +395,7 @@
         "minPrice": 1600,
         "maxPrice": 3400
       },
-      "weight": 4
+      "weight": 1
     },
     {
       "value": {
@@ -512,10 +524,10 @@
           "AMOUNT": 9, 
           "NBT": "{}"
         },
-        "minPrice": 100,
-        "maxPrice": 600
+        "minPrice": 300,
+        "maxPrice": 700
       },
-      "weight": 64
+      "weight": 48
     },
     {
       "value": {
@@ -524,10 +536,10 @@
           "AMOUNT": 14, 
           "NBT": "{}"
         },
-        "minPrice": 100,
-        "maxPrice": 600
+        "minPrice": 300,
+        "maxPrice": 700
       },
-      "weight": 64
+      "weight": 48
     },
     {
       "value": {
@@ -737,25 +749,25 @@
       "value": {
         "item": {
           "ITEM": "the_vault:black_chromatic_steel_ingot",
-          "AMOUNT": 4, 
+          "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 300,
-        "maxPrice": 700
+        "minPrice": 500,
+        "maxPrice": 900
       },
-      "weight": 32
+      "weight": 8
     },
     {
       "value": {
         "item": {
           "ITEM": "the_vault:black_chromatic_steel_nugget",
-          "AMOUNT": 8, 
+          "AMOUNT": 4, 
           "NBT": "{}"
         },
-        "minPrice": 80,
-        "maxPrice": 200
+        "minPrice": 250,
+        "maxPrice": 500
       },
-      "weight": 32
+      "weight": 16
     },
     {
       "value": {
@@ -800,8 +812,8 @@
           "AMOUNT": 2, 
           "NBT": "{}"
         },
-        "minPrice": 10,
-        "maxPrice": 40
+        "minPrice": 30,
+        "maxPrice": 80
       },
       "weight": 32
     },
@@ -812,8 +824,8 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 40,
-        "maxPrice": 80
+        "minPrice": 80,
+        "maxPrice": 140
       },
       "weight": 64
     },
@@ -884,8 +896,8 @@
           "AMOUNT": 4, 
           "NBT": "{}"
         },
-        "minPrice": 80,
-        "maxPrice": 300
+        "minPrice": 160,
+        "maxPrice": 500
       },
       "weight": 16
     },
@@ -1028,8 +1040,8 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 20,
-        "maxPrice": 120
+        "minPrice": 80,
+        "maxPrice": 160
       },
       "weight": 48
     },
@@ -1040,7 +1052,7 @@
           "AMOUNT": 1, 
           "NBT": "{}"
         },
-        "minPrice": 200,
+        "minPrice": 400,
         "maxPrice": 1200
       },
       "weight": 16

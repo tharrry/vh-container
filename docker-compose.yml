@@ -13,8 +13,7 @@ services:
       - ./vault-hunters-1.18.2:/data
     environment:
         - EULA=true
-        - JVM_OPTS=-Xmx16g
-        - LEVELSEED="7229311241545822825"
+        - JVM_OPTS=-Xmx8g
 # default enironment variable values
 #        - JVM_OPTS : "-Xms2g -Xmx6g"
 #        - JAVA_HOME : "/usr/local/openjdk-8"

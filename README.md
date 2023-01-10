@@ -45,13 +45,13 @@ This is the Iskall pre-generated world and will be automatically downloaded and 
 These environment variables can be set at run time to override their defaults.
 
 Java virtual machine memory - 6 Gigabytes maximum, increase by ~2G per player
-> `JVM_OPTS` "-Xmx6g"
+> `JVM_OPTS` "-Xmx8g"
 
 Minecraft server name
-> `MOTD` "A Minecraft (Vault Hunters 1.13.9h) Server Powered by Docker"
+> `MOTD` "Sugar hunten Vaults"
 
 Minecraft World name (and what world is automatically started when the server starts)
-> `LEVEL` Vault-Hunters
+> `LEVEL` Welche
 
 The Level Type - not used currently
 > `LEVELTYPE`
@@ -67,7 +67,7 @@ The Difficulty of the World
 Set the enviroment variable `OPS` with a comma separated list of players.
 
 example:
-> `OPS="OpPlayer1,OpPlayer2"`
+> `OPS="DesmondDDos,OpPlayer2"`
 
 ## Original Source
 Github:

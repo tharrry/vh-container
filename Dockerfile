@@ -43,4 +43,4 @@ ENV GAMEMODE "survival"
 ENV DIFFICULTY "normal"
 
 # Start with 2G of ram expandable to 6G
-ENV JVM_OPTS "-Xms2g -Xmx6g"
+ENV JVM_OPTS "-Xms2g -Xmx8g"
